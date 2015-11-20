@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 import com.cplatform.xhxw.ui.Constants;
 import com.cplatform.xhxw.ui.R;
 import com.cplatform.xhxw.ui.db.dao.SMessageChatDao;
@@ -210,40 +210,40 @@ public class SMessageChatAdapter extends CursorAdapter {
     }
 
     static class ViewHelperLeft {
-        @InjectView(R.id.formclient_row_date)
+        @Bind(R.id.formclient_row_date)
         TextView date;
-        @InjectView(R.id.avatar)
+        @Bind(R.id.avatar)
         ImageView avatar;
-        @InjectView(R.id.formclient_row_msg)
+        @Bind(R.id.formclient_row_msg)
         TextView msg;
-        @InjectView(R.id.iv_pic)
+        @Bind(R.id.iv_pic)
         ImageView pic;
-        @InjectView(R.id.body_layout)
+        @Bind(R.id.body_layout)
         View body;
 
         public ViewHelperLeft(View v) {
-            ButterKnife.inject(this, v);
+            ButterKnife.bind(this, v);
         }
     }
 
     static class ViewHelperRight {
-        @InjectView(R.id.formclient_row_date)
+        @Bind(R.id.formclient_row_date)
         TextView time;
-        @InjectView(R.id.avatar)
+        @Bind(R.id.avatar)
         ImageView avatar;
-        @InjectView(R.id.formclient_row_msg)
+        @Bind(R.id.formclient_row_msg)
         TextView msg;
-        @InjectView(R.id.iv_pic)
+        @Bind(R.id.iv_pic)
         ImageView pic;
-        @InjectView(R.id.send_error_icon)
+        @Bind(R.id.send_error_icon)
         ImageView error;
-        @InjectView(R.id.progressBar)
+        @Bind(R.id.progressBar)
         View progressBar;
-        @InjectView(R.id.body_layout)
+        @Bind(R.id.body_layout)
         View body;
 
         public ViewHelperRight(View v) {
-            ButterKnife.inject(this, v);
+            ButterKnife.bind(this, v);
         }
     }
 }

@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 import butterknife.OnClick;
 
 import com.google.gson.Gson;
@@ -29,22 +29,22 @@ public class AboutActivity extends BaseActivity implements OnLoadListener{
 	private String url;
 	private InstallAppTask task;
 	
-    @InjectView(R.id.about_now_layout)
+    @Bind(R.id.about_now_layout)
     LinearLayout nowLayout;
     
-    @InjectView(R.id.about_now_version1)
+    @Bind(R.id.about_now_version1)
     TextView nowVersion1;
     
-    @InjectView(R.id.about_new_layout)
+    @Bind(R.id.about_new_layout)
     LinearLayout newLayout;
     
-    @InjectView(R.id.about_now_version2)
+    @Bind(R.id.about_now_version2)
     TextView nowVersion2;
     
-    @InjectView(R.id.about_new_version)
+    @Bind(R.id.about_new_version)
     TextView newVersion;
     
-    @InjectView(R.id.about_update)
+    @Bind(R.id.about_update)
     Button updateBtn;
 	
 	public static Intent getIntent(Context context) {
@@ -64,7 +64,7 @@ public class AboutActivity extends BaseActivity implements OnLoadListener{
 		
 		setContentView(R.layout.about);
 		
-		ButterKnife.inject(this);
+		ButterKnife.bind(this);
 		
 		getVersionInfo();
 	}

@@ -6,7 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.RelativeLayout;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 import com.cplatform.xhxw.ui.ui.base.widget.DefaultView;
 import com.cplatform.xhxw.ui.util.LogUtil;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
@@ -22,9 +22,9 @@ import com.cplatform.xhxw.ui.R;
 public class PicItemView extends RelativeLayout {
 
     private static final String TAG = PicItemView.class.getSimpleName();
-    @InjectView(R.id.iv_img)
+    @Bind(R.id.iv_img)
     PhotoView mImg;
-    @InjectView(R.id.def_view)
+    @Bind(R.id.def_view)
     DefaultView mDefView;
 
     private String mUrl;
@@ -39,7 +39,7 @@ public class PicItemView extends RelativeLayout {
         LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context
                 .LAYOUT_INFLATER_SERVICE);
         inflater.inflate(R.layout.view_pic_item, this);
-        ButterKnife.inject(this);
+        ButterKnife.bind(this);
         mDefView.setHidenOtherView(mImg);
         mDefView.setListener(new DefaultView.OnTapListener() {
             @Override

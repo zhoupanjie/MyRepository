@@ -67,7 +67,7 @@ public class WelcomActivity extends BaseNormalActivity implements
 		super.onCreate(savedInstanceState);
 		UmsAgent.init(this, HttpClientConfig.UMSAGENT_BASE_URL, 1);
 		setContentView(R.layout.welcom);
-		ButterKnife.inject(this);
+		ButterKnife.bind(this);
 		mRootLo = (LinearLayout) findViewById(R.id.welcom_root_lo);
 		mAdverIv = (ImageView) findViewById(R.id.welcome_advertise);
 		mAdverIv.setOnClickListener(mOnClick);
@@ -216,7 +216,7 @@ public class WelcomActivity extends BaseNormalActivity implements
 
 	@Override
 	protected void onDestroy() {
-		ButterKnife.reset(this);
+		ButterKnife.bind(this);
 		super.onDestroy();
 	}
 

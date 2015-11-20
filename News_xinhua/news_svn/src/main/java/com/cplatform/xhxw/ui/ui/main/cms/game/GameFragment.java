@@ -37,7 +37,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.ViewFlipper;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 
 import com.cplatform.xhxw.ui.App;
 import com.cplatform.xhxw.ui.Constants;
@@ -71,9 +71,9 @@ import com.viewpagerindicator.CirclePageIndicator;
 public class GameFragment extends BaseFragment implements OnItemClickListener,
 		PullRefreshListView.PullRefreshListener, OnSliderImgOnClickListener {
 	private String mChannelid; // 当前类型
-	@InjectView(R.id.list)
+	@Bind(R.id.list)
 	PullRefreshListView mListView;
-	@InjectView(R.id.def_view)
+	@Bind(R.id.def_view)
 	DefaultView mDefView;
 	private NewsHeaderView mHeandr;
 	private GameAdapter adapterGame;
@@ -100,7 +100,7 @@ public class GameFragment extends BaseFragment implements OnItemClickListener,
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		View view = inflater.inflate(R.layout.fragment_game, container, false);
-		ButterKnife.inject(this, view);
+		ButterKnife.bind(this, view);
 		con = this.getActivity();
 		return view;
 	}
@@ -261,7 +261,7 @@ public class GameFragment extends BaseFragment implements OnItemClickListener,
 		adapterGame.close();
 		adapterGame = null;
 
-		ButterKnife.reset(this);
+//		ButterKnife.reset(this);
 		super.onDestroyView();
 	}
 

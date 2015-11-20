@@ -12,7 +12,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 import butterknife.OnClick;
 
 import com.cplatform.xhxw.ui.Constants;
@@ -34,19 +34,19 @@ import com.cplatform.xhxw.ui.model.FunctionRecommend;
  */
 public class NewsFunctionRecommend extends RelativeLayout {
 
-//	@InjectView(R.id.tv_tag)
+//	@Bind(R.id.tv_tag)
 //	TextView mTag;
-//	@InjectView(R.id.tv_title)
+//	@Bind(R.id.tv_title)
 //	TextView mTitle;
-	@InjectView(R.id.iv_img1)
+	@Bind(R.id.iv_img1)
 	ImageView mImg1;
-	@InjectView(R.id.iv_img2)
+	@Bind(R.id.iv_img2)
 	ImageView mImg2;
-	@InjectView(R.id.iv_img3)
+	@Bind(R.id.iv_img3)
 	ImageView mImg3;
-	@InjectView(R.id.iv_img4)
+	@Bind(R.id.iv_img4)
 	ImageView mImg4;
-	@InjectView(R.id.ly_aimgs)
+	@Bind(R.id.ly_aimgs)
 	View mAimgs;
 
 	private OnFunctionRecommendOnClickListener mListener;
@@ -76,7 +76,7 @@ public class NewsFunctionRecommend extends RelativeLayout {
 		LayoutInflater inflater = (LayoutInflater) getContext()
 				.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		inflater.inflate(R.layout.view_news_function_recommend, this);
-		ButterKnife.inject(this);
+		ButterKnife.bind(this);
 //		ViewGroup.LayoutParams lp = mAimgs.getLayoutParams();
 //		DisplayMetrics spaceWidth = getContext().getResources()
 //				.getDisplayMetrics();

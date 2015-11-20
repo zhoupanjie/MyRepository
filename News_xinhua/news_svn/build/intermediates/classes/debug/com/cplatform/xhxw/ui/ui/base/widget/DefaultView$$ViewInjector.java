@@ -7,16 +7,6 @@ import butterknife.ButterKnife.Finder;
 public class DefaultView$$ViewInjector {
   public static void inject(Finder finder, final com.cplatform.xhxw.ui.ui.base.widget.DefaultView target, Object source) {
     View view;
-    view = finder.findById(source, 2131428289);
-    if (view == null) {
-      throw new IllegalStateException("Required view with id '2131428289' for field 'mLoading' was not found. If this view is optional add '@Optional' annotation.");
-    }
-    target.mLoading = (android.widget.ProgressBar) view;
-    view = finder.findById(source, 2131428290);
-    if (view == null) {
-      throw new IllegalStateException("Required view with id '2131428290' for field 'mBg' was not found. If this view is optional add '@Optional' annotation.");
-    }
-    target.mBg = (android.widget.ImageView) view;
     view = finder.findById(source, 2131427413);
     if (view == null) {
       throw new IllegalStateException("Required view with id '2131427413' for method 'onTapAction' was not found. If this view is optional add '@Optional' annotation.");
@@ -32,7 +22,5 @@ public class DefaultView$$ViewInjector {
   }
 
   public static void reset(com.cplatform.xhxw.ui.ui.base.widget.DefaultView target) {
-    target.mLoading = null;
-    target.mBg = null;
   }
 }

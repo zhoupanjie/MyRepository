@@ -7,11 +7,6 @@ import butterknife.ButterKnife.Finder;
 public class CropAvatarActivity$$ViewInjector {
   public static void inject(Finder finder, final com.cplatform.xhxw.ui.ui.settings.CropAvatarActivity target, Object source) {
     View view;
-    view = finder.findById(source, 2131427431);
-    if (view == null) {
-      throw new IllegalStateException("Required view with id '2131427431' for field 'mImageView' was not found. If this view is optional add '@Optional' annotation.");
-    }
-    target.mImageView = (com.cylib.imageCrop.CropImageView) view;
     view = finder.findById(source, 2131427433);
     if (view == null) {
       throw new IllegalStateException("Required view with id '2131427433' for method 'onCancelAction' was not found. If this view is optional add '@Optional' annotation.");
@@ -51,6 +46,5 @@ public class CropAvatarActivity$$ViewInjector {
   }
 
   public static void reset(com.cplatform.xhxw.ui.ui.settings.CropAvatarActivity target) {
-    target.mImageView = null;
   }
 }

@@ -9,9 +9,8 @@ public class PersonalFragment$$ViewInjector {
     View view;
     view = finder.findById(source, 2131427669);
     if (view == null) {
-      throw new IllegalStateException("Required view with id '2131427669' for field 'mAvatar' and method 'personalLogin' was not found. If this view is optional add '@Optional' annotation.");
+      throw new IllegalStateException("Required view with id '2131427669' for method 'personalLogin' was not found. If this view is optional add '@Optional' annotation.");
     }
-    target.mAvatar = (android.widget.ImageView) view;
     view.setOnClickListener(
       new android.view.View.OnClickListener() {
         @Override public void onClick(
@@ -20,21 +19,10 @@ public class PersonalFragment$$ViewInjector {
           target.personalLogin();
         }
       });
-    view = finder.findById(source, 2131427670);
-    if (view == null) {
-      throw new IllegalStateException("Required view with id '2131427670' for field 'mNickName' was not found. If this view is optional add '@Optional' annotation.");
-    }
-    target.mNickName = (android.widget.TextView) view;
-    view = finder.findById(source, 2131427881);
-    if (view == null) {
-      throw new IllegalStateException("Required view with id '2131427881' for field 'mRegLoginLo' was not found. If this view is optional add '@Optional' annotation.");
-    }
-    target.mRegLoginLo = (android.widget.LinearLayout) view;
     view = finder.findById(source, 2131427882);
     if (view == null) {
-      throw new IllegalStateException("Required view with id '2131427882' for field 'mRegBtn' and method 'personalReg' was not found. If this view is optional add '@Optional' annotation.");
+      throw new IllegalStateException("Required view with id '2131427882' for method 'personalReg' was not found. If this view is optional add '@Optional' annotation.");
     }
-    target.mRegBtn = (android.widget.TextView) view;
     view.setOnClickListener(
       new android.view.View.OnClickListener() {
         @Override public void onClick(
@@ -45,9 +33,8 @@ public class PersonalFragment$$ViewInjector {
       });
     view = finder.findById(source, 2131427884);
     if (view == null) {
-      throw new IllegalStateException("Required view with id '2131427884' for field 'mLoginBtn' and method 'personalLog' was not found. If this view is optional add '@Optional' annotation.");
+      throw new IllegalStateException("Required view with id '2131427884' for method 'personalLog' was not found. If this view is optional add '@Optional' annotation.");
     }
-    target.mLoginBtn = (android.widget.TextView) view;
     view.setOnClickListener(
       new android.view.View.OnClickListener() {
         @Override public void onClick(
@@ -56,16 +43,6 @@ public class PersonalFragment$$ViewInjector {
           target.personalLog();
         }
       });
-    view = finder.findById(source, 2131427900);
-    if (view == null) {
-      throw new IllegalStateException("Required view with id '2131427900' for field 'mMsgNew' was not found. If this view is optional add '@Optional' annotation.");
-    }
-    target.mMsgNew = (android.widget.ImageView) view;
-    view = finder.findById(source, 2131427903);
-    if (view == null) {
-      throw new IllegalStateException("Required view with id '2131427903' for field 'ivNewMyInfo' was not found. If this view is optional add '@Optional' annotation.");
-    }
-    target.ivNewMyInfo = (android.widget.ImageView) view;
     view = finder.findById(source, 2131427901);
     if (view == null) {
       throw new IllegalStateException("Required view with id '2131427901' for method 'personalMyInfo' was not found. If this view is optional add '@Optional' annotation.");
@@ -177,12 +154,5 @@ public class PersonalFragment$$ViewInjector {
   }
 
   public static void reset(com.cplatform.xhxw.ui.ui.main.cms.personal.PersonalFragment target) {
-    target.mAvatar = null;
-    target.mNickName = null;
-    target.mRegLoginLo = null;
-    target.mRegBtn = null;
-    target.mLoginBtn = null;
-    target.mMsgNew = null;
-    target.ivNewMyInfo = null;
   }
 }

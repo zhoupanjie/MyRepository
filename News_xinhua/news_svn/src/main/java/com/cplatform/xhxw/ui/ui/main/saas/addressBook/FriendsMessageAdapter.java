@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 
 import com.cplatform.xhxw.ui.R;
 import com.cplatform.xhxw.ui.db.dao.CompanyMessageDao;
@@ -70,19 +70,19 @@ public class FriendsMessageAdapter extends CursorAdapter {
 	}
 
 	class ViewHolder {
-		@InjectView(R.id.message_item_logo)
+		@Bind(R.id.message_item_logo)
 		ImageView userImage;
-		@InjectView(R.id.message_item_name)
+		@Bind(R.id.message_item_name)
 		TextView userName;
-		@InjectView(R.id.message_item_time)
+		@Bind(R.id.message_item_time)
 		TextView time;
-		@InjectView(R.id.message_item_reply)
+		@Bind(R.id.message_item_reply)
 		TextView reply;
-		@InjectView(R.id.message_item_content)
+		@Bind(R.id.message_item_content)
 		TextView content;
 
 		public ViewHolder(View v) {
-			ButterKnife.inject(this, v);
+			ButterKnife.bind(this, v);
 		}
 	}
 

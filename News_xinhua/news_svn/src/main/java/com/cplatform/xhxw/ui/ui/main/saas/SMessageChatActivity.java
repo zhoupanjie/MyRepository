@@ -22,7 +22,7 @@ import android.view.ViewTreeObserver;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.*;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 import butterknife.OnClick;
 import com.cplatform.xhxw.ui.App;
 import com.cplatform.xhxw.ui.Constants;
@@ -69,17 +69,17 @@ public class SMessageChatActivity extends BaseActivity implements InputViewSensi
     private static final String KEY_LOGO = "logo";
     private static final String KEY_BACK_TITLE = "backTitle";
 
-    @InjectView(R.id.list_view)
+    @Bind(R.id.list_view)
     CommentListView mListView;
-    @InjectView(R.id.comment_editt)
+    @Bind(R.id.comment_editt)
     EditText editText;
-    @InjectView(R.id.comment_expression_widgt)
+    @Bind(R.id.comment_expression_widgt)
     XWExpressionWidgt mExpressionWidgt;
-    @InjectView(R.id.comment_expression_btn)
+    @Bind(R.id.comment_expression_btn)
     Button mExprBtn;
-    @InjectView(R.id.layout_content)
+    @Bind(R.id.layout_content)
     InputViewSensitiveLinearLayout mRootContainer;
-    @InjectView(R.id.comment_editt_linear)
+    @Bind(R.id.comment_editt_linear)
     RelativeLayout mCommentOperateLo;
 
     private boolean mIsExprShow = false;
@@ -119,7 +119,7 @@ public class SMessageChatActivity extends BaseActivity implements InputViewSensi
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_s_message_chat);
-        ButterKnife.inject(this);
+        ButterKnife.bind(this);
         if (!Constants.hasLogin()) {
             finish();
             return;

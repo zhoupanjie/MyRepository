@@ -1,7 +1,7 @@
 package com.cplatform.xhxw.ui.ui.base.view;
 
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 import butterknife.OnClick;
 
 import com.google.gson.Gson;
@@ -33,31 +33,31 @@ public class RecommendImages extends RelativeLayout {
 	/** 暂定宽高比例 */
 	private float scale = 0.75f;
 
-	@InjectView(R.id.recommend_linear_first)
+	@Bind(R.id.recommend_linear_first)
 	LinearLayout linearFirst;
-	@InjectView(R.id.recommend_linear_second)
+	@Bind(R.id.recommend_linear_second)
 	LinearLayout linearSecond;
-	@InjectView(R.id.recommend_linear_third)
+	@Bind(R.id.recommend_linear_third)
 	LinearLayout linearThird;
-	@InjectView(R.id.recommend_linear_forth)
+	@Bind(R.id.recommend_linear_forth)
 	LinearLayout linearForth;
 
-	@InjectView(R.id.recommendimage_first)
+	@Bind(R.id.recommendimage_first)
 	ImageView imageFirst;
-	@InjectView(R.id.recommendimage_second)
+	@Bind(R.id.recommendimage_second)
 	ImageView imageSecond;
-	@InjectView(R.id.recommendimage_third)
+	@Bind(R.id.recommendimage_third)
 	ImageView imageThird;
-	@InjectView(R.id.recommendimage_forth)
+	@Bind(R.id.recommendimage_forth)
 	ImageView imageForth;
 
-	@InjectView(R.id.recommendtext_first)
+	@Bind(R.id.recommendtext_first)
 	TextView textFirst;
-	@InjectView(R.id.recommendtext_second)
+	@Bind(R.id.recommendtext_second)
 	TextView textSecond;
-	@InjectView(R.id.recommendtext_third)
+	@Bind(R.id.recommendtext_third)
 	TextView textThird;
-	@InjectView(R.id.recommendtext_forth)
+	@Bind(R.id.recommendtext_forth)
 	TextView textForth;
 
 	/** 测试用的图片地址 */
@@ -91,7 +91,7 @@ public class RecommendImages extends RelativeLayout {
 				.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		inflater.inflate(R.layout.recommendimages, this);
 
-		ButterKnife.inject(this);
+		ButterKnife.bind(this);
 
 //		dynamicLayout(imageUrl);
 //		loadData();

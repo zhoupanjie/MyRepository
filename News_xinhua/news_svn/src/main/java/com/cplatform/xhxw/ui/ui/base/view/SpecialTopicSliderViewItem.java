@@ -7,7 +7,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 import com.cplatform.xhxw.ui.R;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.cplatform.xhxw.ui.model.SpecialDetailData;
@@ -19,8 +19,8 @@ import com.cplatform.xhxw.ui.util.DisplayImageOptionsUtil;
  */
 public class SpecialTopicSliderViewItem extends RelativeLayout {
 
-    @InjectView(R.id.iv_img) ImageView mImg;
-    @InjectView(R.id.tv_title) TextView mTitle;
+    @Bind(R.id.iv_img) ImageView mImg;
+    @Bind(R.id.tv_title) TextView mTitle;
     private OnSpecialTopicClickListener mLis;
     private SpecialDetailData mItem;
 
@@ -34,7 +34,7 @@ public class SpecialTopicSliderViewItem extends RelativeLayout {
         LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context
                 .LAYOUT_INFLATER_SERVICE);
         inflater.inflate(R.layout.view_slider_item, this);
-        ButterKnife.inject(this);
+        ButterKnife.bind(this);
 
         setOnClickListener(new OnClickListener() {
             @Override

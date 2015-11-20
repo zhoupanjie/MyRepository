@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 
 import com.cplatform.xhxw.ui.R;
 import com.cplatform.xhxw.ui.StatisticalKey;
@@ -24,7 +24,7 @@ import com.wbtech.ums.UmsAgent;
  */
 public class FlagAdView extends LinearLayout {
 
-    @InjectView(R.id.tv_ad_title)
+    @Bind(R.id.tv_ad_title)
     TextView mTitle;
     private Ad mData;
 
@@ -48,7 +48,7 @@ public class FlagAdView extends LinearLayout {
         LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context
                 .LAYOUT_INFLATER_SERVICE);
         inflater.inflate(R.layout.view_flag_ad, this);
-        ButterKnife.inject(this);
+        ButterKnife.bind(this);
         setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {

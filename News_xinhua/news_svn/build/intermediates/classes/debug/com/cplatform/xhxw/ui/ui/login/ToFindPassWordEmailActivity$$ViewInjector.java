@@ -7,11 +7,6 @@ import butterknife.ButterKnife.Finder;
 public class ToFindPassWordEmailActivity$$ViewInjector {
   public static void inject(Finder finder, final com.cplatform.xhxw.ui.ui.login.ToFindPassWordEmailActivity target, Object source) {
     View view;
-    view = finder.findById(source, 2131427682);
-    if (view == null) {
-      throw new IllegalStateException("Required view with id '2131427682' for field 'mEmail' was not found. If this view is optional add '@Optional' annotation.");
-    }
-    target.mEmail = (android.widget.EditText) view;
     view = finder.findById(source, 2131427683);
     if (view == null) {
       throw new IllegalStateException("Required view with id '2131427683' for method 'register' was not found. If this view is optional add '@Optional' annotation.");
@@ -39,6 +34,5 @@ public class ToFindPassWordEmailActivity$$ViewInjector {
   }
 
   public static void reset(com.cplatform.xhxw.ui.ui.login.ToFindPassWordEmailActivity target) {
-    target.mEmail = null;
   }
 }

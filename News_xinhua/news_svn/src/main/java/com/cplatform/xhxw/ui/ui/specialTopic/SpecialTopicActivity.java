@@ -13,7 +13,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 import butterknife.OnClick;
 
 import com.cplatform.xhxw.ui.App;
@@ -54,11 +54,11 @@ public class SpecialTopicActivity extends BaseActivity implements
 
 	private static final String TAG = SpecialTopicActivity.class
 			.getSimpleName();
-	@InjectView(R.id.list)
+	@Bind(R.id.list)
 	ListView mListView;
-	@InjectView(R.id.def_view)
+	@Bind(R.id.def_view)
 	DefaultView mDefView;
-	@InjectView(R.id.special_topic_title)
+	@Bind(R.id.special_topic_title)
 	TextView mSpecialTitle;
 	private SpecialTopicAdapter mAdapter;
 	private AsyncHttpResponseHandler mLoadHandler;
@@ -84,7 +84,7 @@ public class SpecialTopicActivity extends BaseActivity implements
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_special_topic);
-		ButterKnife.inject(this, this);
+		ButterKnife.bind(this, this);
 		initActionBar();
 		mSpecialid = getIntent().getStringExtra("specialid");
 		mChannelid = getIntent().getStringExtra("channelid");

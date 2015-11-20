@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/exploded-aar/News_xinhua/social_sdk_library_project/unspecified/jars/libs/SocialSDK_Sina.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="a6eee0ece63ba5e74411057d09eda1a5a01ca940">
+        <dex dex="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/pre-dexed/debug/SocialSDK_Sina-ec8e41fe3a7122d7285f8e578538eff1bb4bf371.jar" />
+    </item>
+    <item
+        jar="/Users/rangey/MyRepository/News_xinhua/news_svn/libs/universal-image-loader-1.8.4.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="eee81e43531ce82db1781c5a8b27781ca384eede">
+        <dex dex="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/pre-dexed/debug/universal-image-loader-1.8.4-32dd913f521595aacc4a4e22dd5a41dc783217df.jar" />
+    </item>
+    <item
+        jar="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/exploded-aar/News_xinhua/social_sdk_library_project/unspecified/jars/libs/SocialSDK_QQZone_3.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="931ab461b91c2a2fd5c697e7f622cdca8c2b3ac5">
+        <dex dex="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/pre-dexed/debug/SocialSDK_QQZone_3-d324a15bfaddf4ebcea266cfd05ab0c77f1e3a13.jar" />
+    </item>
+    <item
+        jar="/Users/rangey/MyRepository/News_xinhua/news_svn/libs/pushservice-3.2.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="2ff1ada5696df276e1e17ee4fad92aa22c251890">
+        <dex dex="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/pre-dexed/debug/pushservice-3.2.0-19e4a333ad4e3764b98f363c1eeadb5ce0d133d4.jar" />
+    </item>
+    <item
+        jar="/Users/rangey/MyRepository/News_xinhua/news_svn/libs/picasso-2.4.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="f36d2d4e3a36b3259aaf9d004d29b4cdc6c1bfb2">
+        <dex dex="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/pre-dexed/debug/picasso-2.4.0-7456e09bd4fa722b93db3d3b674904c9893ff3db.jar" />
+    </item>
+    <item
+        jar="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/exploded-aar/News_xinhua/baidu_locate_library/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="65a02ec552764cf7d7aa08460f90e3cf9d8f6922">
+        <dex dex="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/pre-dexed/debug/classes-bd9b79e30ed8353ba6662cde3778939c01eb3fe5.jar" />
+    </item>
+    <item
+        jar="/Users/rangey/MyRepository/News_xinhua/news_svn/libs/ormlite-android-4.48.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="afa06f539a4026c10b247386312aa67404b80a16">
+        <dex dex="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/pre-dexed/debug/ormlite-android-4.48-541a8ef9e1de9b00fcb7da14f319e0a9488ec97b.jar" />
+    </item>
+    <item
+        jar="/Users/rangey/MyRepository/News_xinhua/news_svn/libs/pushsdk.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="43469045c90e1aa943933cb5cf09f928668f75fb">
+        <dex dex="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/pre-dexed/debug/pushsdk-8e4a6931bdd582e6e87f8a418d9d4c782d0ee645.jar" />
+    </item>
+    <item
+        jar="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/exploded-aar/News_xinhua/social_sdk_library_project/unspecified/jars/libs/umeng_social_sdk.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="4688dc44ccef22b7f057301ee6abbe187a8d35ea">
+        <dex dex="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/pre-dexed/debug/umeng_social_sdk-a15272490592dc0214a3bf0131aebfa5af7ac280.jar" />
+    </item>
+    <item
+        jar="/Users/rangey/MyRepository/News_xinhua/news_svn/libs/nineoldandroids-2.4.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="59f19e43354d32de831379c23ce03bb259a4c2b7">
+        <dex dex="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/pre-dexed/debug/nineoldandroids-2.4.0-c7c9418aa2fb18120e020b351d55137614f42d6e.jar" />
+    </item>
+    <item
+        jar="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/exploded-aar/News_xinhua/viewPagerIndicator/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="7a8153dd66deabfce817452a386c7117fa0b96f9">
+        <dex dex="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/pre-dexed/debug/classes-68d48bcb4bf781b1e1ff7ca2c713643277f4e202.jar" />
+    </item>
+    <item
+        jar="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/exploded-aar/News_xinhua/social_sdk_library_project/unspecified/jars/libs/SocialSDK_Shake_Lib.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="e7d64cc432deb3ab4c3586686448f2b5feaa141c">
+        <dex dex="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/pre-dexed/debug/SocialSDK_Shake_Lib-6c5d37bfb95a7a9f58a688b4956b9b128ec23438.jar" />
+    </item>
+    <item
+        jar="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/exploded-aar/News_xinhua/baidu_locate_library/unspecified/jars/libs/locSDK_4.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8b405c3054e12d913fa5aafb160c294e642dc673">
+        <dex dex="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/pre-dexed/debug/locSDK_4.0-67cc0a29378e69168e66df619df26b80e3b69517.jar" />
+    </item>
+    <item
+        jar="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/libs/internal_impl-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/pre-dexed/debug/internal_impl-23.1.1-934a5f33d0e7946e17661c64f69cf28b78ee7fd8.jar" />
+    </item>
+    <item
+        jar="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/exploded-aar/News_xinhua/social_sdk_library_project/unspecified/jars/libs/SocialSDK_QQZone_2.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="4a69b33758dcba3ef519cbd4b6c8af5f41603c4f">
+        <dex dex="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/pre-dexed/debug/SocialSDK_QQZone_2-6e8d711335ca0dab805e3bf0d9142d46fc96645c.jar" />
+    </item>
+    <item
+        jar="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/exploded-aar/News_xinhua/social_sdk_library_project/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="2c8ef8234492734f4e593f4c06dfc28c6805be34">
+        <dex dex="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/pre-dexed/debug/classes-8303128f15f18c870a719624bf45c9490159b433.jar" />
+    </item>
+    <item
+        jar="/Users/rangey/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/7.0.1/d5d13ea991eab0252e3710e5df3d6a9d4b21d461/butterknife-7.0.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="d5d13ea991eab0252e3710e5df3d6a9d4b21d461">
+        <dex dex="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/pre-dexed/debug/butterknife-7.0.1-31f2d4ba73b8927d9438d9e4ed41eff2de1b9689.jar" />
+    </item>
+    <item
+        jar="/Users/rangey/MyRepository/News_xinhua/news_svn/libs/ormlite-core-4.48.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="e579bd2905d0399af5029aaaf9817d5fa0ca88a5">
+        <dex dex="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/pre-dexed/debug/ormlite-core-4.48-11235b22f94ba887ba7dab3cddc553632fb1b99f.jar" />
+    </item>
+    <item
+        jar="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/exploded-aar/News_xinhua/social_sdk_library_project/unspecified/jars/libs/SocialSDK_tencentWB_3.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="ffa8f4a76d210b0e34c255891e4d7478faf7b918">
+        <dex dex="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/pre-dexed/debug/SocialSDK_tencentWB_3-9a1b3fb2a40f920f3d37aca48811fc124a5bb1d7.jar" />
+    </item>
+    <item
+        jar="/Users/rangey/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.2.4/a60a5e993c98c864010053cb901b7eab25306568/gson-2.2.4.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="a60a5e993c98c864010053cb901b7eab25306568">
+        <dex dex="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/pre-dexed/debug/gson-2.2.4-aabeadceb95f358e2a4b0d6e8b9073ab41e09afd.jar" />
+    </item>
+    <item
+        jar="/Users/rangey/MyRepository/News_xinhua/news_svn/libs/CySDK.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="4021002a4f415aa320d57c8930a7c9752fda1d27">
+        <dex dex="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/pre-dexed/debug/CySDK-4d515617870150db7cd72b54194a6ec06a6c9dbf.jar" />
+    </item>
+    <item
+        jar="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/exploded-aar/News_xinhua/image_crop_library/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="fb7a17a78c65ddcf719e18c6cb7269afd2703893">
+        <dex dex="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/pre-dexed/debug/classes-2b85097870562a580bc645217b8d5007a6860c30.jar" />
+    </item>
+    <item
+        jar="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/exploded-aar/News_xinhua/social_sdk_library_project/unspecified/jars/libs/SocialSDK_Scrshot_Lib.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="9bc4564a7f9ff7cdb2f5409bc1ce30de9f2c8795">
+        <dex dex="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/pre-dexed/debug/SocialSDK_Scrshot_Lib-3f08577b0fc8087e0649b7b0881904091e29389e.jar" />
+    </item>
+    <item
+        jar="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/exploded-aar/News_xinhua/photoView/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="bdbaf94426e8211f39ad473a6d536025d5600bd4">
+        <dex dex="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/pre-dexed/debug/classes-64ae96edf8ce62e0d8dfc5169b2fa31928695ba4.jar" />
+    </item>
+    <item
+        jar="/Users/rangey/MyRepository/News_xinhua/news_svn/libs/umeng_sdk.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="f215292edd3cea48bea39811c7bc814a09d4481a">
+        <dex dex="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/pre-dexed/debug/umeng_sdk-7fb39cf2304ae6f4a277a5f6098814cb20408bfe.jar" />
+    </item>
+    <item
+        jar="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/exploded-aar/News_xinhua/swipeBackLayout/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="b9edd71eb5fe3a6b92ad39d7e24661cb332b3579">
+        <dex dex="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/pre-dexed/debug/classes-7acbea9349ed761eff2b9935d8391e2da17c00bc.jar" />
+    </item>
+    <item
+        jar="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/exploded-aar/News_xinhua/social_sdk_library_project/unspecified/jars/libs/SocialSDK_WeiXin_1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="47f4993168154fa73377d7470b9f6887d48a8023">
+        <dex dex="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/pre-dexed/debug/SocialSDK_WeiXin_1-08604f733d6e52fa6d5821b7e6a717a694c01a8c.jar" />
+    </item>
+    <item
+        jar="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/exploded-aar/News_xinhua/social_sdk_library_project/unspecified/jars/libs/SocialSDK_WeiXin_2.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="b651be701cb256e3972e7c5a07119f26bb7b44a4">
+        <dex dex="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/pre-dexed/debug/SocialSDK_WeiXin_2-40ae95cca8ce6e3ffe1d86a74640925aaa9229e2.jar" />
+    </item>
+    <item
+        jar="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/exploded-aar/News_xinhua/social_sdk_library_project/unspecified/jars/libs/SocialSDK_tencentWB_1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="328c5351cae13f2ab29450d22b6c02d0ac88a855">
+        <dex dex="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/pre-dexed/debug/SocialSDK_tencentWB_1-de64d08a1ba3e0687bb5e565c08e106adfede076.jar" />
+    </item>
+    <item
+        jar="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/pre-dexed/debug/classes-d30abb47d06f97aafb418f87063355830dac115b.jar" />
+    </item>
+    <item
+        jar="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/exploded-aar/com.android.support/gridlayout-v7/18.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="dafab6ae358e6c801605d50ff1fa761e77200c1a">
+        <dex dex="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/pre-dexed/debug/classes-7239c315abd44a27ae50870d96c2ec444aea964c.jar" />
+    </item>
+    <item
+        jar="/Users/rangey/MyRepository/News_xinhua/news_svn/libs/MiPush_SDK_Client_2_2_sdk.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="98167bb6e3ab4beecdb022a5ce4e57684cf8dbcd">
+        <dex dex="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/pre-dexed/debug/MiPush_SDK_Client_2_2_sdk-163bf25a6708d2267d4f940accd2b32b2af800f3.jar" />
+    </item>
+    <item
+        jar="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/exploded-aar/News_xinhua/social_sdk_library_project/unspecified/jars/libs/httpmime-4.1.3.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="e70d34d98f7f7f3b2b92105b9f2fe2a7a7184461">
+        <dex dex="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/pre-dexed/debug/httpmime-4.1.3-e65c86a60dd6b68f0f0a34e9768f5b8d98068de4.jar" />
+    </item>
+    <item
+        jar="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/exploded-aar/News_xinhua/social_sdk_library_project/unspecified/jars/libs/SocialSDK_QQZone_1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="c184c69f43b1fe46390f7123717c65bd844bccb6">
+        <dex dex="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/pre-dexed/debug/SocialSDK_QQZone_1-8735b7093a93bc21a66b1ca623bacff353726824.jar" />
+    </item>
+    <item
+        jar="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/exploded-aar/News_xinhua/social_sdk_library_project/unspecified/jars/libs/SocialSDK_tencentWB_2.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="6f744074067eb201171c9c8ff1ca45ed821a76a8">
+        <dex dex="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/pre-dexed/debug/SocialSDK_tencentWB_2-1c28dd6ca24a4562fe687784f8fa8b7ddfcbbc9c.jar" />
+    </item>
+    <item
+        jar="/Users/rangey/MyRepository/News_xinhua/news_svn/libs/pageddragdropgrid.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="dd6c70202ca795d4924c0938a7423854d74fc792">
+        <dex dex="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/pre-dexed/debug/pageddragdropgrid-6cb084d86e271dfbc99e6cd16381e17aaa74c258.jar" />
+    </item>
+    <item
+        jar="/Users/rangey/MyRepository/News_xinhua/news_svn/libs/pinyin4j-2.5.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="ae353005f973da1cd8545b54354504c2503f6865">
+        <dex dex="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/pre-dexed/debug/pinyin4j-2.5.0-3449eb64c3e10ca1b742948f44f583dfd75259dc.jar" />
+    </item>
+    <item
+        jar="/Users/rangey/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.1/support-annotations-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/pre-dexed/debug/support-annotations-23.1.1-64ba737e61cc79f481839aba4dfaddfde0bbeb64.jar" />
+    </item>
+    <item
+        jar="/Users/rangey/MyRepository/News_xinhua/news_svn/libs/com.wbkit1.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="2b51fd1311b9bb8247bfd98e1dff56803a342429">
+        <dex dex="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/pre-dexed/debug/com.wbkit1.0-a47e5e145e981c551bdbbfff76f7fa55eac30199.jar" />
+    </item>
+    <item
+        jar="/Users/rangey/MyRepository/News_xinhua/news_svn/libs/androidrecording.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="d51b6f0b99ac249471f712ded60df9da21e2d2a8">
+        <dex dex="/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/pre-dexed/debug/androidrecording-cf3558ba804065c0f62de5fcbd289ebd5674e75e.jar" />
+    </item>
+
+</items>

@@ -11,7 +11,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 import butterknife.OnClick;
 
 import com.cplatform.xhxw.ui.Constants;
@@ -42,31 +42,31 @@ public class RecommendAtlasView extends RelativeLayout {
 	/** 暂定宽高比例 */
 	private float scale = 0.75f;
 
-	@InjectView(R.id.recommend_linear_first)
+	@Bind(R.id.recommend_linear_first)
 	RelativeLayout linearFirst;
-	@InjectView(R.id.recommend_linear_second)
+	@Bind(R.id.recommend_linear_second)
 	RelativeLayout linearSecond;
-	@InjectView(R.id.recommend_linear_third)
+	@Bind(R.id.recommend_linear_third)
 	RelativeLayout linearThird;
-	@InjectView(R.id.recommend_linear_forth)
+	@Bind(R.id.recommend_linear_forth)
 	RelativeLayout linearForth;
 
-	@InjectView(R.id.recommendatlas_first)
+	@Bind(R.id.recommendatlas_first)
 	ImageView imageFirst;
-	@InjectView(R.id.recommendatlas_second)
+	@Bind(R.id.recommendatlas_second)
 	ImageView imageSecond;
-	@InjectView(R.id.recommendatlas_third)
+	@Bind(R.id.recommendatlas_third)
 	ImageView imageThird;
-	@InjectView(R.id.recommendatlas_forth)
+	@Bind(R.id.recommendatlas_forth)
 	ImageView imageForth;
 
-	@InjectView(R.id.recommendtext_first)
+	@Bind(R.id.recommendtext_first)
 	TextView textFirst;
-	@InjectView(R.id.recommendtext_second)
+	@Bind(R.id.recommendtext_second)
 	TextView textSecond;
-	@InjectView(R.id.recommendtext_third)
+	@Bind(R.id.recommendtext_third)
 	TextView textThird;
-	@InjectView(R.id.recommendtext_forth)
+	@Bind(R.id.recommendtext_forth)
 	TextView textForth;
 
 	/** 测试用的图片地址 */
@@ -107,7 +107,7 @@ public class RecommendAtlasView extends RelativeLayout {
 				.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		inflater.inflate(R.layout.recommendatlas, this);
 
-		ButterKnife.inject(this);
+		ButterKnife.bind(this);
 		for(int i=0;i<recommendPics.size();i++){
 			imageUrl[i]=recommendPics.get(i).getThumbnail();
 		}

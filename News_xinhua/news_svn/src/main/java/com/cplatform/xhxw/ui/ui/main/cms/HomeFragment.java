@@ -18,7 +18,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 import butterknife.OnClick;
 
 import com.cplatform.xhxw.ui.Constants;
@@ -60,13 +60,13 @@ public class HomeFragment extends BaseFragment implements
 	private static final ArrayList<ChanneDao> hideData = new ArrayList<ChanneDao>();
 
 	private TabPageIndicatorAdapter mAdapter;
-	@InjectView(R.id.saas_my_record_tabbar)
+	@Bind(R.id.saas_my_record_tabbar)
 	PagerSlidingTabStrip mTabbar;
-	@InjectView(R.id.saas_my_record_tabbar_layout)
+	@Bind(R.id.saas_my_record_tabbar_layout)
 	LinearLayout mTabbarLayout;
-	@InjectView(R.id.pager)
+	@Bind(R.id.pager)
 	ViewPager mViewPage;
-	@InjectView(R.id.ly_channel_manage_view)
+	@Bind(R.id.ly_channel_manage_view)
 	public ChannelManageView mManageView;
 	// private boolean isTabItemClick; // 判断栏目切换是否为点击
 	private Receiver mReceiver;
@@ -80,7 +80,7 @@ public class HomeFragment extends BaseFragment implements
 			Bundle savedInstanceState) {
 		View rootView = inflater.inflate(R.layout.fragment_home, container,
 				false);
-		ButterKnife.inject(this, rootView);
+		ButterKnife.bind(this, rootView);
 		con = this.getActivity();
 		return rootView;
 	}
@@ -286,7 +286,7 @@ public class HomeFragment extends BaseFragment implements
 		if (hideData != null) {
 			hideData.clear();
 		}
-		ButterKnife.reset(this);
+//		ButterKnife.bind(this);
 		super.onDestroyView();
 	}
 

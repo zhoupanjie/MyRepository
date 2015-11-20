@@ -21,7 +21,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 
 import com.cplatform.xhxw.ui.R;
 import com.cplatform.xhxw.ui.model.New;
@@ -45,9 +45,9 @@ import com.google.gson.Gson;
  */
 public class RadioBroadcastFragment extends BaseFragment {
 	public static ViewPager mViewPage;
-	@InjectView(R.id.viewGroup)
+	@Bind(R.id.viewGroup)
 	ViewGroup mViewGroup;
-	@InjectView(R.id.iv_seeting)
+	@Bind(R.id.iv_seeting)
 	ImageView ivSetting;
 	public static TextView tvTitle;
 	private static Context con;
@@ -61,7 +61,7 @@ public class RadioBroadcastFragment extends BaseFragment {
 			Bundle savedInstanceState) {
 		View rootView = inflater.inflate(R.layout.fragment_radiobroadcast,
 				container, false);
-		ButterKnife.inject(this, rootView);
+		ButterKnife.bind(this, rootView);
 		con = this.getActivity();
 		tvTitle = (TextView) rootView.findViewById(R.id.tv_title);
 		mViewPage = (ViewPager) rootView.findViewById(R.id.viewPager);
@@ -248,7 +248,7 @@ public class RadioBroadcastFragment extends BaseFragment {
 		// if (hideData != null) {
 		// hideData.clear();
 		// }
-		ButterKnife.reset(this);
+//		ButterKnife.(this);
 		player.stop();
 		super.onDestroyView();
 	}

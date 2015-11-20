@@ -8,7 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.*;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 import butterknife.OnClick;
 
 import com.cplatform.xhxw.ui.R;
@@ -37,9 +37,9 @@ public class DefaultView extends LinearLayout {
 		error
 	}
 
-	@InjectView(R.id.pb_loading)
+	@Bind(R.id.pb_loading)
 	ProgressBar mLoading;
-	@InjectView(R.id.iv_bg)
+	@Bind(R.id.iv_bg)
 	ImageView mBg;
 
 	private OnTapListener mLis;
@@ -73,7 +73,7 @@ public class DefaultView extends LinearLayout {
 		LayoutInflater inflater = (LayoutInflater) getContext()
 				.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		inflater.inflate(R.layout.view_default, this);
-		ButterKnife.inject(this);
+		ButterKnife.bind(this);
 		setStatus(Status.nodata);
 	}
 	/**
@@ -161,7 +161,7 @@ public class DefaultView extends LinearLayout {
 		mHidVs = null;
 		mStu = null;
 		removeAllViews();
-		ButterKnife.reset(this);
+		ButterKnife.bind(this);
 		super.onDetachedFromWindow();
 	}
 }

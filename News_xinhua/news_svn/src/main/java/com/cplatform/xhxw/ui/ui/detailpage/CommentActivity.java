@@ -29,7 +29,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 import butterknife.OnClick;
 
 import com.cplatform.xhxw.ui.App;
@@ -106,34 +106,34 @@ public class CommentActivity extends BaseActivity implements
 	private String mActionUp = "up";
 	private String mOldCommentId;
 
-	@InjectView(R.id.layout)
+	@Bind(R.id.layout)
 	LinearLayout linearLayout;
 
-	@InjectView(R.id.listview)
+	@Bind(R.id.listview)
 	CommentListView listView;
 
-	@InjectView(R.id.comment_edittext)
+	@Bind(R.id.comment_edittext)
 	CommentEdittext commentEdittext;
 
-	@InjectView(R.id.comment_sendbtn)
+	@Bind(R.id.comment_sendbtn)
 	Button sendbtn;
 
-	@InjectView(R.id.comment_editt)
+	@Bind(R.id.comment_editt)
 	EditText editText;
 
-	@InjectView(R.id.layout_content)
+	@Bind(R.id.layout_content)
 	InputViewSensitiveLinearLayout inputLayout;
 
-	@InjectView(R.id.comment_expression_widgt)
+	@Bind(R.id.comment_expression_widgt)
 	XWExpressionWidgt mExpressionWidgt;
 
-	@InjectView(R.id.comment_expression_btn)
+	@Bind(R.id.comment_expression_btn)
 	Button mExprBtn;
 
-	@InjectView(R.id.layout_content)
+//	@Bind(R.id.layout_content)
 	InputViewSensitiveLinearLayout mRootContainer;
 
-	@InjectView(R.id.comment_editt_linear)
+	@Bind(R.id.comment_editt_linear)
 	RelativeLayout mCommentOperateLo;
 
 	private CommentAdapter mAdapter;
@@ -183,7 +183,7 @@ public class CommentActivity extends BaseActivity implements
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_comment);
 
-		ButterKnife.inject(this);
+		ButterKnife.bind(this);
 		initViews();
 		init();
 	}

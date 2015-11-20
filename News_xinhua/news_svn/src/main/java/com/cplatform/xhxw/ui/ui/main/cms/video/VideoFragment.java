@@ -216,7 +216,7 @@
 //			}
 //		});
 //
-//		// ButterKnife.inject(this, view);
+//		// ButterKnife.bind(this, view);
 //		return view;
 //	}
 //

@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 import android.widget.TextView;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 
 import com.cplatform.xhxw.ui.Constants;
 import com.cplatform.xhxw.ui.R;
@@ -80,7 +80,7 @@ public class AdapterBroadcast extends BaseAdapter<DataRadioBroadcast> {
 		if (convertView == null) {
 			convertView = View.inflate(con, R.layout.item_broadcast, null);
 			holder = new ViewHolderRadio();
-			ButterKnife.inject(holder, convertView);
+			ButterKnife.bind(holder, convertView);
 			/* 得到各个控件的对象 */
 			convertView.setTag(holder); // 绑定ViewHolder对象
 		} else {
@@ -157,11 +157,11 @@ public class AdapterBroadcast extends BaseAdapter<DataRadioBroadcast> {
 	}
 
 	public class ViewHolderRadio {
-		@InjectView(R.id.tv_name)
+		@Bind(R.id.tv_name)
 		TextView tvName;// 名称
-		@InjectView(R.id.tv_time)
+		@Bind(R.id.tv_time)
 		TextView tvTime;// 时间
-		@InjectView(R.id.civ_icon)
+		@Bind(R.id.civ_icon)
 		RotationImageView riv;// 图标
 
 	}

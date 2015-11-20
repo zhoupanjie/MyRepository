@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 import com.cplatform.xhxw.ui.R;
 import com.cplatform.xhxw.ui.db.dao.ContactsDao;
 import com.cplatform.xhxw.ui.util.DisplayImageOptionsUtil;
@@ -71,15 +71,15 @@ public class AddressBookAdapter extends CursorAdapter {
     }
 
     static class ViewHelper {
-        @InjectView(R.id.iv_photo)
+        @Bind(R.id.iv_photo)
         ImageView photo;
-        @InjectView(R.id.tv_name)
+        @Bind(R.id.tv_name)
         TextView name;
-        @InjectView(R.id.tv_index)
+        @Bind(R.id.tv_index)
         TextView index;
 
         public ViewHelper(View v) {
-            ButterKnife.inject(this, v);
+            ButterKnife.bind(this, v);
         }
     }
 }

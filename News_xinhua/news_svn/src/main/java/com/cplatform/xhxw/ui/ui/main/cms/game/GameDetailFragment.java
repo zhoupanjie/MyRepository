@@ -32,7 +32,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 
 import com.cplatform.xhxw.ui.Constants;
 import com.cplatform.xhxw.ui.R;
@@ -59,50 +59,50 @@ public class GameDetailFragment extends BaseFragment implements OnClickListener 
 	private Context con;
 	private static final String TAG = GameDetailFragment.class.getSimpleName();
 
-	@InjectView(R.id.rl_title)
+	@Bind(R.id.rl_title)
 	RelativeLayout rlTitle;
-	@InjectView(R.id.tv_back)
+	@Bind(R.id.tv_back)
 	TextView tvGoback;// 返回按钮
-	@InjectView(R.id.tv_title)
+	@Bind(R.id.tv_title)
 	TextView tvTitle;// 返回按钮
-	@InjectView(R.id.ll_bg)
+	@Bind(R.id.ll_bg)
 	LinearLayout llBG;
 	ImageView ivBG;// 顶部背景图片
-	@InjectView(R.id.iv_logo)
+	@Bind(R.id.iv_logo)
 	ImageView ivLogo;// 应用图标
-	@InjectView(R.id.tv_app_name)
+	@Bind(R.id.tv_app_name)
 	TextView tvAppName;// 应用名称
-	@InjectView(R.id.tv_down_count)
+	@Bind(R.id.tv_down_count)
 	TextView tvDownCount;// 下载次数
-	@InjectView(R.id.tv_version)
+	@Bind(R.id.tv_version)
 	TextView tvVersion;// 版本名称
-	@InjectView(R.id.tv_size)
+	@Bind(R.id.tv_size)
 	TextView tvSize;// 应用大小
-	@InjectView(R.id.hsv_app_image)
+	@Bind(R.id.hsv_app_image)
 	HorizontalScrollView hsv;
-	@InjectView(R.id.v_split2)
+	@Bind(R.id.v_split2)
 	View vSplitBG;
-	@InjectView(R.id.ll_app_image)
+	@Bind(R.id.ll_app_image)
 	LinearLayout llAppImage;// 应用截图
-	@InjectView(R.id.wv_game_introduce)
+	@Bind(R.id.wv_game_introduce)
 	WebView wvGameIntroduce;// 游戏介绍
-	@InjectView(R.id.tv_update_time)
+	@Bind(R.id.tv_update_time)
 	TextView tvUpdateTime;
-	@InjectView(R.id.tv_developer)
+	@Bind(R.id.tv_developer)
 	TextView tvDeveloper;
-	@InjectView(R.id.tv_type)
+	@Bind(R.id.tv_type)
 	TextView tvType;
-	@InjectView(R.id.bt_down)
+	@Bind(R.id.bt_down)
 	TextView btDown;
-	@InjectView(R.id.tv_share)
+	@Bind(R.id.tv_share)
 	TextView tvShare;// 分享
-	@InjectView(R.id.bt_down_state)
+	@Bind(R.id.bt_down_state)
 	TextView btDownState;// 下载状态
-	@InjectView(R.id.pb_down)
+	@Bind(R.id.pb_down)
 	ProgressBar pbDown;// 下载进度条
-	@InjectView(R.id.tv_down_info)
+	@Bind(R.id.tv_down_info)
 	TextView tvDownInfo;
-	@InjectView(R.id.detail_container)
+	@Bind(R.id.detail_container)
 	RelativeLayout rlWebVeiw;
 	String url = "";
 	String ApkName = "";
@@ -122,7 +122,7 @@ public class GameDetailFragment extends BaseFragment implements OnClickListener 
 			Bundle savedInstanceState) {
 		rootView = inflater.inflate(R.layout.fragment_game_detail, container,
 				false);
-		ButterKnife.inject(this, rootView);
+		ButterKnife.bind(this, rootView);
 		this.initActionBar(rootView);
 		this.initViews(rootView);
 		return rootView;
@@ -166,7 +166,7 @@ public class GameDetailFragment extends BaseFragment implements OnClickListener 
 			// 内存泄露
 			wvGameIntroduce.destroy();
 		}
-		ButterKnife.reset(this);
+//		ButterKnife.reset(this);
 		super.onDestroyView();
 	}
 

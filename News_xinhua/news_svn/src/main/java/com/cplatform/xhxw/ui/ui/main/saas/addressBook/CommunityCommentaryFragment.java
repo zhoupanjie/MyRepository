@@ -10,7 +10,7 @@ import android.view.*;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.*;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 import butterknife.OnClick;
 import com.cplatform.xhxw.ui.Constants;
 import com.cplatform.xhxw.ui.PreferencesManager;
@@ -41,13 +41,13 @@ import java.util.HashMap;
 public class CommunityCommentaryFragment extends BaseFragment implements InputViewSensitiveLinearLayout.OnInputViewListener, XWExpressionWidgt.onExprItemClickListener {
 
     private AsyncHttpResponseHandler mHttpHandler;
-    @InjectView(R.id.comment_editt)
+    @Bind(R.id.comment_editt)
     EditText editText;
-    @InjectView(R.id.comment_expression_widgt)
+    @Bind(R.id.comment_expression_widgt)
     XWExpressionWidgt mExpressionWidgt;
-    @InjectView(R.id.comment_expression_btn)
+    @Bind(R.id.comment_expression_btn)
     Button mExprBtn;
-    @InjectView(R.id.layout_content)
+    @Bind(R.id.layout_content)
     InputViewSensitiveLinearLayout mRootContainer;
 
     private boolean mIsExprShow = false;
@@ -88,7 +88,7 @@ public class CommunityCommentaryFragment extends BaseFragment implements InputVi
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.activity_community_commentary, null);
-        ButterKnife.inject(this, view);
+        ButterKnife.bind(this, view);
         return view;
     }
 

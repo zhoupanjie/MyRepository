@@ -7,7 +7,7 @@ import android.text.TextUtils;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 import butterknife.OnClick;
 import com.google.gson.Gson;
 import com.loopj.android.http.AsyncHttpResponseHandler;
@@ -23,7 +23,7 @@ import com.cplatform.xhxw.ui.util.RegexUtil;
  */
 public class ToFindPassWordEmailActivity extends BaseActivity{
 
-	@InjectView(R.id.et_email) EditText mEmail;
+	@Bind(R.id.et_email) EditText mEmail;
     private AsyncHttpResponseHandler mGetFindPassWordHandler;
 
     public static Intent getIntent(Context context) {
@@ -40,7 +40,7 @@ public class ToFindPassWordEmailActivity extends BaseActivity{
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tofind_password_email);
-		ButterKnife.inject(this);
+		ButterKnife.bind(this);
 	}
 
 	/** 确认找回 */

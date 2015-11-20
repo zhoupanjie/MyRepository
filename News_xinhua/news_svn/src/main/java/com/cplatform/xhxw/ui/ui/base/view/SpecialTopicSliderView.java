@@ -6,7 +6,7 @@ import android.view.LayoutInflater;
 import android.widget.AbsListView;
 import android.widget.RelativeLayout;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 import com.cplatform.xhxw.ui.Constants;
 import com.cplatform.xhxw.ui.model.SpecialDetail;
 import com.viewpagerindicator.CirclePageIndicator;
@@ -19,9 +19,9 @@ import com.cplatform.xhxw.ui.ui.base.adapter.SpecialTopicSliderAdapter;
  */
 public class SpecialTopicSliderView extends RelativeLayout {
 
-    @InjectView(R.id.view_pager)
+    @Bind(R.id.view_pager)
     ViewPager mVp;
-    @InjectView(R.id.view_indicator)
+    @Bind(R.id.view_indicator)
     CirclePageIndicator mCpi;
 
     private SpecialTopicSliderAdapter mAdapter;
@@ -36,7 +36,7 @@ public class SpecialTopicSliderView extends RelativeLayout {
         LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context
                 .LAYOUT_INFLATER_SERVICE);
         inflater.inflate(R.layout.view_slider, this);
-        ButterKnife.inject(this);
+        ButterKnife.bind(this);
         AbsListView.LayoutParams lp = new AbsListView.LayoutParams(Constants.screenWidth, getSliderHeight());
         setLayoutParams(lp);
         mAdapter = new SpecialTopicSliderAdapter(getContext(), lis);

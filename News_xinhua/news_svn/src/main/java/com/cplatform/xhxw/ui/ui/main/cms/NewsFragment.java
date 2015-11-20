@@ -37,7 +37,7 @@ import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 
 import com.cplatform.xhxw.ui.App;
 import com.cplatform.xhxw.ui.Constants;
@@ -121,11 +121,11 @@ public class NewsFragment extends BaseFragment implements OnItemClickListener,
 		onItemVideoPlayLisenter {
 
 	private static final String TAG = NewsFragment.class.getSimpleName();
-	@InjectView(R.id.list)
+	@Bind(R.id.list)
 	PullRefreshListView mListView;
-	@InjectView(R.id.def_view)
+	@Bind(R.id.def_view)
 	DefaultView mDefView;
-	@InjectView(R.id.ly_root_content)
+	@Bind(R.id.ly_root_content)
 	View rootView;
 	private NewsAdapter mAdapter;
 	// 新闻视频中的GridView适配器
@@ -182,7 +182,7 @@ public class NewsFragment extends BaseFragment implements OnItemClickListener,
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		View view = inflater.inflate(R.layout.fragment_news, container, false);
-		ButterKnife.inject(this, view);
+		ButterKnife.bind(this, view);
 
 		activity = getActivity();
 		screenWidth = ScreenUtil.getScreenWidth(activity);
@@ -1199,7 +1199,7 @@ public class NewsFragment extends BaseFragment implements OnItemClickListener,
 		mAdapter.close();
 		mAdapter = null;
 
-		ButterKnife.reset(this);
+//		ButterKnife.reset(this);
 		super.onDestroyView();
 	}
 

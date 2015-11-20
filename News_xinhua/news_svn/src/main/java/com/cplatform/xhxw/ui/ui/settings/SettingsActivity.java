@@ -20,7 +20,7 @@ import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 import butterknife.OnClick;
 
 import com.cplatform.xhxw.ui.App;
@@ -66,33 +66,33 @@ public class SettingsActivity extends BaseActivity implements OnClearListener {
 	 */
 	public static final int REQUEST_CODE_LOGIN = 1;
 
-//	@InjectView(R.id.iv_avatar)
+//	@Bind(R.id.iv_avatar)
 //	ImageView mAvatar;
-//	@InjectView(R.id.tv_nickname)
+//	@Bind(R.id.tv_nickname)
 //	TextView mNickname;
-	@InjectView(R.id.btn_logout)
+	@Bind(R.id.btn_logout)
 	Button mLogout;
-	@InjectView(R.id.sw_push_setting)
+	@Bind(R.id.sw_push_setting)
 	SwitchButton mPushSetting;
-	@InjectView(R.id.tv_text_size)
+	@Bind(R.id.tv_text_size)
 	TextView mTextSize; // 新闻详情当前显示字体大小
 
 //	/** 意见反馈 */
-//	@InjectView(R.id.setting_feed_back)
+//	@Bind(R.id.setting_feed_back)
 //	RelativeLayout backFeedLayout;
 
 	/** 关于 */
-	@InjectView(R.id.setting_about)
+	@Bind(R.id.setting_about)
 	RelativeLayout aboutLayout;
 
 	/** 清除缓存 */
-	@InjectView(R.id.setting_clear)
+	@Bind(R.id.setting_clear)
 	RelativeLayout clearLayout;
 
-	@InjectView(R.id.clear_progress)
+	@Bind(R.id.clear_progress)
 	ProgressBar clearProgress;
 
-	@InjectView(R.id.clear_text)
+	@Bind(R.id.clear_text)
 	TextView clearText;
 
 	private RelativeLayout mRecommendLo;
@@ -135,7 +135,7 @@ public class SettingsActivity extends BaseActivity implements OnClearListener {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_settings);
-		ButterKnife.inject(this);
+		ButterKnife.bind(this);
 		initActionBar();
 		mPushSetting
 				.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {

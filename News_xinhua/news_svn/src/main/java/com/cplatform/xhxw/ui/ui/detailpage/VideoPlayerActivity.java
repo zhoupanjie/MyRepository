@@ -14,7 +14,7 @@ import android.text.TextUtils;
 import android.widget.MediaController;
 import android.widget.VideoView;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 
 import com.cplatform.xhxw.ui.App;
 import com.cplatform.xhxw.ui.R;
@@ -42,9 +42,9 @@ public class VideoPlayerActivity extends BaseActivity implements
 		DefaultView.OnTapListener {
 
 	private static final String TAG = VideoPlayerActivity.class.getSimpleName();
-	@InjectView(R.id.def_view)
+	@Bind(R.id.def_view)
 	DefaultView mDefView;
-	@InjectView(R.id.video_view)
+	@Bind(R.id.video_view)
 	VideoView mVideoView;
 	private String mVideoUrl;
 	private String mNewsId;
@@ -69,7 +69,7 @@ public class VideoPlayerActivity extends BaseActivity implements
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		this.setContentView(R.layout.activity_video_player);
-		ButterKnife.inject(this);
+		ButterKnife.bind(this);
 		mVideoView.setOnCompletionListener(this);
 		mVideoView.setOnErrorListener(this);
 		mVideoView.setOnPreparedListener(this);

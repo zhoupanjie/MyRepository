@@ -12,7 +12,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 import butterknife.OnClick;
 
 import com.cplatform.xhxw.ui.App;
@@ -53,19 +53,19 @@ import com.wbtech.ums.UmsAgent;
 
 public class PersonalFragment extends BaseFragment {
 
-	@InjectView(R.id.iv_avatar)
+	@Bind(R.id.iv_avatar)
 	ImageView mAvatar;
-	@InjectView(R.id.tv_nickname)
+	@Bind(R.id.tv_nickname)
 	TextView mNickName;
-	@InjectView(R.id.personal_reg_login_lo)
+	@Bind(R.id.personal_reg_login_lo)
 	LinearLayout mRegLoginLo;
-	@InjectView(R.id.personal_reg_tv)
+	@Bind(R.id.personal_reg_tv)
 	TextView mRegBtn;
-	@InjectView(R.id.personal_login_tv)
+	@Bind(R.id.personal_login_tv)
 	TextView mLoginBtn;
-	@InjectView(R.id.iv_msg_new)
+	@Bind(R.id.iv_msg_new)
 	ImageView mMsgNew;
-	@InjectView(R.id.iv_msg_myinfo)
+	@Bind(R.id.iv_msg_myinfo)
 	ImageView ivNewMyInfo;
 	private View rootView;
 	
@@ -76,7 +76,7 @@ public class PersonalFragment extends BaseFragment {
 			Bundle savedInstanceState) {
 		rootView = inflater.inflate(R.layout.fragment_personal, container,
 				false);
-		ButterKnife.inject(this, rootView);
+		ButterKnife.bind(this, rootView);
 		return rootView;
 	}
 

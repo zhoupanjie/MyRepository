@@ -15,7 +15,7 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.Toast;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 import butterknife.OnClick;
 
 import com.cplatform.xhxw.ui.App;
@@ -66,9 +66,9 @@ public class LoginActivity extends BaseActivity {
 
 	private static final String TAG = LoginActivity.class.getSimpleName();
 
-	@InjectView(R.id.login_account)
+	@Bind(R.id.login_account)
 	EditText account;
-	@InjectView(R.id.login_password)
+	@Bind(R.id.login_password)
 	EditText password;
 
 	private AsyncHttpResponseHandler mLoginHandler;
@@ -101,7 +101,7 @@ public class LoginActivity extends BaseActivity {
 
 		setContentView(R.layout.activity_login);
 
-		ButterKnife.inject(this);
+		ButterKnife.bind(this);
 		mCon = LoginActivity.this;
 		mController = UMServiceFactory.getUMSocialService("com.umeng.login");
 		mController.getConfig().setSsoHandler(new TencentWBSsoHandler());

@@ -31,7 +31,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 import butterknife.OnClick;
 
 import com.cplatform.xhxw.ui.App;
@@ -104,16 +104,16 @@ public class NewsPageFragment extends BaseFragment implements OnTapListener,
 
 	private String mHtml; // 新闻内容模板
 	private String mNewsId; // 新闻id
-	@InjectView(R.id.webview)
+	@Bind(R.id.webview)
 	NeteaseWebView mWebView;
-	@InjectView(R.id.def_view)
+	@Bind(R.id.def_view)
 	DefaultView mDefView;
 	private AsyncHttpResponseHandler mLoadHander;
 	private NewsDetail mNewsDetail;
-	@InjectView(R.id.bottommediaplayer)
+	@Bind(R.id.bottommediaplayer)
 	BottomMediaplayer bottomMediaplayer;
 
-	@InjectView(R.id.btn_share)
+	@Bind(R.id.btn_share)
 	ImageView mShare;
 
 	private boolean isEnterpriseFromBundle = false;
@@ -170,7 +170,7 @@ public class NewsPageFragment extends BaseFragment implements OnTapListener,
 			Bundle savedInstanceState) {
 		View rootView = inflater.inflate(R.layout.fragment_news_page,
 				container, false);
-		ButterKnife.inject(this, rootView);
+		ButterKnife.bind(this, rootView);
 		this.initActionBar(rootView);
 		this.initViews(rootView);
 		isEnterpriseFromBundle = getArguments().getBoolean("isEnterprise");
@@ -513,7 +513,6 @@ public class NewsPageFragment extends BaseFragment implements OnTapListener,
 		// 内存泄露
 		mWebView.destroy();
 		bottomMediaplayer.destroy();
-		ButterKnife.reset(this);
 		super.onDestroyView();
 
 	}

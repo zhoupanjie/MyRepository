@@ -29,7 +29,7 @@ import android.widget.LinearLayout;
 import android.widget.ListAdapter;
 import android.widget.TextView;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 import butterknife.OnClick;
 
 import com.cplatform.xhxw.ui.PreferencesManager;
@@ -69,17 +69,17 @@ public class SearchActivity extends BaseActivity implements TextWatcher,
 	private static final String TAG = SearchActivity.class.getSimpleName();
 	private static final int COUNT = 10;
 
-	@InjectView(R.id.search_edit)
+	@Bind(R.id.search_edit)
 	EditText editText;
-	@InjectView(R.id.search_clear)
+	@Bind(R.id.search_clear)
 	ImageView clear;
-	@InjectView(R.id.listview)
+	@Bind(R.id.listview)
 	PullRefreshListView listView;
-	@InjectView(R.id.def_view)
+	@Bind(R.id.def_view)
 	DefaultView mDefView;
-	@InjectView(R.id.search_hot_words)
+	@Bind(R.id.search_hot_words)
 	HotWordsRectView mHotWordsView;
-	@InjectView(R.id.search_activity_container)
+	@Bind(R.id.search_activity_container)
 	LinearLayout mRootContainer;
 
 	private String mKey;
@@ -126,7 +126,7 @@ public class SearchActivity extends BaseActivity implements TextWatcher,
 
 		setContentView(R.layout.activity_search);
 
-		ButterKnife.inject(this);
+		ButterKnife.bind(this);
 
 		init();
 		getHotSearchWords();

@@ -8,7 +8,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 
 import com.cplatform.xhxw.ui.Constants;
 import com.cplatform.xhxw.ui.R;
@@ -20,15 +20,15 @@ import com.cplatform.xhxw.ui.util.TextViewUtil;
  */
 public class SpecialTopicTextNewItem extends RelativeLayout {
 
-	@InjectView(R.id.tv_header)
+	@Bind(R.id.tv_header)
 	TextView mHeader;
-	@InjectView(R.id.tv_title)
+	@Bind(R.id.tv_title)
 	TextView mTitle;
-	@InjectView(R.id.tv_desc)
+	@Bind(R.id.tv_desc)
 	TextView mDesc;
-	@InjectView(R.id.iv_action)
+	@Bind(R.id.iv_action)
 	ImageView mAction;
-	@InjectView(R.id.tv_comment)
+	@Bind(R.id.tv_comment)
 	TextView mComment;
 
 	private int mDisModel;
@@ -42,7 +42,7 @@ public class SpecialTopicTextNewItem extends RelativeLayout {
 		LayoutInflater inflater = (LayoutInflater) getContext()
 				.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		inflater.inflate(R.layout.view_special_topic_text_new_item, this);
-		ButterKnife.inject(this);
+		ButterKnife.bind(this);
 		mDisModel = Constants.DISPLAY_MODEL_DAY;
 	}
 

@@ -1,7 +1,7 @@
 package com.cplatform.xhxw.ui.ui.base.view;
 
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 import butterknife.OnClick;
 
 import com.cplatform.xhxw.ui.R;
@@ -25,10 +25,10 @@ import android.widget.RelativeLayout;
 public class BottomMediaplayer extends RelativeLayout implements OnMediaPlayerManagerListener{
 
 	private Context context;
-	@InjectView(R.id.bottom_media_start) ImageView imageStart;
-	@InjectView(R.id.bottom_media_pause) ImageView imagePause;
-	@InjectView(R.id.bottom_media_progressBar) ProgressBar progressBar;
-	@InjectView(R.id.bottom_media_linear) LinearLayout linearLayout;
+	@Bind(R.id.bottom_media_start) ImageView imageStart;
+	@Bind(R.id.bottom_media_pause) ImageView imagePause;
+	@Bind(R.id.bottom_media_progressBar) ProgressBar progressBar;
+	@Bind(R.id.bottom_media_linear) LinearLayout linearLayout;
     
     private MediaPlayerManager mediaPlayerManager;
     
@@ -61,7 +61,7 @@ public class BottomMediaplayer extends RelativeLayout implements OnMediaPlayerMa
 		LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context
                 .LAYOUT_INFLATER_SERVICE);
         inflater.inflate(R.layout.bottommediaplayer, this);
-        ButterKnife.inject(this);
+        ButterKnife.bind(this);
         
         imageStart = (ImageView) findViewById(R.id.bottom_media_start);
         imagePause = (ImageView) findViewById(R.id.bottom_media_pause);

@@ -9,9 +9,8 @@ public class Text$$ViewInjector {
     View view;
     view = finder.findById(source, 2131428124);
     if (view == null) {
-      throw new IllegalStateException("Required view with id '2131428124' for field 'button' and method 'button1' was not found. If this view is optional add '@Optional' annotation.");
+      throw new IllegalStateException("Required view with id '2131428124' for method 'button1' was not found. If this view is optional add '@Optional' annotation.");
     }
-    target.button = (android.widget.Button) view;
     view.setOnClickListener(
       new android.view.View.OnClickListener() {
         @Override public void onClick(
@@ -59,6 +58,5 @@ public class Text$$ViewInjector {
   }
 
   public static void reset(com.cplatform.xhxw.ui.test.Text target) {
-    target.button = null;
   }
 }

@@ -8,7 +8,7 @@ import android.view.LayoutInflater;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 import com.cplatform.xhxw.ui.R;
 
 /**
@@ -17,7 +17,7 @@ import com.cplatform.xhxw.ui.R;
  */
 public class ChannelView extends LinearLayout {
 
-    @InjectView(R.id.tv_title)
+    @Bind(R.id.tv_title)
     TextView mTitle;
 
     public ChannelView(Context context) {
@@ -40,7 +40,7 @@ public class ChannelView extends LinearLayout {
         LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context
                 .LAYOUT_INFLATER_SERVICE);
         inflater.inflate(R.layout.view_channel, this);
-        ButterKnife.inject(this);
+        ButterKnife.bind(this);
     }
 
 

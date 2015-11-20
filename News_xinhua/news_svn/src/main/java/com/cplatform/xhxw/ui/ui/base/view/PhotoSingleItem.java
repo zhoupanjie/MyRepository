@@ -6,7 +6,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 import com.cplatform.xhxw.ui.model.New;
 import com.cplatform.xhxw.ui.util.DisplayImageOptionsUtil;
 import com.nostra13.universalimageloader.core.ImageLoader;
@@ -19,9 +19,9 @@ import com.cplatform.xhxw.ui.util.TextViewUtil;
  */
 public class PhotoSingleItem extends RelativeLayout {
 
-    @InjectView(R.id.iv_single_img) ImageView mImg;
-    @InjectView(R.id.tv_img_title) TextView mTitle;
-   /* @InjectView(R.id.tv_comment) TextView mComment;
+    @Bind(R.id.iv_single_img) ImageView mImg;
+    @Bind(R.id.tv_img_title) TextView mTitle;
+   /* @Bind(R.id.tv_comment) TextView mComment;
 */
     public PhotoSingleItem(Context context) {
         super(context);
@@ -32,7 +32,7 @@ public class PhotoSingleItem extends RelativeLayout {
         LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context
                 .LAYOUT_INFLATER_SERVICE);
         inflater.inflate(R.layout.view_photo_single_item, this);
-        ButterKnife.inject(this);
+        ButterKnife.bind(this);
     }
 
     public void setData(New item) {

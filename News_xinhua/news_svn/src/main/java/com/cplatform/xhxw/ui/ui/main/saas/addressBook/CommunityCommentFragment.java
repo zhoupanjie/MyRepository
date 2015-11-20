@@ -11,7 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 import butterknife.OnClick;
 import com.cplatform.xhxw.ui.App;
 import com.cplatform.xhxw.ui.Constants;
@@ -33,18 +33,18 @@ public class CommunityCommentFragment extends BaseFragment implements InputViewS
 
     private AsyncHttpResponseHandler mHttpHandler;
     // 编辑框
-    @InjectView(R.id.comment_editt)
+    @Bind(R.id.comment_editt)
     EditText editText;
     // 表情库
-    @InjectView(R.id.comment_expression_widgt)
+    @Bind(R.id.comment_expression_widgt)
     XWExpressionWidgt mExpressionWidgt;
     // 表情按钮
-    @InjectView(R.id.comment_expression_btn)
+    @Bind(R.id.comment_expression_btn)
     Button mExprBtn;
 
-    @InjectView(R.id.layout_content)
+    @Bind(R.id.layout_content)
     InputViewSensitiveLinearLayout mRootContainer;
-    @InjectView(R.id.toolbar_layout)
+    @Bind(R.id.toolbar_layout)
     View mToolBar;
 
     private boolean mIsExprShow = false;
@@ -61,7 +61,7 @@ public class CommunityCommentFragment extends BaseFragment implements InputViewS
 
         View view = inflater.inflate(R.layout.fragment_community_comment,
                 container, false);
-        ButterKnife.inject(this, view);
+        ButterKnife.bind(this, view);
         return view;
     }
 

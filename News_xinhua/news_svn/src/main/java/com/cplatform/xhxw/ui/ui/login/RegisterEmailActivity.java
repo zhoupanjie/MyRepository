@@ -20,7 +20,7 @@ import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.EditText;
 import android.widget.TextView;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 import butterknife.OnClick;
 
 import com.cplatform.xhxw.ui.Constants;
@@ -45,17 +45,17 @@ public class RegisterEmailActivity extends BaseActivity implements
 
 	private static final String TAG = RegisterEmailActivity.class
 			.getSimpleName();
-	@InjectView(R.id.email_account)
+	@Bind(R.id.email_account)
 	EditText account;
-	@InjectView(R.id.email_password)
+	@Bind(R.id.email_password)
 	EditText passWord;
-	@InjectView(R.id.register_email)
+	@Bind(R.id.register_email)
 	Button register;
-	@InjectView(R.id.register_checkBox)
+	@Bind(R.id.register_checkBox)
 	CheckBox checkBox;
-	@InjectView(R.id.register_checkBox)
+//	@Bind(R.id.register_checkBox)
 	CheckBox terms_service_text;
-	@InjectView(R.id.agreement)
+	@Bind(R.id.agreement)
 	TextView agreement;
 	private AsyncHttpResponseHandler mHttpHandler;
 
@@ -74,7 +74,7 @@ public class RegisterEmailActivity extends BaseActivity implements
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_register_email);
 
-		ButterKnife.inject(this);
+		ButterKnife.bind(this);
 
 		checkBox.setOnCheckedChangeListener(this);
 		checkBox.setBackgroundResource(R.drawable.ic_checkbox_uncheck);

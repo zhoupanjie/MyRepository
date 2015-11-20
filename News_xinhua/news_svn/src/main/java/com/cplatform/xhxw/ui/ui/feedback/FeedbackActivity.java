@@ -7,7 +7,7 @@ import android.text.TextUtils;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 import butterknife.OnClick;
 
 import com.google.gson.Gson;
@@ -21,7 +21,7 @@ import com.cplatform.xhxw.ui.ui.base.BaseActivity;
 
 public class FeedbackActivity extends BaseActivity{
 
-	@InjectView(R.id.publish_feed_edit)
+	@Bind(R.id.publish_feed_edit)
 	EditText editText;
 	
 	public static Intent getIntent(Context context) {
@@ -40,7 +40,7 @@ public class FeedbackActivity extends BaseActivity{
 		
 		setContentView(R.layout.feedback);
 		
-		ButterKnife.inject(this);
+		ButterKnife.bind(this);
 	}
 	
 	/** 返回 */

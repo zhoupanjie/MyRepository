@@ -18,7 +18,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 import butterknife.OnClick;
 
 import com.cplatform.xhxw.ui.App;
@@ -68,21 +68,21 @@ public class FlagContent extends LinearLayout {
 
 	private static final String TAG = "FlagContent";
 	private Activity mActivity;
-	@InjectView(R.id.iv_avatar)
+	@Bind(R.id.iv_avatar)
 	ImageView mAvatar;
-	@InjectView(R.id.tv_nickname)
+	@Bind(R.id.tv_nickname)
 	TextView mNickName;
-	@InjectView(R.id.iv_display_model)
+	@Bind(R.id.iv_display_model)
 	ImageView mDisModelIcon;
-	@InjectView(R.id.tv_display_model)
+	@Bind(R.id.tv_display_model)
 	TextView mDisModelText;
-	@InjectView(R.id.progressBar)
+	@Bind(R.id.progressBar)
 	CircleProgressBar progressBar;
-	@InjectView(R.id.iv_msg_new)
+	@Bind(R.id.iv_msg_new)
 	ImageView mMsgNew;
-	@InjectView(R.id.ly_display_model)
+	@Bind(R.id.ly_display_model)
 	LinearLayout llDisplayModel;
-	@InjectView(R.id.ly_downlist)
+	@Bind(R.id.ly_downlist)
 	LinearLayout llDownList;
 	
 	private OnFlagListener mLis;
@@ -127,7 +127,7 @@ public class FlagContent extends LinearLayout {
 		LayoutInflater inflater = (LayoutInflater) getContext()
 				.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		inflater.inflate(R.layout.view_flag_content, this);
-		ButterKnife.inject(this);
+		ButterKnife.bind(this);
 		mRightArrowIv = (ImageView) findViewById(R.id.flag_account_arrow_right);
 		mNotifyMsgIcon = (ImageView) findViewById(R.id.flag_newmsg_icon);
 		mRegLoginLo = (LinearLayout) findViewById(R.id.flag_reg_login_lo);
@@ -566,7 +566,7 @@ public class FlagContent extends LinearLayout {
 			mLoadAdHandler.cancle();
 			mLoadAdHandler = null;
 		}
-		ButterKnife.reset(this);
+		ButterKnife.bind(this);
 		detachAllViewsFromParent();
 		removeAllViews();
 		super.onDetachedFromWindow();

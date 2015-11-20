@@ -11,7 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 import butterknife.OnClick;
 
 import com.cplatform.xhxw.ui.Constants;
@@ -35,15 +35,15 @@ import com.loopj.android.http.AsyncHttpResponseHandler;
 public class BindPhoneActivity extends BaseActivity {
 
 	private static final String TAG = BindPhoneActivity.class.getSimpleName();
-	@InjectView(R.id.bind_telephon)
+	@Bind(R.id.bind_telephon)
 	EditText mTelephone;
-	@InjectView(R.id.bind_security_code)
+	@Bind(R.id.bind_security_code)
 	EditText mCode;
-	@InjectView(R.id.security_code)
+	@Bind(R.id.security_code)
 	Button mSecurityCode;
-	@InjectView(R.id.bind_mobile)
+	@Bind(R.id.bind_mobile)
 	Button bind_mobile;
-	@InjectView(R.id.time)
+	@Bind(R.id.time)
 	TextView mTimeText;
 
 	private AsyncHttpResponseHandler mReigstHandler, mCodeHandler;
@@ -79,7 +79,7 @@ public class BindPhoneActivity extends BaseActivity {
 
 		setContentView(R.layout.activity_bind_phone);
 
-		ButterKnife.inject(this);
+		ButterKnife.bind(this);
 
 		if (callback != null) {
 			gotoHome = false;

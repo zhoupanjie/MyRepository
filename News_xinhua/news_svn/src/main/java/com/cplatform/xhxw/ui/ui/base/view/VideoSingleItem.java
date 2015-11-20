@@ -6,7 +6,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.cplatform.xhxw.ui.Constants;
@@ -21,9 +21,9 @@ import com.cplatform.xhxw.ui.util.TextViewUtil;
  */
 public class VideoSingleItem extends RelativeLayout {
 
-    @InjectView(R.id.iv_single_img) ImageView mImg;
-    @InjectView(R.id.tv_img_title) TextView mTitle;
-    @InjectView(R.id.tv_desc) TextView mDesc;
+    @Bind(R.id.iv_single_img) ImageView mImg;
+    @Bind(R.id.tv_img_title) TextView mTitle;
+    @Bind(R.id.tv_desc) TextView mDesc;
 
     public VideoSingleItem(Context context) {
         super(context);
@@ -34,7 +34,7 @@ public class VideoSingleItem extends RelativeLayout {
         LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context
                 .LAYOUT_INFLATER_SERVICE);
         inflater.inflate(R.layout.view_video_single_item, this);
-        ButterKnife.inject(this);
+        ButterKnife.bind(this);
     }
 
     public void setData(New item) {

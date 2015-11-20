@@ -13,7 +13,7 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ProgressBar;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 import butterknife.OnClick;
 import com.cylib.imageCrop.CropImage;
 import com.cylib.imageCrop.CropImageView;
@@ -31,7 +31,7 @@ import com.cplatform.xhxw.ui.util.LogUtil;
 public class CropAvatarActivity extends BaseActivity {
     private static final String TAG = CropAvatarActivity.class.getSimpleName();
 
-    @InjectView(R.id.gl_modify_avatar_image)
+    @Bind(R.id.gl_modify_avatar_image)
     CropImageView mImageView;
     private Bitmap mBitmap;
     private CropImage mCrop;
@@ -75,7 +75,7 @@ public class CropAvatarActivity extends BaseActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_crop_image);
-        ButterKnife.inject(this);
+        ButterKnife.bind(this);
         init();
     }
 

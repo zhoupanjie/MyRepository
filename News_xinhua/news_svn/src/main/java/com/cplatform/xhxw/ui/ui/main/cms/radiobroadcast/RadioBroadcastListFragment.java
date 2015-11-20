@@ -34,7 +34,7 @@ import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 import com.cplatform.xhxw.ui.Constants;
 import com.cplatform.xhxw.ui.R;
 import com.cplatform.xhxw.ui.StatisticalKey;
@@ -81,13 +81,13 @@ public class RadioBroadcastListFragment extends BaseFragment implements
 		OnItemClickListener, PullRefreshListView.PullRefreshListener,
 		InterfaceRadioPlayControl {
 	private String mChannelid; // 当前类型
-	@InjectView(R.id.list)
+	@Bind(R.id.list)
 	PullRefreshListView mListView;
-	@InjectView(R.id.def_view)
+	@Bind(R.id.def_view)
 	DefaultView mDefView;
-	@InjectView(R.id.ll_type)
+	@Bind(R.id.ll_type)
 	LinearLayout llType;
-	@InjectView(R.id.iv_ad)
+	@Bind(R.id.iv_ad)
 	ImageView ivAd;
 	private AdapterBroadcast adapterRadio;
 	private String mLastPublished = "";// 最后一条时间戳
@@ -111,7 +111,7 @@ public class RadioBroadcastListFragment extends BaseFragment implements
 			Bundle savedInstanceState) {
 		View view = inflater.inflate(R.layout.fragment_radiobroadcast_list,
 				container, false);
-		ButterKnife.inject(this, view);
+		ButterKnife.bind(this, view);
 		con = this.getActivity();
 		RadioBroadcastFragment.setIrpc(this);
 		return view;
@@ -218,7 +218,7 @@ public class RadioBroadcastListFragment extends BaseFragment implements
 		adapterRadio.close();
 		adapterRadio = null;
 
-		ButterKnife.reset(this);
+//		ButterKnife.reset(this);
 		super.onDestroyView();
 	}
 

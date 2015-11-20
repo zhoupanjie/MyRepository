@@ -1,7 +1,8 @@
 package com.cplatform.xhxw.ui.ui.base.view;
 
+import butterknife.Bind;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 import butterknife.OnClick;
 
 import com.google.gson.Gson;
@@ -27,9 +28,9 @@ public class CommentEdittext extends RelativeLayout{
 	private Context context;
 	private int newsId;
 	
-	@InjectView(R.id.comment_edit)
+	@Bind(R.id.comment_edit)
 	EditText editText;
-	@InjectView(R.id.comment_send)
+	@Bind(R.id.comment_send)
 	Button button;
 	
 	public CommentEdittext(Context context) {
@@ -54,7 +55,7 @@ public class CommentEdittext extends RelativeLayout{
 		LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		inflater.inflate(R.layout.layout_comment_edittext, this);
 		
-		ButterKnife.inject(this);
+		ButterKnife.bind(this);
 	}
 	
 	public void setId(int newsId) {

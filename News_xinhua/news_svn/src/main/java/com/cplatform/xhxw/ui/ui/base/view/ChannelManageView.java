@@ -19,7 +19,7 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 import butterknife.OnClick;
 import ca.laplanete.mobile.pageddragdropgrid.PagedDragDropGrid;
 
@@ -51,13 +51,13 @@ public class ChannelManageView extends LinearLayout implements
 		onChannelOperateListner {
 
 	private static final String TAG = ChannelManageView.class.getSimpleName();
-	@InjectView(R.id.gl_content)
+	@Bind(R.id.gl_content)
 	PagedDragDropGrid mShow;
-	@InjectView(R.id.gl_other)
+	@Bind(R.id.gl_other)
 	GridLayout mHide;
-	@InjectView(R.id.ly_content)
+	@Bind(R.id.ly_content)
 	View mContent;
-	@InjectView(R.id.view_channel_manage_layout)
+	@Bind(R.id.view_channel_manage_layout)
 	RelativeLayout view_channel_manage_layout;
 
 	private int mColumnCount;
@@ -114,7 +114,7 @@ public class ChannelManageView extends LinearLayout implements
 		LayoutInflater inflater = (LayoutInflater) getContext()
 				.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		View rootView = inflater.inflate(R.layout.view_channel_manage, this);
-		ButterKnife.inject(this);
+		ButterKnife.bind(this);
 		mSearchBtn = (RelativeLayout) rootView.findViewById(R.id.vcm_search_lo);
 		mSearchBtn.setOnClickListener(addOnClick);
 		mSearchBtn.setVisibility(View.VISIBLE);
@@ -435,7 +435,7 @@ public class ChannelManageView extends LinearLayout implements
 		} else {
 			ChanneDB.updateChanneById(App.CONTEXT, channel);
 		}
-	}
+}
 
 	@Override
 	public void onOrderChange() {
@@ -460,7 +460,7 @@ public class ChannelManageView extends LinearLayout implements
 
 	@Override
 	protected void onDetachedFromWindow() {
-		ButterKnife.reset(this);
+		ButterKnife.bind(this);
 		super.onDetachedFromWindow();
 	}
 }

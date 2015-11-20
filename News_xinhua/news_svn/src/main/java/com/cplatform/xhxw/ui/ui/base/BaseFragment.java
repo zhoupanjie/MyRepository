@@ -55,7 +55,7 @@ public abstract class BaseFragment extends Fragment {
         super.onDestroyView();
         isDestroyView = true;
         if (isButterKnife) {
-            ButterKnife.reset(this);
+            ////
         }
     }
 

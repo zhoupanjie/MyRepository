@@ -25,7 +25,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 import butterknife.OnClick;
 
 import com.cplatform.xhxw.ui.Constants;
@@ -56,23 +56,23 @@ public class RegisterTelephonActivity extends BaseActivity implements
 
 	private static final String TAG = RegisterTelephonActivity.class
 			.getSimpleName();
-	@InjectView(R.id.register_telephon)
+	@Bind(R.id.register_telephon)
 	EditText mTelephone;
-	@InjectView(R.id.register_security_code)
+	@Bind(R.id.register_security_code)
 	EditText mCode;
-	@InjectView(R.id.register_password)
+	@Bind(R.id.register_password)
 	EditText mPassWord;
-	@InjectView(R.id.security_code)
+	@Bind(R.id.security_code)
 	Button mSecurityCode;
-	@InjectView(R.id.login_register)
+	@Bind(R.id.login_register)
 	Button mRegister;
-	@InjectView(R.id.register_checkBox)
+	@Bind(R.id.register_checkBox)
 	CheckBox mCheckBox;
-	@InjectView(R.id.time)
+	@Bind(R.id.time)
 	TextView mTimeText;
-	@InjectView(R.id.agreement)
+	@Bind(R.id.agreement)
 	TextView mAgreement;
-	@InjectView(R.id.password_switch)
+	@Bind(R.id.password_switch)
 	ImageView passSwitch;
 
 	private AsyncHttpResponseHandler mReigstHandler, mCodeHandler;
@@ -104,7 +104,7 @@ public class RegisterTelephonActivity extends BaseActivity implements
 
 		setContentView(R.layout.activity_register_telephon);
 
-		ButterKnife.inject(this);
+		ButterKnife.bind(this);
 
 		Bundle bun = getIntent().getExtras();
 		if (bun == null) {

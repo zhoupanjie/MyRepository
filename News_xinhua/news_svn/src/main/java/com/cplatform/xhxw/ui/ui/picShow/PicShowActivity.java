@@ -22,7 +22,7 @@ import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 import butterknife.OnClick;
 
 import com.cplatform.xhxw.ui.App;
@@ -75,25 +75,25 @@ public class PicShowActivity extends BaseActivity implements
 		DefaultView.OnTapListener, PicItemView.OnViewTapListener {
 
 	private static final String TAG = PicShowActivity.class.getSimpleName();
-	@InjectView(R.id.view_pager)
+	@Bind(R.id.view_pager)
 	HackyViewPager mVp;
-	@InjectView(R.id.tv_num)
+	@Bind(R.id.tv_num)
 	TextView mNum;
-//	@InjectView(R.id.news_collect_title)
+//	@Bind(R.id.news_collect_title)
 //	TextView tvTitle;
-	@InjectView(R.id.sv_desc)
+	@Bind(R.id.sv_desc)
 	ScrollView mDescScrollView;
-	@InjectView(R.id.tv_desc)
+	@Bind(R.id.tv_desc)
 	TextView mDesc;
-	@InjectView(R.id.btn_favorite)
+	@Bind(R.id.btn_favorite)
 	Button mFavoriteBtn;
-	@InjectView(R.id.def_view)
+	@Bind(R.id.def_view)
 	DefaultView mDefView;
-	@InjectView(R.id.btn_image_comment)
+	@Bind(R.id.btn_image_comment)
 	Button mComment;
-	@InjectView(R.id.nv_title)
+	@Bind(R.id.nv_title)
 	View titleView;
-	@InjectView(R.id.ly_option)
+	@Bind(R.id.ly_option)
 	View optionView;
 	private String mNewsId;
 	private String mNewsTitle;
@@ -137,7 +137,7 @@ public class PicShowActivity extends BaseActivity implements
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_pic_show);
-		ButterKnife.inject(this);
+		ButterKnife.bind(this);
 
 		Bundle bun = getIntent().getExtras();
 		if (bun == null) {

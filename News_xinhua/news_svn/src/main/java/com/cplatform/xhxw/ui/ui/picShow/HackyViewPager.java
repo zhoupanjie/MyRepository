@@ -43,7 +43,7 @@ public class HackyViewPager extends ViewPager {
 //        this.init();
 //    }
     private void init() {
-        ButterKnife.inject(this);
+        ButterKnife.bind(this);
     }
 
 	@Override

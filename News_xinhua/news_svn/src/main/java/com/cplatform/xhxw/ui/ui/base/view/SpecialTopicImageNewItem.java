@@ -8,7 +8,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 import com.cplatform.xhxw.ui.R;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
@@ -18,17 +18,17 @@ import com.cplatform.xhxw.ui.util.ListUtil;
 
 public class SpecialTopicImageNewItem extends RelativeLayout {
 
-    @InjectView(R.id.imageView1)
+    @Bind(R.id.imageView1)
     ImageView imageView1;
-    @InjectView(R.id.imageView2)
+    @Bind(R.id.imageView2)
     ImageView imageView2;
-    @InjectView(R.id.imageView3)
+    @Bind(R.id.imageView3)
     ImageView imageView3;
-    @InjectView(R.id.imageView4)
+    @Bind(R.id.imageView4)
     ImageView imageView4;
-    @InjectView(R.id.imageView5)
+    @Bind(R.id.imageView5)
     ImageView imageView5;
-    @InjectView(R.id.title)
+    @Bind(R.id.title)
     TextView text;
 
     private Context context;
@@ -55,7 +55,7 @@ public class SpecialTopicImageNewItem extends RelativeLayout {
         LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context
                 .LAYOUT_INFLATER_SERVICE);
         inflater.inflate(R.layout.view_special_topic_image_new_item, this);
-        ButterKnife.inject(this);
+        ButterKnife.bind(this);
     }
 
     public void setData(SpecialDetail item, OnSpecialTopicClickListener listener) {

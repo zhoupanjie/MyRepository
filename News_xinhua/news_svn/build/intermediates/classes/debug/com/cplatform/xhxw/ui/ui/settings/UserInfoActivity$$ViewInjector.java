@@ -9,9 +9,8 @@ public class UserInfoActivity$$ViewInjector {
     View view;
     view = finder.findById(source, 2131427669);
     if (view == null) {
-      throw new IllegalStateException("Required view with id '2131427669' for field 'mAvatar' and method 'onAvatarAction' was not found. If this view is optional add '@Optional' annotation.");
+      throw new IllegalStateException("Required view with id '2131427669' for method 'onAvatarAction' was not found. If this view is optional add '@Optional' annotation.");
     }
-    target.mAvatar = (com.cplatform.xhxw.ui.ui.base.widget.RoundedImageView) view;
     view.setOnClickListener(
       new android.view.View.OnClickListener() {
         @Override public void onClick(
@@ -35,6 +34,5 @@ public class UserInfoActivity$$ViewInjector {
   }
 
   public static void reset(com.cplatform.xhxw.ui.ui.settings.UserInfoActivity target) {
-    target.mAvatar = null;
   }
 }

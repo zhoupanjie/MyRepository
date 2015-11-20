@@ -4,7 +4,7 @@ import com.cplatform.xhxw.ui.Constants;
 import com.cplatform.xhxw.ui.R;
 
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 
 import android.app.Activity;
 import android.graphics.drawable.BitmapDrawable;
@@ -28,22 +28,22 @@ public class CommentActionSheet extends PopupWindow{
 	private boolean isDismissed = false;
 	private static CommentActionSheet actionSheet;
 
-	@InjectView(R.id.popu_layout_content)
+	@Bind(R.id.popu_layout_content)
 	LinearLayout linearLayout;
 	
-	@InjectView(R.id.comment_touch_layout)
+	@Bind(R.id.comment_touch_layout)
 	LinearLayout touchLayout;
 	
-	@InjectView(R.id.comment_cancel_touch_layout)
+	@Bind(R.id.comment_cancel_touch_layout)
 	LinearLayout mCommentCancelTouchLayout;
 	
-	@InjectView(R.id.comment_reply_layout)
+	@Bind(R.id.comment_reply_layout)
 	LinearLayout replyLayout;
 	
-	@InjectView(R.id.comment_delete_layout)
+	@Bind(R.id.comment_delete_layout)
 	LinearLayout deleteLayout;
 	
-	@InjectView(R.id.comment_copy_layout)
+	@Bind(R.id.comment_copy_layout)
 	LinearLayout mCopyLayout;
 	
 	private CommentActionSheet(View contentView, int width, int height,
@@ -55,7 +55,7 @@ public class CommentActionSheet extends PopupWindow{
 		context = baseActivity;
 		View contentView = LayoutInflater.from(baseActivity).inflate(
 				R.layout.comment_popuwindow, null);
-		ButterKnife.inject(baseActivity);
+		ButterKnife.bind(baseActivity);
 		
 		actionSheet = new CommentActionSheet(contentView,
 				ViewGroup.LayoutParams.FILL_PARENT,

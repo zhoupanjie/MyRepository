@@ -14,7 +14,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 import butterknife.OnClick;
 
 import com.google.gson.Gson;
@@ -32,19 +32,19 @@ import com.cplatform.xhxw.ui.util.RegexUtil;
  */
 public class ToFindPassWordTelephonActivity extends BaseActivity{
 
-	@InjectView(R.id.to_find_telephon)
+	@Bind(R.id.to_find_telephon)
 	EditText mTelephone;
-	@InjectView(R.id.to_find_code)
+	@Bind(R.id.to_find_code)
 	EditText mCode;
-	@InjectView(R.id.to_find_password)
+	@Bind(R.id.to_find_password)
 	EditText mPassWord;
-	@InjectView(R.id.to_find_code_btn)
+	@Bind(R.id.to_find_code_btn)
 	Button codeBtn;
-	@InjectView(R.id.to_find_ok)
+	@Bind(R.id.to_find_ok)
 	Button toFindOk;
-	@InjectView(R.id.to_find_time)
+	@Bind(R.id.to_find_time)
 	TextView timeText;
-	@InjectView(R.id.password_switch)
+	@Bind(R.id.password_switch)
 	ImageView passSwitch;
     private AsyncHttpResponseHandler mGetFindHandler, mGetFindPassWordHandler;
 	
@@ -65,7 +65,7 @@ public class ToFindPassWordTelephonActivity extends BaseActivity{
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tofind_password_telephon);
-		ButterKnife.inject(this);
+		ButterKnife.bind(this);
 		passSwitch.setBackgroundResource(R.drawable.ic_showpassword_on_gone);
 	}
 	

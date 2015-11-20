@@ -1,14 +1,14 @@
 package com.cplatform.xhxw.ui.ui.recommendimages;
 
 import android.os.Bundle;
-import butterknife.InjectView;
+import butterknife.Bind;
 import com.cplatform.xhxw.ui.R;
 import com.cplatform.xhxw.ui.ui.base.BaseActivity;
 import com.cplatform.xhxw.ui.ui.base.view.RecommendImages;
 
 public class RecommendImagesActivity extends BaseActivity{
 
-	@InjectView(R.id.recommendImages) RecommendImages recommendImages;
+	@Bind(R.id.recommendImages) RecommendImages recommendImages;
 
     @Override
     protected String getScreenName() {

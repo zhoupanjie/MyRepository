@@ -6,7 +6,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 import butterknife.OnClick;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.cplatform.xhxw.ui.R;
@@ -20,9 +20,9 @@ import com.cplatform.xhxw.ui.util.TextViewUtil;
  */
 public class SpecialTopicPicView extends RelativeLayout {
 
-    @InjectView(R.id.iv_img)
+    @Bind(R.id.iv_img)
     ImageView mImg;
-    @InjectView(R.id.tv_desc)
+    @Bind(R.id.tv_desc)
     TextView mDesc;
     private SpecialDetailData mItem;
     private OnSpecialTopicClickListener mListener;
@@ -37,7 +37,7 @@ public class SpecialTopicPicView extends RelativeLayout {
         LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context
                 .LAYOUT_INFLATER_SERVICE);
         inflater.inflate(R.layout.view_special_topic_pic, this);
-        ButterKnife.inject(this);
+        ButterKnife.bind(this);
     }
 
     public void setData(SpecialDetailData item) {

@@ -24,7 +24,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 import butterknife.OnClick;
 
 import com.cplatform.xhxw.ui.App;
@@ -51,22 +51,22 @@ public class FriendsFreshInfoActivity extends BaseActivity implements InputViewS
 
 	private static final String TAG = CompanyFreshInfoActivity.class.getSimpleName();
 
-    @InjectView(R.id.fresh_info_web)
+    @Bind(R.id.fresh_info_web)
     WebView mWebView;
     private String mRelativeString;
     private JSONObject mReplyDict;
     private AsyncHttpResponseHandler mHttpHandler;
-    @InjectView(R.id.comment_editt)
+    @Bind(R.id.comment_editt)
     EditText editText;
-    @InjectView(R.id.comment_expression_widgt)
+    @Bind(R.id.comment_expression_widgt)
     XWExpressionWidgt mExpressionWidgt;
-    @InjectView(R.id.comment_expression_btn)
+    @Bind(R.id.comment_expression_btn)
     Button mExprBtn;
-    @InjectView(R.id.layout_content)
+    @Bind(R.id.layout_content)
     InputViewSensitiveLinearLayout mRootContainer;
-    @InjectView(R.id.comment_editt_linear)
+    @Bind(R.id.comment_editt_linear)
     RelativeLayout mCommentOperateLo;
-    @InjectView(R.id.toolbar_layout)
+    @Bind(R.id.toolbar_layout)
     View mToolBar;
 
     private boolean mIsExprShow = false;
@@ -98,7 +98,7 @@ public class FriendsFreshInfoActivity extends BaseActivity implements InputViewS
 		
 		setContentView(R.layout.activity_fresh_info);
 		
-		ButterKnife.inject(this);
+		ButterKnife.bind(this);
 		
 		initActionBar();
 		

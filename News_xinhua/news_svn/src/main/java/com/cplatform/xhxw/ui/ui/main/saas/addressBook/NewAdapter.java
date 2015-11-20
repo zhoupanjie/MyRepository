@@ -1,7 +1,7 @@
 package com.cplatform.xhxw.ui.ui.main.saas.addressBook;
 
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 
 import com.cplatform.xhxw.ui.R;
 import com.cplatform.xhxw.ui.db.dao.NewFriendsDao;
@@ -120,19 +120,19 @@ public class NewAdapter extends CursorAdapter {
 	}
 
 	class ViewHolder {
-		@InjectView(R.id.new_friends_image)
+		@Bind(R.id.new_friends_image)
 		ImageView userImage;
-		@InjectView(R.id.new_friends_name)
+		@Bind(R.id.new_friends_name)
 		TextView userName;
-		@InjectView(R.id.new_friends_comment)
+		@Bind(R.id.new_friends_comment)
 		TextView comment;
-		@InjectView(R.id.new_friends_add)
+		@Bind(R.id.new_friends_add)
 		Button addFriends;
-		@InjectView(R.id.new_friends_message)
+		@Bind(R.id.new_friends_message)
 		TextView addedFriends;
 
 		public ViewHolder(View v) {
-			ButterKnife.inject(this, v);
+			ButterKnife.bind(this, v);
 		}
 	}
 

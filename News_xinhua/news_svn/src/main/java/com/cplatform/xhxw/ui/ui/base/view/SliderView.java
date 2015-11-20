@@ -7,7 +7,7 @@ import android.view.LayoutInflater;
 import android.widget.AbsListView;
 import android.widget.RelativeLayout;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 import com.cplatform.xhxw.ui.Constants;
 import com.cplatform.xhxw.ui.model.Focus;
 import com.cplatform.xhxw.ui.ui.base.adapter.SliderAdapter;
@@ -21,9 +21,9 @@ import java.util.List;
  */
 public class SliderView extends RelativeLayout {
 
-    @InjectView(R.id.view_pager)
+    @Bind(R.id.view_pager)
     ViewPager mVp;
-    @InjectView(R.id.view_indicator)
+    @Bind(R.id.view_indicator)
     CirclePageIndicator mCpi;
 
     private SliderAdapter mAdapter;
@@ -37,7 +37,7 @@ public class SliderView extends RelativeLayout {
         LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context
                 .LAYOUT_INFLATER_SERVICE);
         inflater.inflate(R.layout.view_slider, this);
-        ButterKnife.inject(this);
+        ButterKnife.bind(this);
         AbsListView.LayoutParams lp = new AbsListView.LayoutParams(Constants.screenWidth,  Constants.HomeSliderSize.title_height);
         setLayoutParams(lp);
         mAdapter = new SliderAdapter(getContext(), lis);

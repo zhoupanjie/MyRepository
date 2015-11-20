@@ -16,7 +16,7 @@ import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 
 import com.cplatform.xhxw.ui.Constants;
 import com.cplatform.xhxw.ui.R;
@@ -79,7 +79,7 @@ public class GameAdapter extends BaseAdapter<Game> {
 		if (convertView == null) {
 			convertView = View.inflate(con, R.layout.item_gamelist, null);
 			holder = new ViewHolderGameList();
-			ButterKnife.inject(holder, convertView);
+			ButterKnife.bind(holder, convertView);
 			/* 得到各个控件的对象 */
 			convertView.setTag(holder); // 绑定ViewHolder对象
 		} else {
@@ -450,21 +450,21 @@ public class GameAdapter extends BaseAdapter<Game> {
 	}
 
 	public class ViewHolderGameList {
-		@InjectView(R.id.rl_root)
+		@Bind(R.id.rl_root)
 		public RelativeLayout rlRoot;
-		@InjectView(R.id.iv_logo)
+		@Bind(R.id.iv_logo)
 		public ImageView ivIcon;// 图片
-		@InjectView(R.id.tv_name)
+		@Bind(R.id.tv_name)
 		public TextView tvName;// 应用名称
-		@InjectView(R.id.tv_type)
+		@Bind(R.id.tv_type)
 		public TextView tvType;// 类型
-		@InjectView(R.id.tv_desc)
+		@Bind(R.id.tv_desc)
 		public TextView tvDescription;// 描述
-		@InjectView(R.id.iv_download)
+		@Bind(R.id.iv_download)
 		public TextView ivDown;// 下载
-		@InjectView(R.id.pb_down)
+		@Bind(R.id.pb_down)
 		public ProgressBar pbDown;
-		@InjectView(R.id.tv_down_info)
+		@Bind(R.id.tv_down_info)
 		TextView tvDownInfo;
 	}
 

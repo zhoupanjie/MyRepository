@@ -9,9 +9,8 @@ public class SpecialTopicPicView$$ViewInjector {
     View view;
     view = finder.findById(source, 2131428003);
     if (view == null) {
-      throw new IllegalStateException("Required view with id '2131428003' for field 'mImg' and method 'onImgClickAction' was not found. If this view is optional add '@Optional' annotation.");
+      throw new IllegalStateException("Required view with id '2131428003' for method 'onImgClickAction' was not found. If this view is optional add '@Optional' annotation.");
     }
-    target.mImg = (android.widget.ImageView) view;
     view.setOnClickListener(
       new android.view.View.OnClickListener() {
         @Override public void onClick(
@@ -20,15 +19,8 @@ public class SpecialTopicPicView$$ViewInjector {
           target.onImgClickAction();
         }
       });
-    view = finder.findById(source, 2131427574);
-    if (view == null) {
-      throw new IllegalStateException("Required view with id '2131427574' for field 'mDesc' was not found. If this view is optional add '@Optional' annotation.");
-    }
-    target.mDesc = (android.widget.TextView) view;
   }
 
   public static void reset(com.cplatform.xhxw.ui.ui.base.view.SpecialTopicPicView target) {
-    target.mImg = null;
-    target.mDesc = null;
   }
 }

@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 import com.cplatform.xhxw.ui.R;
 import com.cplatform.xhxw.ui.db.dao.SMessageDao;
 import com.cplatform.xhxw.ui.ui.detailpage.expressions.XWExpressionUtil;
@@ -80,19 +80,19 @@ public class SMessageAdapter extends CursorAdapter {
     }
 
     static class ViewHelper {
-        @InjectView(R.id.iv_logo)
+        @Bind(R.id.iv_logo)
         ImageView photo;
-        @InjectView(R.id.tv_name)
+        @Bind(R.id.tv_name)
         TextView name;
-        @InjectView(R.id.tv_time)
+        @Bind(R.id.tv_time)
         TextView time;
-        @InjectView(R.id.tv_last_msg)
+        @Bind(R.id.tv_last_msg)
         TextView lastMsg;
-        @InjectView(R.id.tv_num)
+        @Bind(R.id.tv_num)
         TextView num;
 
         public ViewHelper(View v) {
-            ButterKnife.inject(this, v);
+            ButterKnife.bind(this, v);
         }
     }
 }

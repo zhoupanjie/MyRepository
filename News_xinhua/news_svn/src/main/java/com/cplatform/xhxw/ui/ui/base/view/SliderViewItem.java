@@ -11,7 +11,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 
 import com.cplatform.xhxw.ui.Constants;
 import com.cplatform.xhxw.ui.R;
@@ -24,9 +24,9 @@ import com.nostra13.universalimageloader.core.ImageLoader;
  */
 public class SliderViewItem extends LinearLayout {
 
-	@InjectView(R.id.iv_img)
+	@Bind(R.id.iv_img)
 	ImageView mImg;
-	@InjectView(R.id.tv_title)
+	@Bind(R.id.tv_title)
 	TextView mTitle;
 	private OnSliderImgOnClickListener mLis;
 	private Focus mFocus;
@@ -41,7 +41,7 @@ public class SliderViewItem extends LinearLayout {
 		LayoutInflater inflater = (LayoutInflater) getContext()
 				.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		inflater.inflate(R.layout.view_slider_item, this);
-		ButterKnife.inject(this);
+		ButterKnife.bind(this);
 
 		setOnClickListener(new View.OnClickListener() {
 			@Override

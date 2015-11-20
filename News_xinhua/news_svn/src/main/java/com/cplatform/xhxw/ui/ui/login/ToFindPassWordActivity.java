@@ -27,7 +27,7 @@ public class ToFindPassWordActivity extends BaseActivity{
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_find_password_check);
-		ButterKnife.inject(this);
+		ButterKnife.bind(this);
 	}
 	
 	/** 手机 */

@@ -4,8 +4,9 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import butterknife.Bind;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
 import com.cplatform.xhxw.ui.R;
 import com.cplatform.xhxw.ui.db.dao.CollectDao;
 import com.cplatform.xhxw.ui.util.TextViewUtil;
@@ -16,7 +17,7 @@ import com.cplatform.xhxw.ui.util.TextViewUtil;
  */
 public class CollectNewItem extends RelativeLayout {
 
-    @InjectView(R.id.tv_title) TextView mTitle;
+    @Bind(R.id.tv_title) TextView mTitle;
 
     public CollectNewItem(Context context) {
         super(context);
@@ -27,7 +28,7 @@ public class CollectNewItem extends RelativeLayout {
         LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context
                 .LAYOUT_INFLATER_SERVICE);
         inflater.inflate(R.layout.view_collect_new_item, this);
-        ButterKnife.inject(this);
+        ButterKnife.bind(this);
     }
 
     public void setData(CollectDao item) {

@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 import com.cplatform.xhxw.ui.Constants;
 import com.cplatform.xhxw.ui.R;
 import com.cplatform.xhxw.ui.model.SpecialDetail;
@@ -22,9 +22,9 @@ import java.util.List;
  */
 public class SpecialTopicPicNewItem extends RelativeLayout {
 
-    @InjectView(R.id.tv_header)
+    @Bind(R.id.tv_header)
     TextView mHeader;
-    @InjectView(R.id.ly_content)
+    @Bind(R.id.ly_content)
     GridLayout mContent;
     private int mColumn;
     private List<SpecialTopicPicView> mLineCash;
@@ -39,7 +39,7 @@ public class SpecialTopicPicNewItem extends RelativeLayout {
         LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context
                 .LAYOUT_INFLATER_SERVICE);
         inflater.inflate(R.layout.view_special_topic_pic_new_item, this);
-        ButterKnife.inject(this);
+        ButterKnife.bind(this);
         mColumn = getResources().getInteger(R.integer.special_topic_pic_column_count);
         mLineCash = new ArrayList<SpecialTopicPicView>();
         int width = Constants.screenWidth / mColumn;

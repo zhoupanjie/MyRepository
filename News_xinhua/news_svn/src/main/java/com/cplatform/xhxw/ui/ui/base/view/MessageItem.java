@@ -7,7 +7,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.cplatform.xhxw.ui.App;
@@ -24,11 +24,11 @@ import com.cplatform.xhxw.ui.util.TextUtil;
  */
 public class MessageItem extends RelativeLayout {
 
-    @InjectView(R.id.ms_img) ImageView mImg;
-    @InjectView(R.id.ms_title) TextView mTitle;
-    @InjectView(R.id.ms_desc) TextView mDesc;
-    @InjectView(R.id.ms_tag) TextView mTag;
-    @InjectView(R.id.ms_publish_date) TextView mPublishDate;
+    @Bind(R.id.ms_img) ImageView mImg;
+    @Bind(R.id.ms_title) TextView mTitle;
+    @Bind(R.id.ms_desc) TextView mDesc;
+    @Bind(R.id.ms_tag) TextView mTag;
+    @Bind(R.id.ms_publish_date) TextView mPublishDate;
 
     private int mDisModel;
     public MessageItem(Context context) {
@@ -40,7 +40,7 @@ public class MessageItem extends RelativeLayout {
         LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context
                 .LAYOUT_INFLATER_SERVICE);
         inflater.inflate(R.layout.view_message_item, this);
-        ButterKnife.inject(this);
+        ButterKnife.bind(this);
         mDisModel = Constants.DISPLAY_MODEL_DAY;
     }
 

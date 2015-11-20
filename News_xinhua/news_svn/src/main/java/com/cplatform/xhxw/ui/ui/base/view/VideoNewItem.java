@@ -10,7 +10,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.cplatform.xhxw.ui.Constants;
@@ -28,25 +28,25 @@ public class VideoNewItem extends RelativeLayout {
 
 	private boolean isVideo = false;
 
-	@InjectView(R.id.video_layout)
+	@Bind(R.id.video_layout)
 	public RelativeLayout videoLayout;
-	@InjectView(R.id.video_image)
+	@Bind(R.id.video_image)
 	public ImageView videoImage;
-	@InjectView(R.id.video_title_tv)
+	@Bind(R.id.video_title_tv)
 	public TextView videoNameText;
-	@InjectView(R.id.video_play_btn)
+	@Bind(R.id.video_play_btn)
 	public ImageView videoPlayBtn;
-	@InjectView(R.id.video_video_layout)
+	@Bind(R.id.video_video_layout)
 	public LinearLayout videoVideoLayout;
-	@InjectView(R.id.video_recommend_layout)
+	@Bind(R.id.video_recommend_layout)
 	public LinearLayout videoRecommendLayout;
-	@InjectView(R.id.video_item_comment_btn)
+	@Bind(R.id.video_item_comment_btn)
 	public LinearLayout videoCommentBtn;
-	@InjectView(R.id.video_item_share_btn)
+	@Bind(R.id.video_item_share_btn)
 	public LinearLayout videoShareBtn;
-	@InjectView(R.id.video_source_tv)
+	@Bind(R.id.video_source_tv)
 	public TextView videoSourceTv;
-	@InjectView(R.id.video_published_time_tv)
+	@Bind(R.id.video_published_time_tv)
 	public TextView videoPublishedTimeTv;
 
 	public VideoNewItem(Context context, boolean isVideo) {
@@ -59,7 +59,7 @@ public class VideoNewItem extends RelativeLayout {
 		LayoutInflater inflater = (LayoutInflater) getContext()
 				.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		inflater.inflate(R.layout.video_item_layout, this);
-		ButterKnife.inject(this);
+		ButterKnife.bind(this);
 		if (isVideo) {
 			videoVideoLayout.setVisibility(View.VISIBLE);
 		} else {

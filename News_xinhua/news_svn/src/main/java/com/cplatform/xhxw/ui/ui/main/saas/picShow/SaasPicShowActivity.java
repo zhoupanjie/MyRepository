@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 
 import com.cplatform.xhxw.ui.R;
 import com.cplatform.xhxw.ui.model.saas.CompanyZoneItemExrta;
@@ -29,9 +29,9 @@ import java.util.List;
 public class SaasPicShowActivity extends BaseActivity implements DefaultView.OnTapListener {
 
     private static final String TAG = SaasPicShowActivity.class.getSimpleName();
-    @InjectView(R.id.view_pager)
+    @Bind(R.id.view_pager)
     ViewPager mVp;
-    @InjectView(R.id.def_view)
+    @Bind(R.id.def_view)
     DefaultView mDefView;
     private List<CompanyZoneItemExrta> mData;
     private int mSelectIndex;
@@ -54,7 +54,7 @@ public class SaasPicShowActivity extends BaseActivity implements DefaultView.OnT
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ssas_pic_show);
-        ButterKnife.inject(this);
+        ButterKnife.bind(this);
 
         Bundle bun = getIntent().getExtras();
         if (bun == null) {

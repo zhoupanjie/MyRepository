@@ -26,7 +26,7 @@ import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 import butterknife.OnClick;
 import com.google.gson.Gson;
 import com.loopj.android.http.AsyncHttpResponseHandler;
@@ -71,7 +71,7 @@ public class UserInfoActivity extends BaseActivity implements OnClickListener {
     private static final int REQUEST_CODE_PICK_PHOTO = 2; // 选择图片
     private static final int REQUEST_CODE_CROP_IMAGE = 3; // 裁剪图片
 
-    @InjectView(R.id.iv_avatar)
+    @Bind(R.id.iv_avatar)
     RoundedImageView mAvatar;
     private String mTmpFile;
     private String mPhotoFilePath;
@@ -115,7 +115,7 @@ public class UserInfoActivity extends BaseActivity implements OnClickListener {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_info);
-        ButterKnife.inject(this);
+        ButterKnife.bind(this);
         initActionBar();
         init();
         UserinfoUtil.getUserSettingProperties();

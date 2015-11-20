@@ -18,8 +18,12 @@ ADDED from AndroidManifest.xml:7:5
 MERGED from News_xinhua:photoView:unspecified:7:5
 MERGED from News_xinhua:social_sdk_library_project:unspecified:7:5
 MERGED from News_xinhua:swipeBackLayout:unspecified:7:5
+MERGED from com.android.support:support-v4:23.1.1:20:5
 MERGED from News_xinhua:viewPagerIndicator:unspecified:7:5
+MERGED from com.android.support:support-v4:23.1.1:20:5
+MERGED from com.android.support:support-v4:23.1.1:20:5
 MERGED from com.android.support:gridlayout-v7:18.0.0:18:5
+MERGED from com.android.support:support-v4:23.1.1:20:5
 	android:targetSdkVersion
 		ADDED from AndroidManifest.xml:9:9
 		INJECTED from AndroidManifest.xml:0:0
@@ -155,7 +159,11 @@ ADDED from AndroidManifest.xml:61:5
 MERGED from News_xinhua:photoView:unspecified:11:5
 MERGED from News_xinhua:social_sdk_library_project:unspecified:11:5
 MERGED from News_xinhua:swipeBackLayout:unspecified:11:5
+MERGED from com.android.support:support-v4:23.1.1:22:5
+MERGED from com.android.support:support-v4:23.1.1:22:5
+MERGED from com.android.support:support-v4:23.1.1:22:5
 MERGED from com.android.support:gridlayout-v7:18.0.0:19:5
+MERGED from com.android.support:support-v4:23.1.1:22:5
 	android:label
 		ADDED from AndroidManifest.xml:66:9
 	android:hardwareAccelerated

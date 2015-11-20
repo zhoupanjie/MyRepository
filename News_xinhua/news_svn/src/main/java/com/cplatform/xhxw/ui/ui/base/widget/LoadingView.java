@@ -5,8 +5,9 @@ import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import butterknife.Bind;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
 
 import com.cplatform.xhxw.ui.R;
 
@@ -16,7 +17,7 @@ import com.cplatform.xhxw.ui.R;
  */
 public class LoadingView extends RelativeLayout {
 
-    @InjectView(R.id.framework_loading_message) TextView mMsg;
+    @Bind(R.id.framework_loading_message) TextView mMsg;
 
     public LoadingView(Context context) {
         super(context);
@@ -37,7 +38,7 @@ public class LoadingView extends RelativeLayout {
         LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context
                 .LAYOUT_INFLATER_SERVICE);
         inflater.inflate(R.layout.framework_loading_layout, this);
-        ButterKnife.inject(this);
+        ButterKnife.bind(this);
     }
 
     public void setMsg(CharSequence msg) {
@@ -45,7 +46,8 @@ public class LoadingView extends RelativeLayout {
     }
     @Override
     protected void onDetachedFromWindow() {
-        ButterKnife.reset(this);
+        //////
+        ButterKnife.bind(this);
         super.onDetachedFromWindow();
     }
 }

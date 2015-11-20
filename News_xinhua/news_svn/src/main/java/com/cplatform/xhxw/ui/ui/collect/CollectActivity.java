@@ -12,7 +12,7 @@ import android.widget.AdapterView.OnItemLongClickListener;
 import android.widget.ListView;
 import android.widget.Toast;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
+import butterknife.Bind;
 import com.google.gson.Gson;
 import com.cplatform.xhxw.ui.Constants;
 import com.cplatform.xhxw.ui.R;
@@ -39,7 +39,7 @@ import java.util.List;
 public class CollectActivity extends BaseActivity implements OnItemClickListener, OnItemLongClickListener {
 
     private static final String TAG = CollectActivity.class.getSimpleName();
-    @InjectView(R.id.listview)
+    @Bind(R.id.listview)
     ListView mListView;
     private CollectAdapter mAdapter;
     private int mShowPosi;
@@ -57,7 +57,7 @@ public class CollectActivity extends BaseActivity implements OnItemClickListener
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_collect);
-        ButterKnife.inject(this);
+        ButterKnife.bind(this);
         initActionBar();
         mAdapter = new CollectAdapter(this);
         List<CollectDao> data = CollectDB.getCollectsByEnterPriseId(this);

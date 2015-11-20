@@ -70,7 +70,7 @@
 
 -dontwarn butterknife.internal.**
 -keep class **$$ViewInjector { *; }
--keepnames class * { @butterknife.InjectView *;}
+-keepnames class * { @butterknife.Bind *;}
 
 -dontwarn android.support.v4.** 
 -keep class android.support.v4.** { *; } 
