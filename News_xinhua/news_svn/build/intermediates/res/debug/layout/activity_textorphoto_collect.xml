@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/action_bar_height" 
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/nv_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue" >
+
+            <Button
+                android:id="@+id/btn_back"
+                style="@style/back_gray_style"
+                android:drawableLeft="@drawable/arrow_left_white" />
+
+            <TextView
+                android:id="@+id/news_collect_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:singleLine="true"
+                android:text="@string/contribute_title"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/one_px"
+            android:background="@color/flag_content_dividing_line" />
+    </LinearLayout>
+
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/text_photo_collect_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="top"
+                    android:hint="@string/news_collect_content_hint"
+                    android:maxLines="5"
+                    android:minLines="5"
+                    android:paddingBottom="15dp" />
+
+                <TextView
+                    android:id="@+id/text_photo_collect_text_count_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/text_photo_collect_et"
+                    android:layout_alignParentBottom="false"
+                    android:layout_alignRight="@+id/text_photo_collect_et"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginRight="4dp"
+                    android:text="Small Text"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            </RelativeLayout>
+
+            <GridView
+                android:id="@+id/text_photo_collect_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:numColumns="3" >
+
+            </GridView>
+
+            <Button
+                android:id="@+id/text_photo_collect_commit_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/login_bt_bg"
+                android:text="@string/publish_feed"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+            
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+<!-- From: file:/Users/rangey/MyRepository/News_xinhua/news_svn/src/main/res/layout/activity_textorphoto_collect.xml -->

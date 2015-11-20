@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/share_sina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新浪微博" />
+
+    <Button
+        android:id="@+id/share_qq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QQ" />
+
+    <Button
+        android:id="@+id/share_weixin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="微信" />
+
+    <Button
+        android:id="@+id/share_friends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="朋友圈" />
+
+    <Button
+        android:id="@+id/share_qq_weibo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="腾讯微博" />
+
+</LinearLayout>

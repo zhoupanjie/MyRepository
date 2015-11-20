@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/ly_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <RelativeLayout
+            android:id="@+id/focus_hint_info_lo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/base_list_item_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="\n"
+                android:textColor="@color/black"
+                android:textSize="@dimen/base_list_desc_text_size"
+                android:visibility="visible" />
+
+            <com.viewpagerindicator.CirclePageIndicator
+                android:id="@+id/view_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingTop="10dp" 
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"/>
+        </RelativeLayout>
+        <TextView 
+            android:layout_alignBottom="@+id/focus_hint_info_lo"
+	        android:layout_width="match_parent"
+	        android:layout_height="2px"
+	        android:background="#e6e6e6"/>
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/Users/rangey/MyRepository/News_xinhua/news_svn/src/main/res/layout/view_slider.xml -->

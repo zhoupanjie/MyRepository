@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/transparent"
+              android:orientation="vertical">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+        <TextView
+                android:layout_marginTop="22dp"
+                android:id="@+id/formclient_row_date"
+                android:padding="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="11dp"
+                android:background="@drawable/s_message_chat_time_bg"
+                android:textColor="@color/s_message_chat_time_text_color"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_marginTop="12dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="35dp">
+
+        <com.cplatform.xhxw.ui.ui.base.widget.CircleImageView
+                android:id="@+id/avatar"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher"/>
+
+        <LinearLayout
+                android:layout_marginLeft="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <LinearLayout
+                    android:id="@+id/body_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/chatfrom_bg"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="10dp"
+                    android:gravity="center_vertical"
+                    >
+
+                <TextView
+                        android:id="@+id/formclient_row_msg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:textColor="#FF000000"
+                        android:textSize="14dp"/>
+                <ImageView android:layout_width="80dp" android:layout_height="80dp" android:src="@drawable/ic_launcher"
+                           android:id="@+id/iv_pic"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

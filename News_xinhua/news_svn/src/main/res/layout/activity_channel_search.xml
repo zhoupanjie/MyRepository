@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/icon_search_back"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/channel_search_search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="-1dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/input_area_bg"
+            android:text="@string/search_title" />
+
+        <EditText
+            android:id="@+id/channel_search_edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/channel_search_search_btn"
+            android:layout_alignTop="@+id/channel_search_search_btn"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/channel_search_search_btn"
+            android:layout_toRightOf="@+id/btn_back"
+            android:background="@drawable/input_area_bg"
+            android:hint="@string/search_key_demand"
+            android:singleLine="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray" >
+
+        <TextView
+            android:id="@+id/channel_search_result_hint_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/gray"
+            android:ellipsize="middle"
+            android:padding="5dp"
+            android:layout_marginRight="40dp"
+            android:singleLine="true"
+            android:text="TextView"
+            android:textSize="16sp" />
+
+        <ProgressBar
+            android:id="@+id/channel_search_pb"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/channel_search_result_listv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="1dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+    </ListView>
+
+</LinearLayout>

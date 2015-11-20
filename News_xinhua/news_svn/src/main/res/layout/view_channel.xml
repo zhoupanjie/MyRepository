@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView android:layout_width="match_parent" android:layout_height="match_parent"
+              android:gravity="center"
+              android:textSize="@dimen/channel_manage_itme"
+              android:padding="10dp"
+              android:singleLine="true"
+              android:ellipsize="end"
+              android:textStyle="bold"
+              android:textColor="#6c6c6c"
+              android:text=" "
+              android:background="@drawable/bg_channel_item"
+              android:id="@+id/tv_title"/>
+</LinearLayout>

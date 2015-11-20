@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/btn_red_pressed" android:state_pressed="true"/>
+    <item android:drawable="@drawable/btn_red_normal"/>
+
+</selector><!-- From: file:/Users/rangey/MyRepository/News_xinhua/news_svn/src/main/res/drawable/btn_red_login.xml -->

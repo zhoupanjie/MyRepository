@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/popu_layout_content"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp" 
+        android:background="@drawable/menu_bg"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/comment_touch_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="@dimen/actionsheet_image"
+                android:layout_height="@dimen/actionsheet_image"
+                android:src="@drawable/comment_touch" 
+                android:layout_marginRight="2dp"/>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginLeft="2dp"
+                android:textSize="15dp"
+                android:text="赞" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="1dp"
+                android:layout_marginLeft="6dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/comment_populine" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/comment_cancel_touch_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="@dimen/actionsheet_image"
+                android:layout_height="@dimen/actionsheet_image"
+                android:src="@drawable/comment_cancel_touch" 
+                android:layout_marginRight="2dp"/>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:singleLine="true"
+                android:text="取消赞"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+            
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_marginLeft="6dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/comment_populine" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/comment_reply_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="@dimen/actionsheet_image"
+                android:layout_height="@dimen/actionsheet_image"
+                android:layout_marginRight="2dp"
+                android:src="@drawable/comment_reply" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginLeft="2dp"
+                android:textSize="15dp"
+                android:text="回复" />
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/comment_delete_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="@dimen/actionsheet_image"
+                android:layout_height="@dimen/actionsheet_image"
+                android:layout_marginRight="2dp"
+                android:src="@drawable/comment_delete" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginLeft="2dp"
+                android:textSize="15dp"
+                android:text="删除 " />
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/comment_copy_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center" >
+			<ImageView
+                android:layout_width="1dp"
+                android:layout_marginRight="6dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/comment_populine" />
+			
+            <ImageView
+                android:layout_width="@dimen/actionsheet_image"
+                android:layout_height="@dimen/actionsheet_image"
+                android:src="@drawable/icon_copy" 
+                android:layout_marginRight="2dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginLeft="2dp"
+                android:textSize="15dp"
+                android:text="复制" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

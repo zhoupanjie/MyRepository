@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+    <include layout="@layout/view_s_message_chat_item_left" android:id="@+id/ly_left"/>
+    <include layout="@layout/view_s_message_chat_item_right" android:id="@+id/ly_right"/>
+
+</RelativeLayout><!-- From: file:/Users/rangey/MyRepository/News_xinhua/news_svn/src/main/res/layout/view_s_message_chat_item.xml -->

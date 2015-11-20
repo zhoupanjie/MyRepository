@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cplatform.xhxw.ui.ui.base.widget.InputViewSensitiveLinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layout_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom"
+        android:background="@color/transparent"
+        android:orientation="vertical">
+
+    <com.cplatform.xhxw.ui.ui.base.widget.CommentListView
+            android:id="@+id/ly_other"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:divider="@drawable/transparent"
+            android:dividerHeight="0px">
+    </com.cplatform.xhxw.ui.ui.base.widget.CommentListView>
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:background="@color/white"
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
+                android:id="@+id/comment_editt_linear"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="35dp"
+                android:background="@drawable/ic_s_chat_toobar_bg"
+                android:padding="5dp"
+                android:layout_alignParentLeft="true">
+            <Button
+                    android:id="@+id/comment_expression_btn"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:background="@drawable/selector_s_chat_expressions"
+                    android:layout_centerVertical="true"
+                    />
+            <EditText
+                    android:id="@+id/comment_editt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="25dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_toRightOf="@+id/comment_expression_btn"
+                    android:layout_toLeftOf="@+id/comment_sendbtn"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:maxLines="3"
+                    android:background="@drawable/ic_contacts_search_bg">
+            </EditText>
+
+            <Button
+                    android:id="@+id/comment_sendbtn"
+                    android:layout_width="39dp"
+                    android:layout_height="32dp"
+                    android:textSize="14dp"
+                    android:textColor="@color/white"
+                    android:text="@string/send_verify"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="7dp"
+                    android:background="@drawable/selector_s_chat_send_btn_bg"/>
+        </RelativeLayout>
+        <!-- android:background="@drawable/textfield_bg" -->
+
+        <com.cplatform.xhxw.ui.ui.detailpage.expressions.XWExpressionWidgt
+                android:id="@+id/comment_expression_widgt"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/comment_editt_linear"
+                android:visibility="gone"
+                android:background="@drawable/bg_expression_area"
+                android:gravity="center_horizontal"/>
+    </RelativeLayout>
+</com.cplatform.xhxw.ui.ui.base.widget.InputViewSensitiveLinearLayout><!-- From: file:/Users/rangey/MyRepository/News_xinhua/news_svn/src/main/res/layout/activity_community_commentary.xml -->

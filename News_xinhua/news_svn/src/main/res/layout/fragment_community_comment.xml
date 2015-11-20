@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cplatform.xhxw.ui.ui.base.widget.InputViewSensitiveLinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layout_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+    <RelativeLayout
+            android:id="@+id/toolbar_layout"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        <RelativeLayout
+                android:id="@+id/comment_editt_linear"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_alignParentLeft="true">
+
+            <EditText
+                    android:id="@+id/comment_editt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="25dp"
+                    android:paddingLeft="7dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_toLeftOf="@+id/comment_expression_btn"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:maxLines="3"
+                    android:background="@drawable/comment_edit_bg">
+            </EditText>
+
+            <Button
+                    android:id="@+id/comment_expression_btn"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:background="@drawable/selector_s_chat_expressions"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/comment_sendbtn"/>
+
+            <Button
+                    android:id="@+id/comment_sendbtn"
+                    android:layout_width="39dp"
+                    android:layout_height="32dp"
+                    android:textSize="14dp"
+                    android:textColor="@color/white"
+                    android:text="@string/send_verify"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="7dp"
+                    android:background="@drawable/selector_s_chat_send_btn_bg"/>
+        </RelativeLayout>
+        <!-- android:background="@drawable/textfield_bg" -->
+
+        <com.cplatform.xhxw.ui.ui.detailpage.expressions.XWExpressionWidgt
+                android:id="@+id/comment_expression_widgt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/comment_editt_linear"
+                android:visibility="gone"
+                android:background="@drawable/bg_expression_area"
+                android:gravity="center_horizontal"/>
+    </RelativeLayout>
+</com.cplatform.xhxw.ui.ui.base.widget.InputViewSensitiveLinearLayout>

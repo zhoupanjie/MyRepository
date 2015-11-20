@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/News_xinhua.iml" filepath="$PROJECT_DIR$/News_xinhua.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baidu_locate_library/baidu_locate_library.iml" filepath="$PROJECT_DIR$/baidu_locate_library/baidu_locate_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/image_crop_library/image_crop_library.iml" filepath="$PROJECT_DIR$/image_crop_library/image_crop_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/news_svn/news_svn.iml" filepath="$PROJECT_DIR$/news_svn/news_svn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/photoView/photoView.iml" filepath="$PROJECT_DIR$/photoView/photoView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/social_sdk_library_project/social_sdk_library_project.iml" filepath="$PROJECT_DIR$/social_sdk_library_project/social_sdk_library_project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/swipeBackLayout/swipeBackLayout.iml" filepath="$PROJECT_DIR$/swipeBackLayout/swipeBackLayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/viewPagerIndicator/viewPagerIndicator.iml" filepath="$PROJECT_DIR$/viewPagerIndicator/viewPagerIndicator.iml" />
+    </modules>
+  </component>
+</project>

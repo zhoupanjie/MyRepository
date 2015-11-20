@@ -1,0 +1,235 @@
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+
+-optimizationpasses 5
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-dontskipnonpubliclibraryclassmembers
+-dontpreverify
+-dontshrink
+-dontoptimize
+-verbose
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
+
+-libraryjars libs/android-support-v4.jar
+-libraryjars libs/gson-2.2.4.jar
+-libraryjars libs/ormlite-android-4.48.jar
+-libraryjars libs/ormlite-core-4.48.jar
+-libraryjars libs/pageddragdropgrid.jar 
+-libraryjars libs/pushsdk.jar
+-libraryjars libs/pushservice-3.2.0.jar
+-libraryjars libs/umeng_sdk.jar
+-libraryjars libs/universal-image-loader-1.8.4.jar
+-libraryjars libs/MiPush_SDK_Client_2_2_sdk.jar
+-libraryjars libs/pinyin4j-2.5.0.jar
+-libraryjars libs/androidrecording.jar
+-libraryjars libs/picasso-2.4.0.jar
+-libraryjars libs/CySDK.jar
+
+-keep public class com.squareup.picasso.**
+-dontwarn com.squareup.picasso.**
+
+-keep public class com.skd.androidrecording.**
+-dontwarn com.skd.androidrecording.**
+
+-keep public class java.awt.**
+-keep public class javax.swing.**
+-keep public class demo.Pinyin4jAppletDemo
+-dontwarn java.awt.**
+-dontwarn javax.swing.**
+-dontwarn demo.Pinyin4jAppletDemo
+
+-keep public class com.xiaomi.**
+-keep public class a.a.a.**
+-keep public class * extends com.xiaomi.mipush.sdk.PushMessageReceiver
+-dontwarn a.a.a.**
+-dontwarn com.xiaomi.push.service.a.a
+-dontwarn com.google.android.maps.**
+
+-dontwarn android.webkit.WebView
+
+-dontwarn com.facebook.**
+
+-dontwarn butterknife.internal.**
+-keep class **$$ViewInjector { *; }
+-keepnames class * { @butterknife.InjectView *;}
+
+-dontwarn android.support.v4.** 
+-keep class android.support.v4.** { *; } 
+
+-keep public class * extends android.support.v4.** 
+-keep public class * extends android.app.Fragment
+
+-dontwarn ca.laplanete.mobile.**
+-keep class ca.laplanete.mobile.**{*;}
+
+-dontwarn com.viewpagerindicator.**
+-keep class com.viewpagerindicator.** {*;}
+
+-keep class butterknife.**
+
+-keep enum com.facebook.**
+-keepattributes Exceptions,InnerClasses,Signature
+-keepattributes *Annotation*
+-keepattributes JavascriptInterface
+-keepattributes SourceFile,LineNumberTable
+-keepattributes *JavascriptInterface* 
+
+-keep interface com.facebook.**
+-keep interface com.tencent.**
+-keep interface com.umeng.socialize.**
+-keep interface com.umeng.socialize.sensor.**
+-keep interface com.umeng.scrshot.**
+-keep interface org.apache.http.entity.mime.**
+-keep interface com.tencent.weibo.sdk.android.**
+
+-dontwarn com.sohu.cyan.android.sdk.push.**
+-keep class com.sohu.cyan.android.sdk.api.** { *;}
+-keep class com.sohu.cyan.android.sdk.entity.** { *;}
+-keep class com.sohu.cyan.android.sdk.response.** { *;}
+-keep class com.sohu.cyan.android.sdk.http.** { *;}
+
+-dontwarn org.apache.commons.**
+
+-dontwarn org.apache.http.entity.mime.**
+-keep class org.apache.http.entity.mime.** {*;}
+
+-dontwarn com.tencent.stat.**
+-keep class com.tencent.stat.** {*;}
+
+-dontwarn com.umeng.scrshot.**
+-keep class com.umeng.scrshot.**{*;}
+
+-dontwarn com.feedss.push.sdk.**
+-keep class com.feedss.push.sdk.**{*;}
+
+-dontwarn com.umeng.**
+-keep class com.umeng.** { *; }
+-keep class com.umeng*.** {*; }
+
+-dontwarn com.j256.ormlite.**
+-keep class com.j256.ormlite.**{*;}
+
+-dontwarn com.baidu.location.**
+-keep class com.baidu.location.**{*;}
+
+-dontwarn com.google.gson.**
+-keep class com.google.gson.**{*;}
+
+-dontwarn android.support.v7.**
+-keep class android.support.v7.**{*;}
+
+-dontwarn com.tencent.**
+-keep class com.tencent.** {*;}
+
+-dontwarn com.tencent.weibo.sdk.**
+-keep class com.tencent.weibo.sdk.**{*;}
+
+-dontwarn com.nostra13.universalimageloader.**
+-keep class com.nostra13.universalimageloader.**{*;}
+
+-dontwarn com.umeng.socialize.sensor.**
+-keep class com.umeng.socialize.sensor.**{*;}
+
+-dontwarn com.baidu.**
+-keep class com.baidu.**{*;}
+
+
+
+-keep class com.umeng.socialize.* {*;}
+-keep class javax.**
+-keep class android.webkit.**
+
+-keep class com.facebook.**
+-keep class com.umeng.scrshot.**
+
+-keep class com.tencent.mm.sdk.openapi.WXMediaMessage {*;}
+-keep class com.tencent.mm.sdk.openapi.** implements com.tencent.mm.sdk.openapi.WXMediaMessage$IMediaObject {*;}
+
+-keep class im.yixin.sdk.api.YXMessage {*;}
+-keep class im.yixin.sdk.api.** implements im.yixin.sdk.api.YXMessage$YXMessageData{*;}
+
+-keep class com.umeng*.** {*; }
+
+-keep class com.tencent.open.TDialog$*
+-keep class com.tencent.open.TDialog$* {*;}
+-keep class com.tencent.open.PKDialog
+-keep class com.tencent.open.PKDialog {*;}
+-keep class com.tencent.open.PKDialog$*
+-keep class com.tencent.open.PKDialog$* {*;}
+
+-keep public class * extends android.app.Activity
+-keep public class * extends me.imid.swipebacklayout.lib.app.SwipeBackActivity
+-keep public class * extends android.view.View
+-keep public class * extends android.app.Application 
+-keep public class * extends com.baidu.frontia.FrontiaApplication
+-keep public class * extends android.app.Service
+-keep public class * extends android.content.BroadcastReceiver
+-keep public class * extends android.content.ContentProvider
+-keep public class * extends android.app.backup.BackupAgentHelper
+-keep public class * extends android.preference.Preference
+-keep public class * extends com.cplatform.xhxw.ui.ui.base.BaseFragment
+-keep public class * extends com.cplatform.xhxw.ui.ui.base.BaseActivity
+
+-keep class com.cplatform.xhxw.ui.ui.main.saas.addressBook.**{*;}
+-keep class com.cplatform.xhxw.ui.http.net.** {*;}
+-keep class com.cplatform.xhxw.ui.http.net.saas.** {*;}
+-keep class com.cplatform.xhxw.ui.ui.base.view.** {*;}
+-keep class com.cplatform.xhxw.ui.ui.base.widget.*
+-keep class com.cplatform.xhxw.ui.db.** {*;}
+-keep class com.cplatform.xhxw.ui.model.* {*;}
+-keep class com.cplatform.xhxw.ui.model.saas.* {*;}
+-keep class com.cplatform.xhxw.ui.ui.main.cms.game.**{*;}
+-keep class com.cplatform.xhxw.ui.ui.main.cms.radiobroadcast.**{*;}
+
+-keep public class com.android.vending.licensing.ILicensingService
+-keepclasseswithmembernames class * {
+	native <methods>; 
+}
+
+-keepclasseswithmembers class * {
+	public <init>(android.content.Context, android.util.AttributeSet);
+}
+
+-keepclasseswithmembers class * {
+	public <init>(android.content.Context, android.util.AttributeSet, int);
+}
+
+ -keepclassmembers class * extends android.app.Activity {
+	public void *(android.view.View);
+}
+
+-keep public class com.cplatform.xhxw.ui.ui.detailpage.JSInterface {
+	*;
+}
+
+-keep public class com.cplatform.xhxw.ui.ui.web.newscollect.LevyJSObject {
+	public void androidGetLevyInfo(java.lang.String);
+}
+
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+-keep class * implements android.os.Parcelable {
+	public static final android.os.Parcelable$Creator *;
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:keepScreenOn="true"
+                android:background="@android:color/black"
+                android:layout_height="match_parent">
+
+    <VideoView
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/video_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    <com.cplatform.xhxw.ui.ui.base.widget.DefaultView
+            android:visibility="gone"
+            android:id="@+id/def_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+</RelativeLayout><!-- From: file:/Users/rangey/MyRepository/News_xinhua/news_svn/src/main/res/layout/activity_video_player.xml -->

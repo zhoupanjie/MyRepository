@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:text="@string/draw_prize_get"
+        android:textSize="18sp" />
+    <LinearLayout 
+        android:id="@+id/draw_prize_oper_lo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/textView1"
+        android:orientation="horizontal">
+        <Button
+	        android:id="@+id/dialog_draw_prize_play_btn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/draw_prize_play" />
+    	<Button
+	        android:id="@+id/dialog_draw_prize_close"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="15dp"
+			android:text="@string/draw_prize_cancel"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/draw_prize_oper_lo"
+        android:layout_marginTop="15dp"
+        android:text="@string/draw_prize_hint"
+        android:textColor="@color/setting_gray"
+        android:textSize="14sp" />
+</RelativeLayout>
+<!-- From: file:/Users/rangey/MyRepository/News_xinhua/news_svn/src/main/res/layout/dialog_draw_prize.xml -->

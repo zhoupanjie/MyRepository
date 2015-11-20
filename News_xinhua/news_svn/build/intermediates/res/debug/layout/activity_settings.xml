@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/contact_bg" >
+
+    <LinearLayout
+        android:id="@+id/ly_nav"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/nv_title"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/red_xuanwen"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_back"
+                style="@style/back_red_style"
+                android:drawableLeft="@drawable/arrow_left_white" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/settings"
+                android:textColor="@color/white"
+                android:textSize="@dimen/logintitle" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/one_px"
+            android:background="@color/flag_content_dividing_line" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/setting_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:background="@color/contact_bg"
+        android:layout_below="@+id/ly_nav"
+        android:layout_marginBottom="10dp"
+        android:paddingBottom="@dimen/base_listitem_padding_top_bottom"
+        android:paddingTop="@dimen/base_listitem_padding_top_bottom" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/ic_setting_item_bg"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:paddingLeft="10dp">
+
+                    <ImageView
+                        android:id="@+id/setting_push_iv"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_setting_message" />
+
+                    <TextView
+                        android:id="@+id/setting_push_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/setting_push_iv"
+                        android:text="要闻推送"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                        
+                    <com.cplatform.xhxw.ui.ui.base.view.SwitchButton
+                        xmlns:zhaocailing="http://schemas.android.com/apk/res/com.cplatform.xhxw.ui"
+                        android:id="@+id/sw_push_setting"
+                        android:layout_width="@dimen/switch_button_width"
+                        android:layout_height="@dimen/switch__mask_height"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        zhaocailing:switchbutton_bottom_height="@dimen/switch__bottom_height"
+                        zhaocailing:switchbutton_bottom_width="@dimen/switch__bottom_width"
+                        zhaocailing:switchbutton_mask_height="@dimen/switch__mask_height"
+                        zhaocailing:switchbutton_mask_width="@dimen/switch__mask_width" android:checked="false"/>
+                    
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/one_px"
+                        android:layout_alignLeft="@+id/setting_push_tv"
+                        android:layout_below="@+id/setting_push_tv"
+                        android:layout_marginTop="20dp"
+                        android:background="#e5e5e5" />
+
+                </RelativeLayout>
+                
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp" >
+
+                    <ImageView
+                        android:id="@+id/setting_day_model_iv"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_setting_night" />
+
+                    <TextView
+                        android:id="@+id/setting_day_model_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/setting_day_model_iv"
+                        android:text="夜间模式"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                        
+                    <com.cplatform.xhxw.ui.ui.base.view.SwitchButton
+                        xmlns:zhaocailing="http://schemas.android.com/apk/res/com.cplatform.xhxw.ui"
+                        android:id="@+id/sw_day_model_setting"
+                        android:layout_width="@dimen/switch_button_width"
+                        android:layout_height="@dimen/switch__mask_height"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        zhaocailing:switchbutton_bottom_height="@dimen/switch__bottom_height"
+                        zhaocailing:switchbutton_bottom_width="@dimen/switch__bottom_width"
+                        zhaocailing:switchbutton_mask_height="@dimen/switch__mask_height"
+                        zhaocailing:switchbutton_mask_width="@dimen/switch__mask_width" android:checked="false"/>
+                    
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/one_px"
+                        android:layout_alignLeft="@+id/setting_day_model_tv"
+                        android:layout_below="@+id/setting_day_model_tv"
+                        android:layout_marginTop="20dp"
+                        android:background="#e5e5e5" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ly_news_det_text_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp">
+                    
+                    <ImageView
+                        android:id="@+id/setting_text_size_iv"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_setting_front" />
+                    
+                    <TextView
+                        android:id="@+id/setting_text_size_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/setting_text_size_iv"
+                        android:text="字体大小"
+                        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                    <TextView
+                        android:id="@+id/tv_text_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:text="小"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/setting_red" />
+                    
+                    <View
+	                    android:layout_width="match_parent"
+	                    android:layout_height="@dimen/one_px"
+	                    android:layout_below="@+id/setting_text_size_tv"
+	                    android:layout_alignLeft="@+id/setting_text_size_tv"
+	                    android:layout_marginTop="20dp"
+	                    android:background="#e5e5e5" />
+
+                </RelativeLayout>
+                
+                <RelativeLayout
+                    android:id="@+id/setting_clear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp" >
+
+                    <ImageView
+                        android:id="@+id/setting_clear_cache_iv"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_setting_clean" />
+                    
+                    <TextView
+                        android:id="@+id/setting_clear_cache_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/setting_clear_cache_iv"
+                        android:text="清除缓存"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                    
+                    <ProgressBar
+                        android:id="@+id/clear_progress"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone" />
+                    
+                    <TextView
+                        android:id="@+id/clear_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/setting_red" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/ic_setting_item_bg"
+                android:orientation="vertical" >
+                
+
+                <RelativeLayout
+                    android:id="@+id/setting_change_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp" >
+                    
+                    <ImageView
+                        android:id="@+id/setting_feedback_iv"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_setting_feedback" />
+                    
+                    <TextView
+                        android:id="@+id/setting_feedback_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/setting_feedback_iv"
+                        android:text="修改密码"
+                        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                    <ImageView
+                        android:id="@+id/iv_arr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:paddingRight="20dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/arrow_right_gray" />
+                    
+                    <View
+	                    android:layout_width="match_parent"
+	                    android:layout_height="@dimen/one_px"
+	                    android:layout_below="@+id/setting_feedback_tv"
+	                    android:layout_alignLeft="@+id/setting_feedback_tv"
+	                    android:layout_marginTop="20dp"
+	                    android:background="#e5e5e5" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/setting_about"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp" >
+                    
+                    <ImageView
+                        android:id="@+id/setting_about_iv"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_setting_about" />
+                    
+                    <TextView
+                        android:id="@+id/setting_about_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/setting_about_iv"
+                        android:text="关于"
+                        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                    <ImageView
+                        android:id="@+id/iv_arr2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/arrow_right_gray" />
+                    
+                    <View
+	                    android:layout_width="match_parent"
+	                    android:layout_height="@dimen/one_px"
+	                    android:layout_below="@+id/setting_about_tv"
+	                    android:layout_alignLeft="@+id/setting_about_tv"
+	                    android:layout_marginTop="20dp"
+	                    android:background="#e5e5e5" />
+                </RelativeLayout>
+
+				<RelativeLayout
+                    android:id="@+id/setting_share_app"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp" >
+                    
+                    <ImageView
+                        android:id="@+id/setting_share_app_iv"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_setting_reconmmend" />
+                    
+                    <TextView
+                        android:id="@+id/setting_share_app_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/setting_share_app_iv"
+                        android:text="推荐给好友"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <ImageView
+                        android:id="@+id/iv_arr3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:paddingRight="20dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/arrow_right_gray" />
+                    
+                    <View
+	                    android:layout_width="match_parent"
+	                    android:layout_height="@dimen/one_px"
+	                    android:layout_below="@+id/setting_share_app_tv"
+	                    android:layout_alignLeft="@+id/setting_share_app_tv"
+	                    android:layout_marginTop="20dp"
+	                    android:background="#e5e5e5" />
+                </RelativeLayout>
+                
+                
+            </LinearLayout>
+             <Button
+        android:id="@+id/btn_logout"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/btn_red_login"
+        android:text="@string/logout"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+        </LinearLayout>
+       
+    </ScrollView>
+    
+    
+</RelativeLayout><!-- From: file:/Users/rangey/MyRepository/News_xinhua/news_svn/src/main/res/layout/activity_settings.xml -->

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <com.cplatform.xhxw.ui.ui.picShow.PhotoView android:id="@+id/iv_img" android:layout_width="match_parent"
+                                     android:layout_height="match_parent"/>
+
+    <com.cplatform.xhxw.ui.ui.base.widget.DefaultView
+            android:id="@+id/def_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+</LinearLayout><!-- From: file:/Users/rangey/MyRepository/News_xinhua/news_svn/src/main/res/layout/view_pic_item.xml -->

@@ -1,0 +1,7 @@
+include ':photoView'
+include ':swipeBackLayout'
+include ':viewPagerIndicator'
+include ':baidu_locate_library'
+include ':image_crop_library'
+include ':social_sdk_library_project'
+include ':news_svn'

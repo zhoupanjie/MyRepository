@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_channel_manage_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/channel_manager_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_page_indicator_height"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/tv_flag_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/edit_channel_manage"
+            android:textColor="#484848"
+            android:textSize="@dimen/logintitle" />
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="@dimen/tab_page_indicator_height"
+            android:layout_height="@dimen/tab_page_indicator_height"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/icon_back_new" />
+
+        <View
+            android:layout_width="@dimen/one_px"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/iv_close"
+            android:background="@color/light_gray" />
+    </RelativeLayout>
+
+    <ScrollView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ly_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/vcm_search_lo"
+        android:layout_below="@+id/channel_manager_title"
+        android:layout_marginBottom="-2dp"
+        android:background="#f2f2f2" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/one_px"
+                android:background="@color/light_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f5f5f5"
+                android:orientation="vertical" >
+
+                <ca.laplanete.mobile.pageddragdropgrid.PagedDragDropGrid
+                    android:id="@+id/gl_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:background="#ffffff"
+                    android:scrollbars="none" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text="@string/long_click_hint"
+                    android:textColor="#4A708B"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="10dp"
+                    android:text="@string/edit_channel_more"
+                    android:textColor="#a0a0a0"
+                    android:textSize="@dimen/logintitle" />
+
+                <RelativeLayout
+                    android:id="@+id/vcm_search_lo"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/gray" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="1dp"
+                        android:layout_toLeftOf="@+id/channel_manager_search_btn"
+                        android:background="@color/input_area_bg"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        android:text="@string/search_to_add"
+                        android:textColor="@color/gray"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/channel_manager_search_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:background="@color/input_area_bg"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:text="@string/search_title"
+                        android:textColor="@color/setting_gray"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+
+                <android.support.v7.widget.GridLayout
+                    android:id="@+id/gl_other"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:alignmentMode="alignBounds"
+                    app:columnCount="@integer/channel_manage_column_count"
+                    app:columnOrderPreserved="false"
+                    app:useDefaultMargins="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout><!-- From: file:/Users/rangey/MyRepository/News_xinhua/news_svn/src/main/res/layout/view_channel_manage.xml -->

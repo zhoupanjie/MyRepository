@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp" >
+
+    <TextView
+        android:id="@+id/contribute_list_status_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:text="审核中"
+        android:textSize="@dimen/saas_setting_list_title_text_size"
+        android:textColor="@color/setting_gray" />
+
+    <TextView
+        android:id="@+id/contribute_list_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/contribute_list_status_tv"
+        android:text="Large Text"
+        android:textStyle="bold"
+        android:textColor="@color/setting_light_black"
+        android:singleLine="true"
+        android:textSize="@dimen/saas_setting_list_title_text_size" />
+
+    <TextView
+        android:id="@+id/contribute_list_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/contribute_list_title_tv"
+        android:layout_below="@+id/contribute_list_title_tv"
+        android:layout_marginTop="5dp"
+        android:text="Medium Text"
+        android:textSize="@dimen/saas_setting_list_desc_text_size"
+        android:textColor="@color/setting_gray" />
+
+</RelativeLayout>

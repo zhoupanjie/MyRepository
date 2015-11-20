@@ -1,0 +1,15 @@
+<totem.widget.InputViewSensitiveLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_content"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="bottom"
+    android:orientation="vertical" >
+
+    <com.ss.zcl.widget.MessageInputBar
+        android:id="@+id/message_input_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </com.ss.zcl.widget.MessageInputBar>
+
+</totem.widget.InputViewSensitiveLinearLayout>

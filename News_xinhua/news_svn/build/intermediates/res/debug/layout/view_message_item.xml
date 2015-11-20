@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:orientation="vertical"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+         android:background="@color/special_topic_index_color" android:id="@+id/ms_tag_layout" >
+    	<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="今天"
+              style="@style/base_list_item_style" android:gravity="center" android:id="@+id/ms_tag"  />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/base_list_item_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ms_img"
+            android:layout_width="@dimen/base_listitem_img_width"
+            android:layout_height="@dimen/base_listitem_img_height"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="6.0dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_test" />
+
+        <TextView
+            android:id="@+id/ms_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/ms_img"
+            android:gravity="top|left|center"
+            android:lineSpacingExtra="3.0dip"
+            android:singleLine="true"
+            android:text="@string/test_nickname"
+            android:textAppearance="@style/base_list_title_style" />
+
+        <TextView
+            android:id="@+id/ms_desc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ms_title"
+            android:layout_below="@+id/ms_title"
+            android:lineSpacingExtra="2.0dip"
+            android:maxLines="2"
+            android:text="@string/test_nickname"
+            android:textAppearance="@style/base_list_desc_style" />
+        
+        <TextView
+            android:id="@+id/ms_publish_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/ms_title"
+            android:layout_below="@+id/ms_desc"
+            android:layout_marginTop="-5dp"
+            android:singleLine="true"
+            android:textAppearance="@style/base_list_desc_style" />
+
+    </RelativeLayout>
+     
+
+</LinearLayout><!-- From: file:/Users/rangey/MyRepository/News_xinhua/news_svn/src/main/res/layout/view_message_item.xml -->

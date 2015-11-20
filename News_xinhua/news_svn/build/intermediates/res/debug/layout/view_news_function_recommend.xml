@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:orientation="vertical" >
+ <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#d9d9d9" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="5dp"
+         >
+         <!-- 
+        <TextView
+            android:id="@+id/tv_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_title"
+            android:layout_alignParentRight="true"
+            android:padding="2.0dip"
+            android:singleLine="true"
+            android:textAppearance="@style/base_list_tag_style"
+            android:visibility="gone"
+             />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/tv_tag"
+            android:gravity="top|left|center"
+            android:lineSpacingExtra="3.0dip"
+            android:singleLine="true"
+            android:textAppearance="@style/base_list_title_style"
+            android:visibility="gone" />
+ -->
+        <LinearLayout
+            android:id="@+id/ly_aimgs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:orientation="horizontal"
+            android:gravity="center"
+             >
+
+            <ImageView
+                android:id="@+id/iv_img1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:layout_weight="1.0"
+                android:minHeight="45dp"
+                android:scaleType="centerInside" />
+
+            <ImageView
+                android:id="@+id/iv_img2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1.0"
+                android:minHeight="45dp"
+                android:scaleType="centerInside" />
+
+            <ImageView
+                android:id="@+id/iv_img3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_weight="1.0"
+                android:minHeight="45dp"
+                android:scaleType="centerInside" />
+
+            <ImageView
+                android:id="@+id/iv_img4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_weight="1.0"
+                android:minHeight="45dp"
+                android:scaleType="centerInside" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#d9d9d9"
+         />
+
+
+</LinearLayout>
+<!-- From: file:/Users/rangey/MyRepository/News_xinhua/news_svn/src/main/res/layout/view_news_function_recommend.xml -->

@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="loading">正在加载...</string>
+    <string name="sending">正在上传...</string>
+    <string name="app_name_directory_name">xinhua_news</string>
+    <string name="app_name">新华炫闻</string>
+    <string name="data_format_error">数据异常</string>
+    <string name="load_server_failure">网络不给力</string>
+    <string name="app_exit_tip">再按一次退出</string>
+    <string name="sending_now">正在提交...</string>
+    <string name="please_wait">正在获取...</string>
+    <string name="ic_news_text">新闻</string>
+    <string name="ic_interview_text">访谈</string>
+    <string name="id_rumorrefuted_text">辟谣</string>
+    <string name="ic_piccs_text">图片</string>
+    <string name="ic_radio_text">播报</string>
+    <string name="alert">消息</string>
+    <string name="home">主页</string>
+    <string name="news">新闻</string>
+    <string name="xinhua_video">新华视频</string>
+    <string name="share_news_click_url" formatted="false">%1$s/show/index?newsid=%2$s</string>
+    <string name="play_error">播放遇到问题了</string>
+    <string name="comment_count_string_format">评论(%s)</string>
+    <string name="long_click_hint">长按显示栏目后拖动排序</string>
+    <string name="done">完成</string>
+    <string name="select">选择</string>
+
+    <!-- 登陆界面 -->
+    <string name="login_ok">立即登录</string>
+    <string name="login_register">立即注册</string>
+    <string name="login_forgot_password">忘记密码？</string>
+    <string name="login_title">登录新华炫闻</string>
+    <string name="login_account_hint">账号/手机号/邮箱</string>
+    <string name="login_account_hint_demand">请输入账号</string>
+    <string name="login_password_hint">密码</string>
+    <string name="login_password_hint_demand">请输入密码</string>
+    <string name="login_other_mothed">其他登录方式</string>
+    <string name="guide_enter_home">立即体验</string>
+
+    <!-- 选择注册界面 -->
+    <string name="register_check_title">注册</string>
+    <string name="register_check_telephon">手机注册</string>
+    <string name="register_check_telephon_info">免费验证短信快速注册</string>
+    <string name="register_check_email">邮箱注册</string>
+    <string name="register_check_email_info">使用你的常用邮箱注册</string>
+
+    <!-- 手机注册界面 -->
+    <string name="register_telephon_title">手机注册</string>
+    <string name="register_telephon_account_hint">输入收到的验证码</string>
+    <string name="register_telephon_account_demand">请输入您要注册的手机号码</string>
+    <string name="register_telephone_format_error">请输入11位正确手机号码</string>
+    <string name="register_telephon_code_hint">请输入您的手机号</string>
+    <string name="register_telephon_get_code">验证码</string>
+    <string name="register_telephon_password_hint">输入您的密码</string>
+    <string name="register_telephon_password_demand">请输入密码</string>
+    <string name="register_telephon_password_lenth_demand">密码请输入6-16个字符</string>
+    <string name="register_telephon_now">立即注册</string>
+    <string name="register_agreement">我同意“服务条款”和“隐私协议”</string>
+    <string name="register_agreement_demand">请选择协议条款</string>
+    <string name="register_telephon_mind">验证后，将会有一条带有验证码的短信发送到您的手机，请注意查收</string>
+
+    <!-- 邮箱注册界面 -->
+    <string name="register_email_title">邮箱注册</string>
+    <string name="register_email_account_hint">请输入邮箱地址</string>
+    <string name="register_email_account_demand">请输入您要注册的邮箱地址</string>
+    <string name="register_email_format_error">邮箱格式错误</string>
+    <string name="register_email_password_hint">密码：6-16个字符</string>
+    <string name="register_email_password_demand">请输入密码</string>
+    <string name="register_email_password_lenth_demand">密码请输入6-16个字符</string>
+    <string name="register_email_now">立即注册</string>
+    <string name="register_email_ok">注册成功</string>
+    <string name="register_email_fail">注册失败</string>
+    <string name="register_email_ok__to">注册成功,请去邮箱激活账号</string>
+
+    <!-- 找回密码 -->
+    <string name="find_password_title">找回密码</string>
+    <string name="find_password_email">邮箱找回密码</string>
+    <string name="find_password_email_detail">使用你的邮箱快速找回</string>
+    <string name="find_password_telephon">手机找回密码</string>
+    <string name="find_password_telephon_detail">免费验证短信快速找回</string>
+    <string name="find_password_telephon_now">您正在找回密码</string>
+    <string name="find_password_telephon_account_hint">请输入注册手机号</string>
+    <string name="find_email_format_error">邮箱格式错误</string>
+    <string name="find_password_email_account_hint">请输入注册邮箱</string>
+    <string name="find_password_telephon_password_hint">新密码：6到16个字符</string>
+    <string name="find_password_telephon_ok">一键找回</string>
+    <string name="find_password_telephon_newpwd">输入新密码</string>
+
+    <!-- 评论 -->
+    <string name="comment_title">评论</string>
+    <string name="comment_send_hint">发布</string>
+    <string name="mycomment_title">我的评论</string>
+    <string name="comment_content_demand">请输入评论内容</string>
+    <string name="comment_content_upping">正在上传...</string>
+    <string name="comment_content_my">我的评论</string>
+    <string name="comment_content_from">原文：%1$s</string>
+    <string name="comment_hot_lable">最热   共  %d 条评论</string>
+    <string name="comment_new_lable">最新   共  %d 条评论</string>
+    <string name="comment_no_net">无法加载评论，请检查网络后刷新重试。</string>
+
+    <!-- 搜索 -->
+    <string name="search_title">搜索</string>
+    <string name="search_key_hint">输入关键词</string>
+    <string name="search_key_demand">请输入关键词</string>
+    <string name="search_to_add">搜索添加</string>
+
+    <!-- 邀请 -->
+    <string name="invite_content">青春派，炫精彩！我下载了新版新华炫闻客户端，新闻能看又能听！简直炫爆了！让我们一起炫起来吧。</string>
+    <string name="invite_content_cick_url">http://xw.feedss.com/show/down</string>
+    <string name="user_info_parse_error">用户信息解析失败</string>
+    <string name="not_login">未登录</string>
+    <string name="night_model">夜间模式</string>
+    <string name="day_model">日间模式</string>
+    <string name="night_model_en">Night</string>
+    <string name="day_model_en">Day</string>
+    <string name="source">来源</string>
+    <string name="settings">设置</string>
+    <string name="save">保存</string>
+    <string name="not_change_userinfo">未修改内容</string>
+    <string name="name_lenther">昵称过长</string>
+    <string name="name_lenth_remand">昵称：1-14字符</string>
+    <string name="nickname_can_not_be_empty">用户昵称不能为空</string>
+    <string name="modify_user_info">个人资料设置</string>
+    <string name="logout">退出登录</string>
+    <string name="please_loging">请登录</string>
+
+    <!-- 角标 -->
+    <string name="flag_today_news">要闻消息</string>
+    <string name="flag_my_news">我的消息</string>
+    <string name="flag_my_collection">我的收藏</string>
+    <string name="flag_my_comments">我的评论</string>
+    <string name="flag_feedback">意见反馈</string>
+    <string name="flag_mutilanguage">多语种</string>
+    <string name="flag_setting">设置</string>
+    <string name="flag_text_size">文字模式</string>
+    <string name="flag_search_fun">新闻搜索</string>
+    <string name="flag_download">下载中心</string>
+    <string name="flag_download_off_line">离线下载</string>
+    <string name="flag_english_news">英文版</string>
+
+    <!-- 个人中心界面 -->
+    <string name="personal_today_news">要闻消息</string>
+    <string name="personal_my_news">我的消息</string>
+    <string name="personal_my_collection">我的收藏</string>
+    <string name="personal_my_comments">我的评论</string>
+    <string name="personal_feedback">意见反馈</string>
+    <string name="personal_mutilanguage">多语种</string>
+    <string name="personal_setting">设置</string>
+    <string name="personal_text_size">文字模式</string>
+    <string name="personal_search_fun">新闻搜索</string>
+    <string name="personal_download">下载中心</string>
+    <string name="personal_english_news">英文版</string>
+    <string name="personal_login">登录</string>
+    <string name="personal_register">注册</string>
+
+    <!-- 评论和回复 -->
+    <string name="edit_hint">说两句...</string>
+    <string name="popu_fail">取消</string>
+    <string name="popu_reply">回复</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+    <string name="super_big_text_size">特大号字</string>
+    <string name="big_text_size">大号字</string>
+    <string name="middle_text_size">中号字</string>
+    <string name="small_text_size">小号字</string>
+    <string name="main_body_typeface">正文字体</string>
+    <string name="edit_channel_manage">栏目订阅</string>
+    <string name="edit_channel_more">更多栏目</string>
+    <string name="back">返回</string>
+    <string name="today">今天</string>
+    <string name="yesterday">昨天</string>
+    <string name="history">历史</string>
+    <string name="comment_copy_done">已复制到粘贴板</string>
+
+    <!-- 意见反馈 -->
+    <string name="publish_feed">提交</string>
+    <string name="publish_feed_title">意见反馈</string>
+    <string name="publish_feed_content">请输入意见内容</string>
+
+    <!-- 关于 -->
+    <string name="about_title">关于</string>
+    <string name="about_now_versions">当前版本v%1$s</string>
+    <string name="about_new_versions">最新版本%1$s</string>
+    <string name="about_update">版本注册</string>
+    <string name="delete">删除</string>
+    <string name="related_news">相关新闻</string>
+    <string name="hot_comments">热门评论</string>
+
+    <!-- 设置 -->
+    <string name="setting_now_versions">当前版本v%1$s</string>
+    <string name="alert_setting_saved">更改已保存</string>
+    <string name="caculating">计算中...</string>
+
+    <!-- 版本更新 -->
+    <string name="find_new_version">发现新版本</string>
+    <string name="version_update_string">版本更新</string>
+    <string name="update">更新</string>
+    <string name="networking_tips">网络提示</string>
+    <string name="phone_network_to_download_tips">当前为2G/3G网络,是否进行下载?</string>
+    <string name="download">下载</string>
+    <string name="network_settings_tips">网络连接不可用,是否进行设置?</string>
+    <string name="network_invalid">请检查网络设置</string>
+    <string name="clear_history">清除历史记录</string>
+    <string name="clear_history_verify">确认要清除历史搜索信息？</string>
+    <string name="clear_history_close">关闭</string>
+    <string name="start_download">开始下载</string>
+    <string name="download_the_task_already_exists">下载任务已存在!</string>
+    <string name="downloading">正在下载</string>
+    <string name="download_done">下载完成</string>
+    <string name="click_to_view">点击查看</string>
+    <string name="share_news">分享新闻</string>
+    <string name="news_id_is_empty">新闻id为空！</string>
+    <string name="rank_activity_sdcard">sd卡不可用,请检查</string>
+    <string name="no_search_results">抱歉，没有找到相关结果</string>
+    <string name="terms_of_service">服务条款</string>
+    <string name="privacy_policy">隐私协议</string>
+    <string name="photograph">拍照</string>
+    <string name="choose_from_a_local_album">从本地相册中选择</string>
+    <string name="share">分享</string>
+    <string name="do_you_want_to_delete">是否删除?</string>
+    <string name="hint">提示</string>
+    <string name="logout_hint">是否退出？</string>
+    <string name="view_details">查看详情</string>
+    <string name="news_push">要闻推送</string>
+    <string name="no_app_found">请下载并安装相关的应用</string>
+
+    <!-- home主界面 -->
+    <string name="home_bar_news">新闻</string>
+    <string name="home_bar_broadcase">广播</string>
+    <string name="home_bar_video">视频</string>
+    <string name="home_bar_personal">个人</string>
+
+    <!-- apps center -->
+    <string name="app_center_name">应用中心</string>
+    <string name="app_center_open">打开</string>
+    <string name="app_center_download">下载</string>
+
+    <!-- personal center -->
+    <string name="personal_center_name">个人中心</string>
+    <string name="collect_select_name">新闻收藏</string>
+    <string name="comment_select_name">新闻评论</string>
+    <string name="personal_nickname">小牛</string>
+    <string name="image_desc">箭头</string>
+    <string name="collect_desc">新闻收藏</string>
+    <string name="comment_desc">新闻评论</string>
+
+    <!-- push message -->
+    <string name="message_title">消息推送</string>
+    <string name="message_xuanwen">炫闻消息</string>
+    <string name="message_enterprise">企业消息</string>
+
+    <!-- collect news -->
+    <string name="collect_not_available">无权限查看其它用户的收藏！</string>
+
+    <!-- 通讯录 -->
+    <string name="contact">通讯录</string>
+    <string name="add_friends">添加好友</string>
+    <string name="search_result">搜索结果</string>
+    <string name="friend_verify">好友验证</string>
+    <string name="update_friends_remark">更多</string>
+    <string name="friends_info">详细资料</string>
+    <string name="new_friends">新的好友</string>
+    <string name="search">搜索</string>
+    <string name="new_friend">新的朋友</string>
+    <string name="send_verify">发送</string>
+    <string name="company_circle">公司圈</string>
+    <string name="company_circle_message">消息</string>
+    <string name="company_circle_camera">拍照</string>
+    <string name="company_circle_phone">从手机相册获取</string>
+
+    <!-- 个人投稿 -->
+    <string name="contribute_title">投稿</string>
+    <string name="commit_contri">提交</string>
+    <string name="cancel_alert">是否放弃编辑内容并离开？</string>
+    <string name="commit_dialog_title">提交投稿</string>
+    <string name="commit_dialog_msg">正在提交，请稍候...</string>
+    <string name="contribute_commite_verify">是否提交编辑内容？</string>
+    <string name="contribute_commit_success">投稿成功</string>
+    <string name="contribute_commit_fail">提交失败，请检查网络后重试</string>
+    <string name="contribute_content_empty_alert">标题和文字描述不能为空，请填写！</string>
+    <string name="contribue_out_of_length">内容超过限定长度！</string>
+    <string name="contribute_choose_channel">选择投稿栏目</string>
+    <string name="manager">管理</string>
+
+    <!-- saas settings -->
+    <string name="saas_setting_fresh_events">新鲜事</string>
+    <string name="saas_setting_my_record">我的记录</string>
+    <string name="saas_setting_my_collection">我的收藏</string>
+    <string name="saas_setting_app_center">应用中心</string>
+    <string name="saas_setting_msg_center">消息中心</string>
+    <string name="saas_setting_search">搜索新闻</string>
+    <string name="saas_setting_sys_settings">系统设置</string>
+    <string name="recommend_friends">推荐好友</string>
+
+    <!-- 圈阅新闻 -->
+    <string name="sign_news_verify">是否圈阅此资讯？圈阅后其他用户将无法再次圈阅。</string>
+    <string name="unsign_news_verify">是否撤销您的圈阅？</string>
+    <string name="sign_news_success">提交成功</string>
+    <string name="sign_news_fail">提交失败，请检查网络后重试</string>
+    <string name="clean_chat_tip">清空聊天记录？</string>
+    <string name="clean">清空</string>
+    <string name="clean_chat_success">清空聊天记录成功！</string>
+    <string name="disable_comments">禁止评论</string>
+    <string name="disable_parisa">此新鲜事禁止赞</string>
+
+    <!-- 修改密码 -->
+    <string name="change_pw_title">找回密码</string>
+    <string name="change_pw_old_pw">旧密码</string>
+    <string name="change_pw_new_pw">新的密码（6-16个字符）</string>
+    <string name="change_pw_new_pw_verify">重复输入</string>
+    <string name="change_pw_empty_content">各项内容不能为空，请填写完成后重试</string>
+    <string name="change_pw_invalid_length">新密码长度需控制在6-16字符，请检查修改后重试</string>
+    <string name="change_pw_commit">提交</string>
+    <string name="change_pw_new_pw_verify_error">两次输入的新密码不一致，请检查后重试</string>
+    <string name="change_pw_success">密码修改成功</string>
+    <string name="change_pw_fail">密码修改失败</string>
+    <string name="change_pw_commmit_verify">是否确认提交？</string>
+    <string name="like_success">赞成功</string>
+    <string name="cancel_like_success">取消赞成功</string>
+    <string name="like">赞</string>
+
+    <!-- 新闻征集 -->
+    <string name="news_collect_text">文字</string>
+    <string name="news_collect_photos">照片</string>
+    <string name="news_collect_take_vidios">拍摄视频</string>
+    <string name="news_collect_local_vidios">本地视频</string>
+    <string name="news_collect_not_login_alert">此功能需要您登录后使用，是否立即登录？</string>
+    <string name="news_collect_video_upload_alert" formatted="false">文件：\n%s\n大小：%s\n是否确定上传？\n（建议在wifi环境下进行上传）</string>
+    <string name="news_collect_video_read_false">读取视频文件错误</string>
+    <string name="uploading">上传中，请稍候...</string>
+    <string name="submit_fail">提交失败！</string>
+    <string name="news_collect_no_photo">请选择照片</string>
+    <string name="news_collect_content_hint">请输入您的问题</string>
+    <string name="video_size_too_large">您选择的文件超过15MB，暂不支持，请重新选择。</string>
+
+    <!-- 视频录制 -->
+    <string name="video_record_start">开始</string>
+    <string name="video_record_stop">停止</string>
+    <string name="video_record_resolution">视频分辨率：</string>
+    <string name="video_record_preview">预览</string>
+    <string name="is_del_comment">是否删除评论?</string>
+
+    <!-- 频道定制 -->
+    <string name="channel_sub_verify">是否确定订阅该栏目？</string>
+    <string name="channel_sub_cancel_verify">是否取消该栏目订阅？</string>
+    <string name="channel_sub_success">操作成功</string>
+    <string name="channel_sub_fail">操作失败，请检查网络后重试。</string>
+    <string name="channel_sub_search_hint">%s搜索结果：</string>
+
+    <!-- 图片预览 -->
+    <string name="select_picture_reached_the_limit">图片达到上限了</string>
+
+    <!-- 抽奖活动 -->
+    <string name="draw_prize_get">恭喜您获得一次抽奖机会</string>
+    <string name="draw_prize_play">参与抽奖</string>
+    <string name="draw_prize_cancel">不感兴趣</string>
+    <string name="draw_prize_hint">注：用户每天只要打开客户端进行三次分享，就可获得三次抽奖资格。</string>
+    <!-- 流量红包 -->
+    <string name="red_envelopes_register">流量红包快捷注册</string>
+    <string name="red_envelopes_register_disable">您输入的手机号并未获得流量红包,无法使用流量快捷注册</string>
+    <string name="red_envelopes_register_already">手机号已注册,请返回进行登录</string>
+    <string name="red_envelopes_register_success">注册成功!在个人中心下的流量兑换中可进行查询兑换</string>
+    <string name="bind_phone_please">请先绑定手机号</string>
+    <string name="bind_phone_go">去绑定</string>
+    <string name="bind_phone_number">绑定手机号</string>
+    <string name="bind_phone_number_title">绑定手机号码</string>
+    <string name="bind_phone_number_input_please">请输入您要绑定的手机号</string>
+    <string name="bind_phone_number_success">绑定手机号成功!</string>
+    <!-- 游戏频道 -->
+    <string name="game_down">下载</string>
+    <string name="game_down_pause">暂停</string>
+    <string name="game_down_continue">继续</string>
+    <string name="game_down_install">安装</string>
+    <string name="game_install_open">打开</string>
+    <string name="game_down_wait">等待</string>
+    <string name="game_text_down_failure">下载失败</string>
+    <string name="game_text_install_failure">下载失败</string>
+    <string name="downlist_model">下载中心</string>
+    <string name="game_text_unknown">未知</string>
+
+    <!-- 下拉刷新，上拉加载更多 -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+	<!-- 广播 -->
+	<string name="text_play_tips">播放提示</string>
+	<string name="text_no_network">无网络连接，请检查您的网络设置!</string>
+	<string name="text_no_radiolist">当前广播列表为空</string>
+</resources>

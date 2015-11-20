@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal" >
+
+            <com.cplatform.xhxw.ui.ui.base.widget.CircleImageView
+                android:id="@+id/search_result_image"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="centerCrop"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/search_result_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="" 
+                android:textSize="14dp"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/search_result_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已添加"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/search_result_add"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:focusable="false"
+                android:background="@drawable/new_friends_btn_bg"
+                android:drawableLeft="@drawable/new_friends_add"
+                android:drawablePadding="1dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textSize="12dp"
+                android:text="添加好友" 
+                android:textColor="#16AD6B"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

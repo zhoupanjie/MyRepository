@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <corners android:radius="10dp"/>
+    
+    <solid android:color="#00A644"/>  
+    
+
+</shape>
+<!-- From: file:/Users/rangey/MyRepository/News_xinhua/news_svn/src/main/res/drawable/search_btn_bg_press.xml -->

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/action_bar_height"
+            android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/nv_title"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:background="@color/red_xuanwen"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_back"
+                style="@style/back_red_style"
+                android:drawableLeft="@drawable/arrow_left_white" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/mycomment_title"
+                android:textColor="@color/white"
+                android:textSize="@dimen/logintitle" />
+            
+            <Button
+                    android:id="@+id/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/action_bar_height"
+                    android:layout_alignParentRight="true"
+                    android:visibility="gone"
+                    android:text="测试"/>
+        </RelativeLayout>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/one_px"
+                android:background="@color/flag_content_dividing_line"/>
+    </LinearLayout>
+    
+    <FrameLayout
+        android:id="@+id/fg_my_comment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout" />
+
+</RelativeLayout>
+<!-- From: file:/Users/rangey/MyRepository/News_xinhua/news_svn/src/main/res/layout/activity_my_comment.xml -->

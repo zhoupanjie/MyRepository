@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/rangey/MyRepository/News_xinhua/news_svn/src/main/res/values-sw600dp/dimens.xml -->
+    <eat-comment/>
+    <integer name="app_push_device_type">3</integer>
+</resources>

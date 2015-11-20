@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/base_listitem_padding_left_right"
+    android:paddingRight="@dimen/base_listitem_padding_left_right"
+    android:paddingTop="@dimen/base_listitem_padding_top_bottom" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/pic_video_item_bg" >
+
+        <ImageView
+            android:id="@+id/iv_single_img"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/def_img_16_9" />
+
+        <TextView
+            android:id="@+id/tv_img_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/iv_single_img"
+            android:layout_centerVertical="true"
+            android:background="@color/white_translucent"
+            android:gravity="center_horizontal"
+            android:padding="10.0dip"
+            android:singleLine="true"
+            android:textSize="16.0sp" />
+    </RelativeLayout>
+    <!--
+             <com.cplatform.xhxw.ui.ui.base.widget.RotateTextView
+                android:id="@+id/tv_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/read_tag"
+                android:layout_alignParentTop="true"
+                android:text="37"
+                android:textSize="14dp"
+                android:textColor="@color/white"
+                android:layout_alignParentRight="true"/>
+    -->
+
+</RelativeLayout>

@@ -1,0 +1,4 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/radio_setting_radio_select" android:state_checked="true"></item>
+    <item android:drawable="@drawable/radio_setting_radio_default" android:state_checked="false"></item>
+</selector><!-- From: file:/Users/rangey/MyRepository/News_xinhua/news_svn/src/main/res/drawable/radiobroadcast_setting_radio.xml -->

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_background_gray"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/base_listitem_padding_top_bottom"
+    android:paddingTop="@dimen/base_listitem_padding_top_bottom" >
+
+    <TextView
+        android:id="@+id/tv_header"
+        style="@style/base_list_item_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:text="图集" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/base_listitem_padding_top_bottom"
+        android:paddingLeft="@dimen/base_listitem_padding_left_right"
+        android:paddingRight="@dimen/base_listitem_padding_left_right"
+        android:paddingTop="@dimen/base_listitem_padding_top_bottom" >
+
+        <ImageView
+	        android:id="@+id/iv_img"
+	        android:layout_width="@dimen/base_listitem_img_width"
+	        android:layout_height="@dimen/base_listitem_img_height"
+	        android:scaleType="fitXY"
+	        android:src="@drawable/def_img_4_3" />
+        
+        <RelativeLayout 
+            android:layout_width="0dp"
+            android:layout_height="@dimen/base_listitem_img_height"
+            android:layout_weight="1"
+            android:layout_marginLeft="4dp">
+            <TextView
+		        android:id="@+id/tv_title"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentTop="true"
+		        android:layout_marginTop="3dp"
+		        android:gravity="top|left"
+		        android:lineSpacingExtra="3.0dip"
+		        android:ellipsize="end"
+		        android:maxLines="2"
+		        android:textAppearance="@style/base_list_title_style" />
+        
+            <RelativeLayout 
+                android:id="@+id/news_item_options_lo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+                
+                <ImageView
+	                android:id="@+id/iv_action"
+	                android:layout_alignParentRight="true"
+	                android:src="@drawable/tags_audio"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="2dp"
+	                android:layout_marginRight="5dp"/>
+                
+                <TextView 
+                    android:id="@+id/news_item_source_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_action"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/list_gray_text"
+                    android:textSize="@dimen/list_text_size_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="新华网"/>
+                
+                <LinearLayout 
+                    android:id="@+id/news_item_comment_lo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/news_item_source_tv"
+                    android:layout_toRightOf="@+id/news_item_source_tv"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="10dp"
+                        android:src="@drawable/ic_list_comment"/>
+                    
+                    <TextView
+		                android:id="@+id/tv_comment"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:textColor="@color/list_gray_text"
+	                    android:textSize="@dimen/list_text_size_content"
+		                android:text="评论(188)"
+		                />
+                </LinearLayout>
+                
+                <TextView 
+                    android:id="@+id/news_list_date_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/news_item_source_tv"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/news_item_comment_lo"
+	                android:textColor="@color/list_gray_text"
+                    android:textSize="@dimen/list_text_size_content"
+                    android:text="8-20 15:48"
+                    android:singleLine="true"
+                    android:gravity="right"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

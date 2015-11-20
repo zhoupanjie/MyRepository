@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <RelativeLayout android:id="@+id/msg_activity_title" android:layout_width="match_parent"
+                    android:layout_height="@dimen/action_bar_height"
+                    android:orientation="horizontal"
+                    android:background="@color/red_xuanwen">
+        <Button
+                android:id="@+id/comment_reply_back_ben"
+                style="@style/back_red_style"
+                android:drawableLeft="@drawable/arrow_left_white"/>
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:text="我的消息"
+                android:textSize="@dimen/logintitle"/>
+        </LinearLayout>
+    </RelativeLayout>
+    
+	<com.cplatform.xhxw.ui.ui.base.view.EnterpriseChannelBar
+        android:id="@+id/my_msg_menu_bar"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="10dp"
+        android:gravity="center" 
+        android:layout_below="@+id/msg_activity_title"/>
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/my_msg_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/my_msg_menu_bar" />
+
+    <RelativeLayout 
+        android:id="@+id/my_msg_show_detail_lo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:background="@drawable/ic_setting_item_bg"
+        android:visibility="invisible">
+        <com.cplatform.xhxw.ui.ui.base.widget.PullRefreshListView
+	        android:id="@+id/my_msg_show_detail_list"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:divider="@null"
+	        android:background="@drawable/ic_setting_item_bg"
+	        android:layout_above="@+id/my_msg_collapse_detail" />
+	    <ImageView 
+	        android:id="@+id/my_msg_collapse_detail"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/arrow_up"
+	        android:layout_alignParentBottom="true"
+	        android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>
+<!-- From: file:/Users/rangey/MyRepository/News_xinhua/news_svn/src/main/res/layout/activity_my_msg.xml -->

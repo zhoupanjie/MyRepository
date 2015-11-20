@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:background="@color/white">
+    <com.cplatform.xhxw.ui.ui.base.widget.PullRefreshListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    <com.cplatform.xhxw.ui.ui.base.widget.DefaultView
+            android:id="@+id/ly_defult"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    <TextView android:layout_width="match_parent" android:layout_marginTop="10dp" android:layout_marginLeft="100dp"
+              android:layout_marginRight="100dp" android:layout_height="wrap_content"
+              android:background="@drawable/bg_new_msg" android:textColor="@color/white"
+              android:padding="10dp" android:layout_centerHorizontal="true"
+              android:paddingLeft="20dp" android:paddingRight="20dp"
+              android:textSize="12dp"
+              android:visibility="gone"
+              android:id="@+id/tv_new" android:text="3条未读消息" android:gravity="center"/>
+</RelativeLayout><!-- From: file:/Users/rangey/MyRepository/News_xinhua/news_svn/src/main/res/layout/activity_company_circle.xml -->

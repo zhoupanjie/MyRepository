@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/list_bg_p">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="5dp"
+                    android:orientation="horizontal">
+        <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="35dp"
+                android:paddingRight="35dp"
+                android:singleLine="true"
+                android:imeOptions="actionSearch"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_contacts_search_bg"
+                android:gravity="left|center_vertical"
+                android:layout_marginLeft="10dp" android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp" android:layout_toLeftOf="@+id/tv_cancel"/>
+        <ImageView
+                android:id="@+id/iv_search_clear"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:visibility="gone"
+                android:src="@drawable/button_clear" android:layout_alignRight="@+id/et_search"
+                />
+        <ImageView android:layout_marginLeft="20dp" android:layout_width="20dp" android:layout_centerVertical="true"
+                   android:layout_height="20dp"
+                   android:src="@drawable/ic_contacts_search_icon"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="40dp"
+                  android:layout_centerVertical="true"
+                  android:id="@+id/tv_cancel"
+                  android:layout_alignParentRight="true"
+                  android:gravity="center_vertical"
+                  android:paddingLeft="10dp"
+                  android:textSize="14dp"
+                  android:textColor="#4277d9"
+                  android:paddingRight="10dp"
+                  android:text="取消"/>
+
+    </RelativeLayout>
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/one_px"
+            android:background="#DEDEDC"/>
+    <ListView android:id="@+id/list_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

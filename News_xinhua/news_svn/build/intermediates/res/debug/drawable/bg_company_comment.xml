@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@drawable/company_comment_focus" />
+    <item android:state_pressed="true" android:drawable="@drawable/company_comment_focus" />
+    <item android:state_focused="true" android:drawable="@drawable/company_comment_focus" />
+    <item android:drawable="@drawable/transparent"/>
+</selector> <!-- From: file:/Users/rangey/MyRepository/News_xinhua/news_svn/src/main/res/drawable/bg_company_comment.xml -->

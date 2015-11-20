@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/title_lo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height" >
+
+        <Button
+            android:id="@+id/select_tooken_photo_done_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/transparent"
+            android:text="@string/done"
+            android:textColor="@drawable/top_sure_btn"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/select_tooken_photo_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/select_tooken_photo_done_btn"
+            android:text="@string/select"
+            android:textColor="@drawable/top_sure_btn"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/select_tooken_photo_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_lo"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_detail_more_function" />
+
+</RelativeLayout>

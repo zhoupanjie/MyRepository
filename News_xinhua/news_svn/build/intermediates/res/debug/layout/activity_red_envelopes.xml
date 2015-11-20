@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout android:id="@+id/nv_title" android:layout_width="wrap_content"
+                    android:layout_height="@dimen/action_bar_height"
+                    android:orientation="horizontal">
+        <Button
+                android:id="@+id/btn_back"
+                style="@style/back_btn_gray_style"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/web_activity_share"
+            android:layout_toRightOf="@+id/btn_back"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textSize="@dimen/logintitle" />
+        
+        <ImageView 
+            android:id="@+id/web_activity_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/icon_detail_more_func_normal"/>
+    </RelativeLayout>
+    <View android:layout_below="@+id/nv_title" android:layout_width="match_parent" android:layout_height="@dimen/one_px"
+          android:background="@color/flag_content_dividing_line"/>
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/nv_title">
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        
+        <LinearLayout 
+            android:id="@+id/web_activity_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="gone">
+            <ImageView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/bg_empty_view"/>
+        </LinearLayout>
+        
+        <ProgressBar
+            android:id="@+id/web_activity_pb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/Users/rangey/MyRepository/News_xinhua/news_svn/src/main/res/layout/activity_red_envelopes.xml -->

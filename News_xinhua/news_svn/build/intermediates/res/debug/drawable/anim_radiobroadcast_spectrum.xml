@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false" >
+
+    <item
+        android:drawable="@drawable/img_spectrum_1"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/img_spectrum_2"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/img_spectrum_3"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/img_spectrum_4"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/img_spectrum_5"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/img_spectrum_6"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/img_spectrum_7"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/img_spectrum_8"
+        android:duration="100"/>
+
+</animation-list><!-- From: file:/Users/rangey/MyRepository/News_xinhua/news_svn/src/main/res/drawable/anim_radiobroadcast_spectrum.xml -->

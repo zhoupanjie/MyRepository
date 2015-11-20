@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F2F2F2" >
+
+    <LinearLayout
+        android:id="@+id/ly_nav"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/nv_title"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <ImageView
+                    android:id="@+id/btn_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/saas_titl_btn_cancel_bg"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="系统设置"
+                android:textSize="@dimen/logintitle" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/one_px"
+            android:background="@color/flag_content_dividing_line" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/setting_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/ic_setting_item_bg"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" >
+
+                    <ImageView
+                        android:id="@+id/setting_push_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_push" />
+
+                    <TextView
+                        android:id="@+id/setting_push_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/setting_push_iv"
+                        android:text="要闻推送"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/setting_gray" />
+                        
+                    <com.cplatform.xhxw.ui.ui.base.view.SwitchButton
+                        xmlns:zhaocailing="http://schemas.android.com/apk/res/com.cplatform.xhxw.ui"
+                        android:id="@+id/saas_setting_push_setting"
+                        android:layout_width="@dimen/switch_button_width"
+                        android:layout_height="@dimen/switch__mask_height"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:checked="false"
+                        zhaocailing:switchbutton_bottom_height="@dimen/switch__bottom_height"
+                        zhaocailing:switchbutton_bottom_width="@dimen/switch__bottom_width"
+                        zhaocailing:switchbutton_mask_height="@dimen/switch__mask_height"
+                        zhaocailing:switchbutton_mask_width="@dimen/switch__mask_width" />
+                    
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/one_px"
+                        android:layout_below="@+id/setting_push_tv"
+                        android:layout_marginTop="20dp"
+                        android:background="#e5e5e5" />
+
+                </RelativeLayout>
+                
+                <RelativeLayout
+                    android:id="@+id/saas_setting_ly_news_det_text_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" >
+                    
+                    <ImageView
+                        android:id="@+id/setting_text_size_iv"
+                        android:layout_width="@dimen/saas_personal_setting_icon_size"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_font" />
+                    
+                    <TextView
+                        android:id="@+id/setting_text_size_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/setting_text_size_iv"
+                        android:text="字体大小"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/setting_gray" />
+
+                    <TextView
+                        android:id="@+id/saas_setting_tv_text_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:text="小"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/setting_blue" />
+                    
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/one_px"
+                        android:layout_below="@+id/setting_text_size_tv"
+                        android:layout_marginTop="20dp"
+                        android:background="#e5e5e5" />
+
+                </RelativeLayout>
+                
+                <RelativeLayout
+                    android:id="@+id/saas_setting_clear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingBottom="10dp" >
+
+                    <ImageView
+                        android:id="@+id/setting_clear_cache_iv"
+                        android:layout_width="@dimen/saas_personal_setting_icon_size"
+                        android:layout_height="@dimen/saas_personal_setting_icon_size"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_clear" />
+                    
+                    <TextView
+                        android:id="@+id/saas_setting_clear_cache_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/setting_clear_cache_iv"
+                        android:text="清除缓存"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/setting_gray" />
+                    
+                    <ProgressBar
+                        android:id="@+id/saas_clear_progress"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone" />
+                    
+                    <TextView
+                        android:id="@+id/saas_clear_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/setting_blue" />
+
+                </RelativeLayout>
+            </LinearLayout>
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/ic_setting_item_bg"
+                android:paddingLeft="10dp" >
+
+                    <ImageView
+                        android:id="@+id/setting_day_model_iv"
+                        android:layout_width="@dimen/saas_personal_setting_icon_size"
+                        android:layout_height="@dimen/saas_personal_setting_icon_size"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_nightmode" />
+
+                    <TextView
+                        android:id="@+id/setting_day_model_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/setting_day_model_iv"
+                        android:text="夜间模式"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/setting_gray" />
+                        
+                    <com.cplatform.xhxw.ui.ui.base.view.SwitchButton
+                        xmlns:zhaocailing="http://schemas.android.com/apk/res/com.cplatform.xhxw.ui"
+                        android:id="@+id/saas_setting_day_model_setting"
+                        android:layout_width="@dimen/switch_button_width"
+                        android:layout_height="@dimen/switch__mask_height"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:checked="false"
+                        zhaocailing:switchbutton_bottom_height="@dimen/switch__bottom_height"
+                        zhaocailing:switchbutton_bottom_width="@dimen/switch__bottom_width"
+                        zhaocailing:switchbutton_mask_height="@dimen/switch__mask_height"
+                        zhaocailing:switchbutton_mask_width="@dimen/switch__mask_width" />
+
+                </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/ic_setting_item_bg"
+                android:orientation="vertical" >
+                    
+                <RelativeLayout
+                    android:id="@+id/saas_setting_change_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+                    
+                    <ImageView
+                        android:id="@+id/setting_change_pwd_iv"
+                        android:layout_width="@dimen/saas_personal_setting_icon_size"
+                        android:layout_height="@dimen/saas_personal_setting_icon_size"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_change_pwd" />
+                    
+                    <TextView
+                        android:id="@+id/setting_change_pwd_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/setting_change_pwd_iv"
+                        android:text="@string/change_pw_title"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/setting_gray" />
+
+                    <ImageView
+                        android:id="@+id/iv_arr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/arrow_right_blue" />
+                    
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/one_px"
+                        android:layout_below="@+id/setting_change_pwd_tv"
+                        android:layout_marginTop="20dp"
+                        android:background="#e5e5e5" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/saas_setting_feed_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+                    
+                    <ImageView
+                        android:id="@+id/setting_feedback_iv"
+                        android:layout_width="@dimen/saas_personal_setting_icon_size"
+                        android:layout_height="@dimen/saas_personal_setting_icon_size"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_feedback" />
+                    
+                    <TextView
+                        android:id="@+id/setting_feedback_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/setting_feedback_iv"
+                        android:text="意见反馈"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/setting_gray" />
+
+                    <ImageView
+                        android:id="@+id/iv_arr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/arrow_right_blue" />
+                    
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/one_px"
+                        android:layout_below="@+id/setting_feedback_tv"
+                        android:layout_marginTop="20dp"
+                        android:background="#e5e5e5" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/saas_setting_about"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" >
+                    
+                    <ImageView
+                        android:id="@+id/setting_about_iv"
+                        android:layout_width="@dimen/saas_personal_setting_icon_size"
+                        android:layout_height="@dimen/saas_personal_setting_icon_size"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_alert" />
+                    
+                    <TextView
+                        android:id="@+id/setting_about_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/setting_about_iv"
+                        android:text="关于"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/setting_gray" />
+
+                    <ImageView
+                        android:id="@+id/iv_arr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/arrow_right_blue" />
+                    
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/one_px"
+                        android:layout_below="@+id/setting_about_tv"
+                        android:layout_marginTop="20dp"
+                        android:background="#e5e5e5" />
+
+                </RelativeLayout>
+
+				<RelativeLayout
+				    android:id="@+id/saas_setting_share_app"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_marginLeft="10dp"
+				    android:layout_marginRight="10dp" >
+                    
+                    <ImageView
+                        android:id="@+id/setting_share_app_iv"
+                        android:layout_width="@dimen/saas_personal_setting_icon_size"
+                        android:layout_height="@dimen/saas_personal_setting_icon_size"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_to_friends" />
+                    
+                    <TextView
+                        android:id="@+id/setting_share_app_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/setting_share_app_iv"
+                        android:text="推荐给好友"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/setting_gray" />
+
+                    <ImageView
+                        android:id="@+id/iv_arr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/arrow_right_blue" />
+                    
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/one_px"
+                        android:layout_below="@+id/setting_share_app_tv"
+                        android:layout_marginTop="20dp"
+                        android:background="#e5e5e5" />
+
+                </RelativeLayout>
+                
+				<RelativeLayout
+				    android:id="@+id/saas_setting_update_app"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_marginLeft="10dp"
+				    android:layout_marginRight="10dp"
+				    android:paddingBottom="10dp" >
+                    
+                    <ImageView
+                        android:id="@+id/setting_version_update_iv"
+                        android:layout_width="@dimen/saas_personal_setting_icon_size"
+                        android:layout_height="@dimen/saas_personal_setting_icon_size"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_version_update" />
+                    
+                    <TextView
+                        android:id="@+id/setting_version_update_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/setting_version_update_iv"
+                        android:text="版本更新"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/setting_gray" />
+
+                    <ImageView
+                        android:id="@+id/saas_setting_new_version_alert_iv"
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_new" />
+                </RelativeLayout>
+                
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    
+    <Button
+        android:id="@+id/saas_setting_btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_logout"
+        android:text="@string/logout"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+</LinearLayout>

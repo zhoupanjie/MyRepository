@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+   	<item android:drawable="@drawable/icon_radiobroadcast_play_press" android:state_focused="true" android:state_pressed="true"/>
+    <item android:drawable="@drawable/icon_radiobroadcast_play_default" android:state_focused="true" android:state_pressed="false"/>
+    <item android:drawable="@drawable/icon_radiobroadcast_play_press" android:state_focused="false" android:state_pressed="true"/>
+    <item android:drawable="@drawable/icon_radiobroadcast_play_default"/>
+
+</selector><!-- From: file:/Users/rangey/MyRepository/News_xinhua/news_svn/src/main/res/drawable/radiobroadcast_play_bg.xml -->

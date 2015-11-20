@@ -1,0 +1,4 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/base_tabpager_indicator_selected" android:state_checked="true"></item>
+    <item android:drawable="@android:color/transparent" android:state_checked="false"></item>
+</selector><!-- From: file:/Users/rangey/MyRepository/News_xinhua/news_svn/src/main/res/drawable/tab_indicator_radiobroadcast.xml -->

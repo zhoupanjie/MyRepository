@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/contact_bg" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/contact_bg"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_setting_item_bg"
+                android:orientation="vertical" >
+
+                <!-- 新闻收藏 -->
+
+                <RelativeLayout
+                    android:id="@+id/btn_personal_alert"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp" >
+
+                    <ImageView
+                        android:id="@+id/collect_image"
+                        style="@style/saas_setting_icon_style"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:contentDescription="@string/collect_desc"
+                        android:src="@drawable/personal_message" />
+
+                    <TextView
+                        android:id="@+id/personal_today_news_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/collect_image"
+                        android:text="@string/personal_today_news"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <ImageView
+                        android:id="@+id/iv_msg_new"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/personal_today_news_tv"
+                        android:src="@drawable/icon_new" />
+                    
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/one_px"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="0dp"
+                    android:background="#e5e5e5" />
+
+                <!-- 新闻评论 -->
+
+                <RelativeLayout
+                    android:id="@+id/btn_personal_myinfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp" >
+
+                    <ImageView
+                        android:id="@+id/comment_image"
+                        style="@style/saas_setting_icon_style"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:contentDescription="@string/comment_desc"
+                        android:src="@drawable/personal_mymessage" />
+
+                    <TextView
+                        android:id="@+id/tv_personal_myinfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/comment_image"
+                        android:text="@string/personal_my_news"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <ImageView
+                        android:id="@+id/iv_msg_myinfo"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/tv_personal_myinfo"
+                        android:src="@drawable/icon_new"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_setting_item_bg"
+                android:orientation="vertical" >
+
+                <!-- 我的收藏 -->
+
+                <RelativeLayout
+                    android:id="@+id/btn_personal_collection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp" >
+
+                    <ImageView
+                        android:id="@+id/mycollect_image"
+                        style="@style/saas_setting_icon_style"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:contentDescription="@string/collect_desc"
+                        android:src="@drawable/personal_collection" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/mycollect_image"
+                        android:text="@string/personal_my_collection"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/one_px"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="0dp"
+                    android:background="#e5e5e5" />
+
+                <!-- 我的评论 -->
+
+                <RelativeLayout
+                    android:id="@+id/btn_personal_mycomments"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp" >
+
+                    <ImageView
+                        android:id="@+id/mycomment_image"
+                        style="@style/saas_setting_icon_style"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:contentDescription="@string/comment_desc"
+                        android:src="@drawable/personal_comments" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/mycomment_image"
+                        android:text="@string/personal_my_comments"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/saas_personal_setting_sys_msg_alert"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/ic_msg_new_bg"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="3"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/white"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_setting_item_bg"
+                android:orientation="vertical" >
+
+                <!-- 新闻搜索 -->
+
+                <RelativeLayout
+                    android:id="@+id/btn_personal_search_news"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp" >
+
+                    <ImageView
+                        android:id="@+id/personal_search_image"
+                        style="@style/saas_setting_icon_style"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:contentDescription="@string/collect_desc"
+                        android:src="@drawable/personal_search" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/personal_search_image"
+                        android:text="@string/personal_search_fun"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/one_px"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="0dp"
+                    android:background="#e5e5e5" />
+
+                <!-- 多语种 -->
+
+                <RelativeLayout
+                    android:id="@+id/btn_personal_mutilanguage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp" >
+
+                    <ImageView
+                        android:id="@+id/personal_mutilanguage_image"
+                        style="@style/saas_setting_icon_style"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:contentDescription="@string/comment_desc"
+                        android:src="@drawable/personal_mutilangue" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/personal_mutilanguage_image"
+                        android:text="@string/personal_mutilanguage"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_setting_item_bg"
+                android:orientation="vertical" >
+
+                <!-- 意见反馈 -->
+
+                <RelativeLayout
+                    android:id="@+id/btn_personal_feedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp" >
+
+                    <ImageView
+                        android:id="@+id/personal_feedback_image"
+                        style="@style/saas_setting_icon_style"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:contentDescription="@string/collect_desc"
+                        android:src="@drawable/personal_feedback" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/personal_feedback_image"
+                        android:text="@string/personal_feedback"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/one_px"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="0dp"
+                    android:background="#e5e5e5" />
+
+                <!-- 设置 -->
+
+                <RelativeLayout
+                    android:id="@+id/btn_personal_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp" >
+
+                    <ImageView
+                        android:id="@+id/personal_setting_image"
+                        style="@style/saas_setting_icon_style"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:contentDescription="@string/comment_desc"
+                        android:src="@drawable/personal_setting" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/personal_setting_image"
+                        android:text="@string/personal_setting"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_setting_item_bg"
+                android:orientation="vertical" >
+
+                <!-- 下载中心 -->
+
+                <RelativeLayout
+                    android:id="@+id/btn_personal_download"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp" >
+
+                    <ImageView
+                        android:id="@+id/personal_download_image"
+                        style="@style/saas_setting_icon_style"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:contentDescription="@string/collect_desc"
+                        android:src="@drawable/personal_download" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/personal_download_image"
+                        android:text="@string/personal_download"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/one_px"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:background="#e5e5e5" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout><!-- From: file:/Users/rangey/MyRepository/News_xinhua/news_svn/src/main/res/layout/fragment_personal_options.xml -->

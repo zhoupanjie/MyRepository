@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/base_listitem_padding_top_bottom"
+    android:paddingBottom="@dimen/base_listitem_padding_top_bottom"
+    android:background="@color/main_background_gray" >
+    
+    <ImageView 
+        android:id="@+id/view_news_ad_iv"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:scaleType="fitXY"/>
+
+</LinearLayout>

@@ -1,0 +1,157 @@
+<resources>
+
+    <!-- push类型为手机平板 -->
+    <integer name="app_push_device_type">2</integer>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="one_px">1px</dimen>
+    <dimen name="one_dip">1dip</dimen>
+    <dimen name="action_bar_height">48.0dip</dimen>
+    <!-- 标签 tab 高度 -->
+    <dimen name="tab_page_indicator_height">48dp</dimen>
+
+    <!-- list item 参数 -->
+    <dimen name="base_listitem_img_width">120dp</dimen>
+    <dimen name="base_listitem_img_height">90dp</dimen>
+    <dimen name="base_listitem_padding_left_right">14dp</dimen>
+    <dimen name="base_listitem_padding_top_bottom">4dp</dimen>
+    <dimen name="base_listitem_img_padding">7.0dip</dimen>
+    <dimen name="base_photo_listitem_padding_bottom">15.0dip</dimen>
+    <dimen name="base_list_tag_text_size">11dp</dimen>
+    <dimen name="base_list_title_text_size">18sp</dimen>
+    <dimen name="base_list_desc_text_size">14sp</dimen>
+    <dimen name="base_list_audio_size">70.0dip</dimen>
+    <dimen name="list_text_size_content">12sp</dimen>
+    
+    <dimen name="base_listitem_total_height">100dp</dimen>
+
+    <!-- 首页标签 -->
+    <dimen name="flag_height">64dp</dimen>
+    <dimen name="flag_width">47dp</dimen>
+    <dimen name="flag_margin_top">-30dp</dimen>
+    <dimen name="flag_margin_left">10dp</dimen>
+    <dimen name="flag_content_padding_left_right">10.0dip</dimen>
+    <dimen name="flag_content_padding_top_bottom">5.0dip</dimen>
+    <dimen name="flag_content_dividing_width">1px</dimen>
+    <dimen name="flag_content_options_height">90dp</dimen>
+    <dimen name="flag_content_options_icon_width_height">40dp</dimen>
+    <dimen name="flag_content_options_space">5dp</dimen>
+
+    <!-- 首页圆角头像大小 -->
+    <dimen name="flag_rounded_avatar_size">80dp</dimen>
+    <dimen name="flag_rounded_avatar_border_width">0dp</dimen>
+    <dimen name="flag_rounded_avatar_margin_top">20dip</dimen>
+    <dimen name="flag_rounded_avatar_margin_bottom">15dip</dimen>
+    
+     <!-- 个人中心界面 -->
+    <dimen name="personal_height">64dp</dimen>
+    <dimen name="personal_width">47dp</dimen>
+    <dimen name="personal_margin_top">-30dp</dimen>
+    <dimen name="personal_margin_left">10dp</dimen>
+    <dimen name="personal_content_padding_left_right">10.0dip</dimen>
+    <dimen name="personal_content_padding_top_bottom">5.0dip</dimen>
+    <dimen name="personal_content_dividing_width">1px</dimen>
+    <dimen name="personal_content_options_height">90dp</dimen>
+    <dimen name="personal_content_options_icon_width_height">40dp</dimen>
+    <dimen name="personal_content_options_space">5dp</dimen>
+    <dimen name="personal_rounded_avatar_size">90dp</dimen>
+    <dimen name="personal_rounded_avatar_border_width">0dp</dimen>
+    <dimen name="personal_rounded_avatar_margin_top">20dip</dimen>
+    <dimen name="personal_rounded_avatar_margin_bottom">15dip</dimen>
+    
+    <!-- 专题 图集 个数 -->
+    <integer name="special_topic_pic_column_count">2</integer>
+    <!-- 栏目管理 单行 个数 -->
+    <integer name="channel_manage_column_count">3</integer>
+    <!-- 播放器 -->
+    <dimen name="media_widht">50dp</dimen>
+    <dimen name="media_height">50dp</dimen>
+    <dimen name="progross_height">10dp</dimen>
+
+    <!-- 图片推荐集 -->
+    <dimen name="image_distance">6dp</dimen>
+
+    <!-- 登录   注册 -->
+    <dimen name="logintitle">20dp</dimen>
+    <dimen name="editheight">40dp</dimen>
+    <dimen name="login_Size_edittext">15sp</dimen>
+    <dimen name="login_size_btn">18sp</dimen>
+
+    <!-- 设置页面字体大小 -->
+    <dimen name="settings_title_text_size">16dp</dimen>
+    <dimen name="setting_describe_text_size">14dp</dimen>
+    <dimen name="setting_right_text_size">14dp</dimen>
+    <dimen name="channel_manage_itme">14dp</dimen>
+
+    <!-- 评论 -->
+    <dimen name="activity_comment_popu_transt">60dp</dimen>
+
+    <!-- CommentActionSheet  图片的大小 -->
+    <dimen name="actionsheet_image">15dp</dimen>
+
+    <!-- switch button -->
+    <dimen name="switch_button_width">60.5dp</dimen>
+    <dimen name="switch_button_height">25dp</dimen>
+    <dimen name="switch__bottom_height">25dp</dimen>
+    <dimen name="switch__bottom_width">100dp</dimen>
+    <dimen name="switch__mask_height">25dp</dimen>
+    <dimen name="switch__mask_width">60.5dp</dimen>
+
+    <!-- 专题5图内部图片间距 -->
+    <dimen name="special_topic_image_spacing">10dp</dimen>
+    
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!--<dimen name="activity_horizontal_margin">16dp</dimen>-->
+    <!--<dimen name="activity_vertical_margin">16dp</dimen>-->
+
+    <!-- 个人信息详情 -->
+    <dimen name="margin_top">15dp</dimen>
+    <dimen name="margin_bottom">15dp</dimen>
+	<dimen name="left_layout_width">85dp</dimen>
+	<dimen name="left_right">10dp</dimen>
+	
+	<!-- 投稿 -->
+	<dimen name="contribute_padding_top">10dp</dimen>
+	<dimen name="contribute_padding_bottom">10dp</dimen>
+	
+	<!-- saas个人中心 -->
+	<dimen name="saas_personal_setting_icon_size">30dp</dimen>
+	<dimen name="saas_setting_list_title_text_size">16sp</dimen>
+	<dimen name="saas_setting_list_desc_text_size">14sp</dimen>
+	
+	<!-- 公司圈发表图片  -->
+	<dimen name="company_gridview_margin">10dp</dimen>
+    <dimen name="event_richeng_list_time">15dp</dimen>
+    <dimen name="hds_login_margin">10dp</dimen>
+    <dimen name="hds_small_margin">5dp</dimen>
+    <dimen name="event_meeting_record_left_margin">10dp</dimen>
+    <dimen name="event_meeting_record_right_margin">10dp</dimen>
+    <dimen name="event_meeting_record_left_layout">66dp</dimen>
+    <dimen name="event_meeting_record_iamge_distance">5dp</dimen>
+    <dimen name="company_gridview_distance">5dp</dimen>
+    
+    
+    <!-- 新鲜事详情页面 , 动态设置赞人员的个人头像-->
+    <dimen name="freshs_mood_info_margin">10dp</dimen><!-- 整个布局左右两侧的margin -->
+    <dimen name="parisa_margin_left">9dp</dimen>
+    <dimen name="parisa_margin_right">9dp</dimen>
+    <dimen name="parisa_user_logo_size">35dp</dimen>
+    <dimen name="parisa_user_logo_margin_left">10dp</dimen>
+    <dimen name="parisa_user_logo_distance">5dp</dimen>
+    <dimen name="parisa_tubiao_comment_tubiao_size">15dp</dimen>
+    
+    <!-- 新鲜事列表 -->
+    <dimen name="person_mood_layout_margin_left">10dp</dimen>
+    <dimen name="person_mood_layout_margin_right">10dp</dimen>
+    <dimen name="person_mood_day_time_width">75dp</dimen>
+    <dimen name="person_mood_day_time_content_distance">10dp</dimen>
+    <dimen name="person_mood_content_margin_left">10dp</dimen>
+    <dimen name="person_mood_content_margin_right">10dp</dimen>
+    <dimen name="person_mood_image_distance">5dp</dimen>
+
+    <!-- 图片预览高度 -->
+    <dimen name="album_preview_img_size">60dp</dimen>
+    
+    <dimen name="bottom_bar_text_size">10sp</dimen>
+</resources>

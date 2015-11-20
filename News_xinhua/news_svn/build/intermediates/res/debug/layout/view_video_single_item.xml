@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/base_listitem_padding_left_right"
+    android:paddingRight="@dimen/base_listitem_padding_left_right"
+    android:paddingTop="@dimen/base_listitem_padding_top_bottom" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pic_video_item_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/ly_single_img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="5dp" >
+
+            <ImageView
+                android:id="@+id/iv_single_img"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/def_img_16_9" />
+
+            <ImageView
+                android:id="@+id/iv_play_btn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/video_play_btn" />
+        </RelativeLayout>
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/layout_video_single_item_infos" />
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/Users/rangey/MyRepository/News_xinhua/news_svn/src/main/res/layout/view_video_single_item.xml -->

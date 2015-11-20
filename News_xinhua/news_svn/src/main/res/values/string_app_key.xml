@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_key_qq">801461360</string>
+    <string name="app_key_tencent_weibo">801461360</string>
+    <string name="app_key_renren">245937</string>
+    <string name="app_key_sina">290740527</string>
+    <!-- HpeW9U9f1ojbTcnZmR10Wv8M,  YkxEtRQrSB4G1CO3pefhaMRU -->
+    <string name="app_key_baidu_push">HpeW9U9f1ojbTcnZmR10Wv8M</string>
+    <string name="app_key_baidu_location">HpeW9U9f1ojbTcnZmR10Wv8M</string>
+    <string name="app_baidu_push_channel">baidu</string>
+    <string name="app_feedss_push_channel">push_platform</string>
+    <!-- 服务协议地址 -->
+    <string name="app_service_url">http://api.xw.feedss.com/show/service</string>
+    <!-- 用户隐私地址 -->
+    <string name="app_privacy_url">http://api.xw.feedss.com/show/privacy</string>
+</resources>

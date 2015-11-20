@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/flag_content_padding_left_right"
+    android:layout_marginRight="@dimen/flag_content_padding_left_right"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/flag_content_option_layout_style"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:id="@+id/btn_flag_alert"
+            style="@style/flag_content_option_child_layout_style"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        style="@style/flag_content_option_icon_itme_style"
+                        android:background="@drawable/btn_flag_alert" />
+
+                    <TextView
+                        style="@style/flag_content_option_text_itme_style"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/flag_today_news" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_msg_new"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/icon_new" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_collect"
+            style="@style/flag_content_option_child_layout_style"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                style="@style/flag_content_option_icon_itme_style"
+                android:background="@drawable/btn_flag_favorites" />
+
+            <TextView
+                style="@style/flag_content_option_text_itme_style"
+                android:layout_marginTop="5dp"
+                android:text="@string/flag_my_collection" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_flag_comment"
+            style="@style/flag_content_option_child_layout_style"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                style="@style/flag_content_option_icon_itme_style"
+                android:background="@drawable/ic_comment2" />
+
+            <TextView
+                style="@style/flag_content_option_text_itme_style"
+                android:layout_marginTop="5dp"
+                android:text="@string/flag_my_comments" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_flag_setting"
+            style="@style/flag_content_option_child_layout_style"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                style="@style/flag_content_option_icon_itme_style"
+                android:background="@drawable/ic_feedback" />
+
+            <TextView
+                style="@style/flag_content_option_text_itme_style"
+                android:layout_marginTop="5dp"
+                android:text="@string/flag_feedback" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/flag_content_option_layout_style"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:id="@+id/ly_display_model"
+            style="@style/flag_content_option_child_layout_style"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/iv_display_model"
+                style="@style/flag_content_option_icon_itme_style" />
+
+            <TextView
+                android:id="@+id/tv_display_model"
+                style="@style/flag_content_option_text_itme_style"
+                android:layout_marginTop="5dp"
+                android:text="@string/night_model" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ly_downlist"
+            style="@style/flag_content_option_child_layout_style"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+             >
+
+            <ImageView
+                android:id="@+id/iv_downlist"
+                style="@style/flag_content_option_icon_itme_style"
+                android:background="@drawable/btn_flag_downlist"
+                />
+
+            <TextView
+                android:id="@+id/tv_downlist"
+                style="@style/flag_content_option_text_itme_style"
+                android:layout_marginTop="5dp"
+                android:text="@string/downlist_model" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_flag_invite"
+            style="@style/flag_content_option_child_layout_style"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                style="@style/flag_content_option_icon_itme_style"
+                android:background="@drawable/ic_font" />
+
+            <TextView
+                style="@style/flag_content_option_text_itme_style"
+                android:layout_marginTop="5dp"
+                android:text="@string/flag_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_flag_search"
+            style="@style/flag_content_option_child_layout_style"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                style="@style/flag_content_option_icon_itme_style"
+                android:background="@drawable/btn_flag_search" />
+
+            <TextView
+                style="@style/flag_content_option_text_itme_style"
+                android:layout_marginTop="5dp"
+                android:text="@string/flag_search_fun" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_flag_bg" >
+
+            <LinearLayout
+                android:id="@+id/btn_flag_offlinedownload"
+                style="@style/flag_content_option_child_layout_style"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_margin="0dp" >
+
+                <ImageView
+                    style="@style/flag_content_option_icon_itme_style"
+                    android:background="@drawable/ic_en_noemal" />
+
+                <TextView
+                    style="@style/flag_content_option_text_itme_style"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/flag_english_news" />
+            </LinearLayout>
+
+            <com.cplatform.xhxw.ui.ui.base.widget.CircleProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:padding="5dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/flow_exchange_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="流量兑换"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+</LinearLayout><!-- From: file:/Users/rangey/MyRepository/News_xinhua/news_svn/src/main/res/layout/view_flag_content_options.xml -->

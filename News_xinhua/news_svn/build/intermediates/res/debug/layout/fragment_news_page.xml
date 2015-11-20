@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/detail_root_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+	
+    <com.cplatform.xhxw.ui.ui.base.widget.NeteaseWebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/detail_expr_area"
+        android:layout_below="@+id/nv_title" />
+
+    <com.cplatform.xhxw.ui.ui.base.widget.DefaultView
+        android:id="@+id/def_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/nv_title" />
+
+    <RelativeLayout
+        android:id="@+id/nv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@color/red_xuanwen" >
+
+        <Button
+            android:id="@+id/btn_back"
+            style="@style/back_red_style" />
+<!-- 
+        <TextView
+            android:id="@+id/news_collect_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:text="新闻详情"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+ -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/detail_sign_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/saas_sign_selector"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/btn_share"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/icon_detail_more_func_normal"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/detail_dividing_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/one_px"
+        android:layout_below="@+id/nv_title"
+        android:background="#e8e6e5" />
+    <com.cplatform.xhxw.ui.ui.base.view.BottomMediaplayer
+        android:id="@+id/bottommediaplayer"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="70dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="5dp"
+        android:visibility="gone" >
+    </com.cplatform.xhxw.ui.ui.base.view.BottomMediaplayer>
+
+    <RelativeLayout
+        android:id="@+id/detail_expr_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/detail_comment_editt_linear"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/input_area_bg" >
+
+            <EditText
+                android:id="@+id/detail_comment_editt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:layout_toLeftOf="@+id/detail_comment_sendbtn"
+                android:background="@drawable/input_area_bg"
+                android:gravity="center_vertical"
+                android:maxLines="3"
+                android:paddingBottom="6dp"
+                android:paddingLeft="7dp"
+                android:paddingRight="36dp"
+                android:paddingTop="6dp" >
+            </EditText>
+
+            <Button
+                android:id="@+id/detail_comment_expression_btn"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/detail_comment_sendbtn"
+                android:background="@drawable/selector_expressions" />
+
+            <Button
+                android:id="@+id/detail_comment_sendbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selector_comment_color_btn"
+                android:text="@string/comment_title" />
+        </RelativeLayout>
+
+        <com.cplatform.xhxw.ui.ui.detailpage.expressions.XWExpressionWidgt
+            android:id="@+id/detail_comment_expression_widgt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/detail_comment_editt_linear"
+            android:background="@drawable/bg_expression_area"
+            android:gravity="center_horizontal"
+            android:visibility="gone" />
+    </RelativeLayout>
+</RelativeLayout><!-- From: file:/Users/rangey/MyRepository/News_xinhua/news_svn/src/main/res/layout/fragment_news_page.xml -->

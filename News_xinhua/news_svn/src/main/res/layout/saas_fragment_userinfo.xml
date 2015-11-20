@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" >
+	
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="15dp"
+	            android:background="@drawable/ic_setting_item_bg"
+	            android:orientation="vertical" >
+	            
+	            <RelativeLayout
+	                android:id="@+id/saas_userinfo_ly_avatar"
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:padding="5dp" >
+	
+		            <ImageView
+		                android:id="@+id/iv_arr"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_alignParentRight="true"
+		                android:layout_centerVertical="true"
+		                android:layout_marginRight="10dp"
+		                android:contentDescription="@string/image_desc"
+		                android:src="@drawable/arrow_list_right" />
+	
+		            <ImageView
+		                android:id="@+id/saas_userinfo_iv_avatar"
+		                android:layout_width="60dp"
+		                android:layout_height="60dp"
+		                android:layout_centerVertical="true"
+		                android:layout_marginRight="5dp"
+		                android:layout_toLeftOf="@+id/iv_arr"
+		                android:scaleType="centerCrop"
+		                android:src="@drawable/s_msg_user_def" />
+	
+		            <TextView
+		                android:id="@+id/saas_personnal_nick_tv"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_alignParentLeft="true"
+		                android:layout_centerVertical="true"
+		                android:layout_marginLeft="10dp"
+		                android:text="头像"
+		                android:textAppearance="?android:attr/textAppearanceMedium" />
+		        </RelativeLayout>
+
+		        <View
+		            android:layout_width="match_parent"
+		            android:layout_height="@dimen/one_px"
+		            android:layout_marginLeft="10dp"
+		            android:layout_marginRight="10dp"
+		            android:background="#e5e5e5" />
+				
+		        <RelativeLayout
+		            android:id="@+id/saas_personal_userinfo_name_lo"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:padding="15dp" >
+
+		            <TextView
+		                android:id="@+id/textView2"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_centerVertical="true"
+		                android:text="姓名"
+		                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		            <ImageView
+		                android:id="@+id/arrow_name"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_alignParentRight="true"
+		                android:layout_centerVertical="true"
+		                android:visibility="invisible"
+		                android:contentDescription="@string/collect_desc"
+		                android:src="@drawable/arrow_list_right" />
+
+		            <TextView
+		                android:id="@+id/saas_userinfo_name_tv"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_alignBottom="@+id/textView2"
+		                android:layout_marginRight="5dp"
+		                android:layout_toLeftOf="@+id/arrow_name"
+		                android:text="Medium Text"
+		                android:textAppearance="?android:attr/textAppearanceMedium"
+		                android:textColor="@color/setting_gray" />
+
+		        </RelativeLayout>
+	
+	            <View
+	                android:layout_width="match_parent"
+	                android:layout_height="@dimen/one_px"
+	                android:layout_marginLeft="10dp"
+	                android:layout_marginRight="10dp"
+	                android:background="#e5e5e5" />
+	
+	            <!-- 新闻评论 -->
+	
+	            <RelativeLayout
+	                android:id="@+id/saas_userinfo_nickname_lo"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:padding="15dp" >
+
+		            <TextView
+		                android:id="@+id/textView2"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_centerVertical="true"
+		                android:text="昵称"
+		                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		            <ImageView
+		                android:id="@+id/arrow_nickname"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_alignParentRight="true"
+		                android:layout_centerVertical="true"
+		                android:contentDescription="@string/collect_desc"
+		                android:src="@drawable/arrow_list_right" />
+
+		            <TextView
+		                android:id="@+id/saas_userinfo_nickname_tv"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_alignBottom="@+id/textView2"
+		                android:layout_marginLeft="10dp"
+		                android:layout_marginRight="5dp"
+		                android:layout_toLeftOf="@+id/arrow_nickname"
+		                android:layout_toRightOf="@+id/textView2"
+		                android:gravity="right"
+		                android:text="Medium Text"
+		                android:textAppearance="?android:attr/textAppearanceMedium"
+		                android:textColor="@color/setting_gray" />
+
+		        </RelativeLayout>
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="15dp"
+	            android:background="@drawable/ic_setting_item_bg"
+	            android:orientation="vertical" >
+				
+		        <RelativeLayout
+		            android:id="@+id/saas_userinfo_mobile_lo"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:padding="15dp" >
+
+		            <TextView
+		                android:id="@+id/textView2"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_centerVertical="true"
+		                android:text="手机号"
+		                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		            <ImageView
+		                android:id="@+id/arrow_name"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_alignParentRight="true"
+		                android:layout_centerVertical="true"
+		                android:visibility="invisible"
+		                android:contentDescription="@string/collect_desc"
+		                android:src="@drawable/arrow_list_right" />
+
+		            <TextView
+		                android:id="@+id/saas_userinfo_mobilenum_tv"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_alignBottom="@+id/textView2"
+		                android:layout_marginRight="5dp"
+		                android:layout_toLeftOf="@+id/arrow_name"
+		                android:text="Medium Text"
+		                android:textAppearance="?android:attr/textAppearanceMedium"
+		                android:textColor="@color/setting_gray" />
+
+		        </RelativeLayout>
+	
+	            <View
+	                android:layout_width="match_parent"
+	                android:layout_height="@dimen/one_px"
+	                android:layout_marginLeft="10dp"
+	                android:layout_marginRight="10dp"
+	                android:background="#e5e5e5" />
+	            
+	            <RelativeLayout
+	                android:id="@+id/saas_userinfo_telnum_lo"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:padding="15dp" >
+
+		            <TextView
+		                android:id="@+id/textView2"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_centerVertical="true"
+		                android:text="座机号"
+		                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		            <ImageView
+		                android:id="@+id/arrow_name"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_alignParentRight="true"
+		                android:layout_centerVertical="true"
+		                android:contentDescription="@string/collect_desc"
+		                android:src="@drawable/arrow_list_right" />
+
+		            <TextView
+		                android:id="@+id/saas_userinfo_telnum_tv"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_alignBottom="@+id/textView2"
+		                android:layout_marginLeft="10dp"
+		                android:layout_marginRight="5dp"
+		                android:layout_toLeftOf="@+id/arrow_name"
+		                android:layout_toRightOf="@+id/textView2"
+		                android:gravity="right"
+		                android:text="Medium Text"
+		                android:textAppearance="?android:attr/textAppearanceMedium"
+		                android:textColor="@color/setting_gray" />
+
+		        </RelativeLayout>
+	
+	            <View
+	                android:layout_width="match_parent"
+	                android:layout_height="@dimen/one_px"
+	                android:layout_marginLeft="10dp"
+	                android:layout_marginRight="10dp"
+	                android:background="#e5e5e5" />
+	            
+	            <RelativeLayout
+	                android:id="@+id/saas_userinfo_mailbox_lo"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:padding="15dp" >
+
+		            <TextView
+		                android:id="@+id/textView2"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_centerVertical="true"
+		                android:text="邮箱"
+		                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		            <ImageView
+		                android:id="@+id/arrow_name"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_alignParentRight="true"
+		                android:layout_centerVertical="true"
+		                android:visibility="invisible"
+		                android:contentDescription="@string/collect_desc"
+		                android:src="@drawable/arrow_list_right" />
+
+		            <TextView
+		                android:id="@+id/saas_userinfo_mailbox_tv"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_alignBottom="@+id/textView2"
+		                android:layout_marginRight="5dp"
+		                android:layout_toLeftOf="@+id/arrow_name"
+		                android:text="Medium Text"
+		                android:textAppearance="?android:attr/textAppearanceMedium"
+		                android:textColor="@color/setting_gray" />
+
+		        </RelativeLayout>
+	
+	            <View
+	                android:layout_width="match_parent"
+	                android:layout_height="@dimen/one_px"
+	                android:layout_marginLeft="10dp"
+	                android:layout_marginRight="10dp"
+	                android:background="#e5e5e5" />
+	            
+	            <RelativeLayout
+	                android:id="@+id/saas_userinfo_sex_lo"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:padding="15dp" >
+
+		            <TextView
+		                android:id="@+id/textView2"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_centerVertical="true"
+		                android:text="性别"
+		                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		            <ImageView
+		                android:id="@+id/arrow_name"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_alignParentRight="true"
+		                android:layout_centerVertical="true"
+		                android:contentDescription="@string/collect_desc"
+		                android:src="@drawable/arrow_list_right" />
+
+		            <TextView
+		                android:id="@+id/saas_userinfo_sex_tv"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_alignBottom="@+id/textView2"
+		                android:layout_marginRight="5dp"
+		                android:layout_toLeftOf="@+id/arrow_name"
+		                android:text="Medium Text"
+		                android:textAppearance="?android:attr/textAppearanceMedium"
+		                android:textColor="@color/setting_gray" />
+
+		        </RelativeLayout>
+	
+	            <View
+	                android:layout_width="match_parent"
+	                android:layout_height="@dimen/one_px"
+	                android:layout_marginLeft="10dp"
+	                android:layout_marginRight="10dp"
+	                android:background="#e5e5e5" />
+	
+	            <!-- 新闻评论 -->
+	
+	            <RelativeLayout
+	                android:id="@+id/saas_userinfo_persign_lo"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:padding="15dp" >
+
+		            <TextView
+		                android:id="@+id/textView2"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_centerVertical="true"
+		                android:text="个性签名"
+		                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		            <ImageView
+		                android:id="@+id/arrow_nickname"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_alignParentRight="true"
+		                android:layout_centerVertical="true"
+		                android:contentDescription="@string/collect_desc"
+		                android:src="@drawable/arrow_list_right" />
+
+		            <TextView
+		                android:id="@+id/saas_userinfo_persign_tv"
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:layout_marginLeft="10dp"
+		                android:layout_marginRight="5dp"
+		                android:layout_toLeftOf="@+id/arrow_nickname"
+		                android:layout_toRightOf="@+id/textView2"
+		                android:gravity="center_horizontal"
+		                android:text="Medium Text"
+		                android:textAppearance="?android:attr/textAppearanceMedium"
+		                android:textColor="@color/setting_gray" />
+
+		        </RelativeLayout>
+	        </LinearLayout>
+	        
+	        <Button
+	            android:id="@+id/saas_userinfo_btn_save"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="15dp"
+	            android:background="@drawable/register_email_btn_bg"
+	            android:text="@string/save"
+	            android:textColor="@color/white" />
+
+	    </LinearLayout>
+	</ScrollView>
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.cplatform.xhxw.ui"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/flag_content_padding_top_bottom" >
+
+    <RelativeLayout
+        android:id="@+id/flag_content_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/flag_content_bg"
+        android:clickable="true"
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="@dimen/flag_content_padding_left_right"
+        android:paddingTop="10dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <com.cplatform.xhxw.ui.ui.base.widget.RoundedImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="@dimen/flag_rounded_avatar_size"
+                android:layout_height="@dimen/flag_rounded_avatar_size"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_avatar_bg"
+                app:border_color="@color/rounded_avatar_border_color"
+                app:border_width="@dimen/flag_rounded_avatar_border_width"
+                app:corner_radius="@dimen/flag_rounded_avatar_size"
+                app:is_oval="true"
+                app:round_background="true" />
+
+            <LinearLayout
+                android:id="@+id/flag_reg_login_lo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/flag_login_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="登录"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/flag_login_reg_devider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/divider_white_line" />
+
+                <TextView
+                    android:id="@+id/flag_reg_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="注册"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="5dp"
+                android:textColor="@android:color/white" />
+
+            <ImageView
+                android:id="@+id/flag_newmsg_icon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/icon_sys_msg" 
+                android:scaleType="center"
+                android:layout_marginLeft="10dp"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/flag_account_arrow_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrow_right_light" />
+
+
+        <ImageView
+            android:id="@+id/flag_settings_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_settings"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/view_flag_content_options" />
+
+</LinearLayout><!-- From: file:/Users/rangey/MyRepository/News_xinhua/news_svn/src/main/res/layout/view_flag_content.xml -->

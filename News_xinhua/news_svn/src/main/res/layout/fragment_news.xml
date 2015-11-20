@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ly_root_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/video_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/red_xuanwen"
+        android:gravity="center"
+        android:text="@string/xinhua_video"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <com.cplatform.xhxw.ui.ui.base.widget.PullRefreshListView
+            android:id="@+id/list"
+            style="@style/news_list_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null" />
+
+        <com.cplatform.xhxw.ui.ui.base.widget.DefaultView
+            android:id="@+id/def_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <AbsoluteLayout
+            android:id="@+id/root_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:id="@+id/textureview_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="0dp"
+                android:layout_y="0dp"
+                android:background="#000000"
+                android:visibility="invisible" >
+
+                <TextureView
+                    android:id="@+id/textureview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                </TextureView>
+
+                <ProgressBar
+                    android:id="@+id/video_corner_progressbar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:max="100"
+                    android:progressDrawable="@drawable/player_setting_bright_progressbar"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:id="@+id/video_function_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_x="0dp"
+                    android:layout_y="0dp"
+                    android:visibility="invisible" >
+
+                    <ImageView
+                        android:id="@+id/video_close_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/video_close_bg" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp" >
+
+                        <ImageView
+                            android:id="@+id/video_pause"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/video_pause_bg" />
+
+                        <TextView
+                            android:id="@+id/video_current_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="00:00" />
+
+                        <SeekBar
+                            android:id="@+id/video_seekbar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:max="100"
+                            android:progressDrawable="@drawable/player_setting_bright_progressbar"
+                            android:thumb="@drawable/video_progress_btn" />
+
+                        <TextView
+                            android:id="@+id/video_duration_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="00:00" />
+
+                        <ImageView
+                            android:id="@+id/video_full"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/video_fullscreen_bg" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <ProgressBar
+                    android:id="@+id/video_loading_progressbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="visible" />
+            </RelativeLayout>
+        </AbsoluteLayout>
+    </RelativeLayout>
+
+</LinearLayout>

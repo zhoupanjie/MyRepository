@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="pushsdk">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/news_svn/libs/pushsdk.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

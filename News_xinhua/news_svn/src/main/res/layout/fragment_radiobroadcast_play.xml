@@ -1,0 +1,154 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.cplatform.xhxw.ui"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_play"
+        android:layout_width="280dp"
+        android:layout_height="200dp" >
+
+        <com.cplatform.xhxw.ui.ui.main.cms.radiobroadcast.RotationImageView
+            android:id="@+id/civ_mid"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/icon_record_big" />
+
+        <RelativeLayout
+            android:id="@+id/rl_stylus"
+            android:layout_width="68dp"
+            android:layout_height="120dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" >
+
+            <ImageView
+                android:id="@+id/iv_stylus_head_bg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_radiobroadcast_stylus_head_bg" />
+
+            <ImageView
+                android:id="@+id/iv_stylus_head_needle"
+                android:layout_width="48dp"
+                android:layout_height="200dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="20dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/icon_radiobroadcast_stylus_needle" />
+
+            <ImageView
+                android:id="@+id/iv_stylus_head_top"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@id/iv_stylus_head_bg"
+                android:layout_alignLeft="@id/iv_stylus_head_bg"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@id/iv_stylus_head_bg"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_radiobroadcast_stylus_head_top" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_spectrum"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+		<ImageView
+            android:id="@+id/iv_spectrum_default"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="ContentDescription"
+            android:src="@drawable/img_spectrum_0"
+            android:layout_gravity="center"
+             />
+        <ImageView
+            android:id="@+id/iv_spectrum"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="ContentDescription"
+            android:visibility="gone"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/tv_time_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00:00"
+            android:textColor="@android:color/white"
+            android:textSize="10sp" />
+
+        <SeekBar
+            android:id="@+id/seekbar_play"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:progressDrawable="@drawable/player_setting_bright_progressbar"
+            android:thumb="@drawable/icon_seekbar_thumb"
+             />
+
+        <TextView
+            android:id="@+id/tv_time_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00:00"
+            android:textColor="@android:color/white"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_play"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/iv_last"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/radiobroadcast_last_bg"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/iv_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/radiobroadcast_play_bg"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/iv_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/radiobroadcast_next_bg"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+</LinearLayout>

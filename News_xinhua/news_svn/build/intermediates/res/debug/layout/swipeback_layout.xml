@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.imid.swipebacklayout.lib.SwipeBackLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+    
+<!-- From: file:/Users/rangey/MyRepository/News_xinhua/swipeBackLayout/src/main/res/layout/swipeback_layout.xml --><!-- From: file:/Users/rangey/MyRepository/News_xinhua/news_svn/build/intermediates/exploded-aar/News_xinhua/swipeBackLayout/unspecified/res/layout/swipeback_layout.xml -->

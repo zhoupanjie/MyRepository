@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.cplatform.xhxw.ui"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/base_listitem_padding_left_right"
+     	android:layout_marginRight="@dimen/base_listitem_padding_left_right"
+        android:background="@drawable/list_divider" />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/base_listitem_padding_left_right"
+        android:layout_marginRight="@dimen/base_listitem_padding_left_right"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp">
+    
+	    <com.cplatform.xhxw.ui.ui.base.widget.RoundedImageView
+	        android:id="@+id/comment_reply_avatar"
+	        android:layout_width="35dp"
+	        android:layout_height="35dp"
+	        android:src="@drawable/ic_avatar_bg"
+	        android:scaleType="centerCrop"
+	        app:border_color="@color/rounded_avatar_border_color"
+	        app:border_width="@dimen/flag_rounded_avatar_border_width"
+	        app:corner_radius="@dimen/flag_rounded_avatar_size"
+	        app:is_oval="true"
+	        app:round_background="true" />
+	
+	    <TextView
+	        android:id="@+id/comment_reply_reply_content"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="5dp"
+	        android:lineSpacingMultiplier="1.2"
+	        android:text=""
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textColor="#707070"
+	        android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

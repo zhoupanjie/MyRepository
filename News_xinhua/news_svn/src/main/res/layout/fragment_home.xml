@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/saas_my_record_tabbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tab_page_indicator_height"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+            
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:scaleType="center"
+                android:src="@drawable/xw_flag" />
+
+            <com.cplatform.xhxw.ui.ui.base.view.PagerSlidingTabStrip
+                android:id="@+id/saas_my_record_tabbar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/iv_addchannel"
+                android:layout_width="@dimen/tab_page_indicator_height"
+                android:layout_height="@dimen/tab_page_indicator_height"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_addchannel" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/one_px"
+            android:background="@color/light_gray" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <com.cplatform.xhxw.ui.ui.base.view.ChannelManageView
+        android:id="@+id/ly_channel_manage_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

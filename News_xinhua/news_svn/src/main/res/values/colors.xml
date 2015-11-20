@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent">#00000000</color>
+    <color name="messagelisthead_color">#ffd7d7d7</color>
+    <color name="news_items_pressed_colors">#f0f0f0</color>
+    <color name="news_items_colors">#ffffff</color>
+    <color name="tab_text_pressed_color">#00a2ff</color>
+    <color name="tab_text_pressed">#6f6f6f</color>
+    <color name="pull_to_refresh_label_color">#FF999999</color>
+    <color name="list_bg_p">#FFEEEEEE</color>
+    <color name="items_title_colors">#3c3c3c</color>
+    <color name="news_detail_content_color">#787878</color>
+    <color name="news_date_source_color">#bebebe</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="share_text_color">#4a4a4a</color>
+    <color name="flag_content_bg">#eaeaea</color>
+    <color name="flag_content_dividing_line">@color/nav_title_text_color</color>
+    <color name="grey">#FF808080</color>
+ <!-- 灰色 -->
+    <color name="blue">#00a2ff</color>
+    <color name="black">#000000</color>
+    <color name="base_main_bg_color">#FFFFFF</color>
+    <color name="night_base_main_bg_color">#222222</color>
+    <color name="base_list_tag_color">#ff808080</color>
+    <color name="channel_nanage_content_bg">#f0f0f0</color>
+    <color name="gray">#e0e0e0</color>
+
+    <drawable name="flag_bg">#DEDEDE</drawable>
+    <drawable name="flag_bg_pressed">#28A6FF</drawable>
+    <!-- 灰 -->
+    <color name="gray_d3">#d3d3d3</color>
+    <color name="gray_9d">#9d9d9d</color>
+    <!-- 浅灰 -->
+    <color name="light_gray">#dddddd</color>
+    <!-- 半透明 -->
+    <color name="translucent">#66000000</color>
+    <!-- 白色背景半透明 -->
+    <color name="white_translucent">#B2FFFFFF</color>
+    <!-- 首页圆角头像边线 -->
+    <color name="rounded_avatar_border_color">#333</color>
+
+    <!-- news item title 颜色 -->
+    <color name="base_list_title_color">#000000</color>
+    <color name="night_base_list_title_color">#000000</color>
+
+    <!-- news item desc 颜色 -->
+    <color name="base_list_desc_color">#ff969ba5</color>
+    <color name="night_base_list_desc_color">#ff969ba5</color>
+    <!-- 专题索引颜色 -->
+    <color name="special_topic_index_color">#f0f0f0</color>
+
+    <!--  -->
+    <color name="channel_manage_tip">#d0d0d0</color>
+    <color name="touming">#9000</color>
+    <!-- 标题字体 -->
+    <color name="nav_title_text_color">#787878</color>
+
+    <drawable name="flag_ad">#73bcef</drawable>
+    <drawable name="flag_ad_highlight">#a4cfed</drawable>
+
+    <!-- settings -->
+    <color name="setting_light_black">#7D7D7D</color>
+    <color name="setting_gray">#696969</color>
+    <color name="setting_blue">#1E90FF</color>
+    <color name="setting_red">#cc0000</color>
+    <!-- 通讯录背景 -->
+    <color name="contact_bg">#F7F7F5</color>
+    <!-- s信对话 -->
+    <color name="s_message_chat_time_text_color">#fff</color>
+    <color name="s_message_chat_bg">#fff</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="act_transparent">#9000</color>
+    <color name="commentary_name_color">#576b95</color>
+    <color name="commentary_time_color">#959595</color>
+    <color name="freshs_mood_info_delete">#8291AB</color>
+    <color name="freshs_mood_info_prasa_comment_bg">#EFF2F2</color>
+    <color name="freshs_mood_info_time">#727272</color>
+    <color name="webview_refresh_color1">#660099</color>
+    <color name="webview_refresh_color2">#003300</color>
+    <color name="webview_refresh_color3">#cc0000</color>
+    <color name="webview_refresh_color4">#ccff00</color>
+    <color name="community_unselect_text_color">#737373</color>
+    <color name="main_list_bg_color_white">#f9f9f9</color>
+    <color name="main_background_gray">#f1f1f1</color>
+    <color name="list_unread_color">#222222</color>
+    <color name="list_read_color">#484848</color>
+    <color name="list_divider_color">#d9d9d9</color>
+    <color name="list_gray_text">#999999</color>
+    <color name="input_area_bg">#fafafa</color>
+
+    <drawable name="top_sure_btn">#767676</drawable>
+
+    <!-- 社区评论单行点击背景 -->
+    <drawable name="company_comment_focus">#e4e4e4</drawable>
+    <!-- 炫游戏 -->
+    <color name="gray_1">#969696</color>
+    <color name="gray_2">#DCDCDC</color>
+    <color name="blue_game">#2998ff</color>
+    <color name="blue_game_detail_down_press">#0077e7</color>
+    <color name="blue_game_detail_down_default">#2c98fe</color>
+    <!-- 透明色 -->
+    <color name="transparent_white_half">#10000000</color>
+    <color name="transparent_white_three_quarter">#75FFFFFF</color>
+    <color name="transparent_black_three_quarter">#75000000</color>
+    <color name="transparent_black_half">#50000000</color>
+    <!-- 广播 -->
+    <color name="gray_radio_setting">#f4f4f4</color>
+    <color name="gray_radio_setting_split">#cccccc</color>
+    <color name="bestred">#CC0000</color>
+    <!-- 炫闻标题红 -->
+    <color name="red_xuanwen">#cc0000</color>
+    <!-- 炫闻红色按钮 -->
+    <color name="btn_red_normal">#cc0000</color>
+    <color name="btn_red_pressed">#aa0000</color>
+    <!-- 炫闻红色字体 -->
+    <color name="text_red_xuanwen">#ee0000</color>
+</resources>

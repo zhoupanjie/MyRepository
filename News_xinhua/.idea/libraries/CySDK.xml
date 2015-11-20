@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="CySDK">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/news_svn/libs/CySDK.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

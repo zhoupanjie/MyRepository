@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="androidrecording">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/news_svn/libs/androidrecording.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

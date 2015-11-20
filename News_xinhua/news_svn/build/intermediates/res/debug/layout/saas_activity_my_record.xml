@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/saas_my_record_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height" >
+
+        <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/saas_titl_btn_cancel_bg"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/saas_setting_my_record"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </RelativeLayout>
+    
+    <com.cplatform.xhxw.ui.ui.base.view.PagerSlidingTabStrip
+        android:id="@+id/saas_my_record_tabbar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/saas_my_record_title"
+        android:background="#DCDCDC" />
+    
+    <android.support.v4.view.ViewPager
+	    android:id="@+id/saas_my_record_vp"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_below="@+id/saas_my_record_tabbar" />
+
+    <RelativeLayout 
+        android:id="@+id/saas_my_comment_detail_lo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:background="@drawable/ic_setting_item_bg"
+        android:visibility="invisible">
+        <com.cplatform.xhxw.ui.ui.base.widget.PullRefreshListView
+	        android:id="@+id/saas_my_comment_detail_list"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:divider="@null"
+	        android:background="@drawable/ic_setting_item_bg"
+	        android:layout_above="@+id/saas_my_comment_collapse_detail" />
+	    <ImageView 
+	        android:id="@+id/saas_my_comment_collapse_detail"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/arrow_up"
+	        android:layout_alignParentBottom="true"
+	        android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</RelativeLayout>
+<!-- From: file:/Users/rangey/MyRepository/News_xinhua/news_svn/src/main/res/layout/saas_activity_my_record.xml -->

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_radio_setting" >
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/bestred" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="播放设置"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/iv_goback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/game_detail_back" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_title"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:id="@+id/rl_playmode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/gray_radio_setting_split"
+                android:paddingBottom="0.5dp"
+                android:paddingTop="0.5dp" >
+
+                <TextView
+                    android:id="@+id/rg_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical|left"
+                    android:paddingLeft="10dp"
+                    android:text="播放方式"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rg_title"
+                    android:layout_marginTop="0.5dp"
+                    android:orientation="horizontal" >
+
+                    <View
+                        android:id="@+id/v_split"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/white" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_playmode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <RadioButton
+                            android:id="@+id/rb_turnchannelorder"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginBottom="0.5dp"
+                            android:background="@android:color/white"
+                            android:button="@null"
+                            android:checked="true"
+                            android:drawableRight="@drawable/radiobroadcast_setting_radio"
+                            android:paddingRight="20dp"
+                            android:text="转频道顺序播放"
+                            android:textColor="@color/selector_radio_setting_text" />
+
+                        <RadioButton
+                            android:id="@+id/rb_singlechannelloop"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@android:color/white"
+                            android:button="@null"
+                            android:drawableRight="@drawable/radiobroadcast_setting_radio"
+                            android:paddingRight="20dp"
+                            android:text="单频道循环播放"
+                            android:textColor="@color/selector_radio_setting_text" />
+                    </RadioGroup>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_playmode"
+                android:layout_marginTop="10dp"
+                android:background="@color/gray_radio_setting_split"
+                android:paddingBottom="0.5dp"
+                android:paddingTop="0.5dp" >
+
+                <TextView
+                    android:id="@+id/rg_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical|left"
+                    android:paddingLeft="10dp"
+                    android:text="定时停止播放"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rg_title"
+                    android:layout_marginTop="0.5dp"
+                    android:orientation="horizontal" >
+
+                    <View
+                        android:id="@+id/v_split"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/white" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_timer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <RadioButton
+                            android:id="@+id/rb_nolimit"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginBottom="0.5dp"
+                            android:background="@android:color/white"
+                            android:button="@null"
+                            android:checked="true"
+                            android:drawableRight="@drawable/radiobroadcast_setting_radio"
+                            android:paddingRight="20dp"
+                            android:text="不限制"
+                            android:textColor="@color/selector_radio_setting_text" />
+
+                        <RadioButton
+                            android:id="@+id/rb_minute60"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginBottom="0.5dp"
+                            android:background="@android:color/white"
+                            android:button="@null"
+                            android:drawableRight="@drawable/radiobroadcast_setting_radio"
+                            android:paddingRight="20dp"
+                            android:text="60分钟"
+                            android:textColor="@color/selector_radio_setting_text" />
+
+                        <RadioButton
+                            android:id="@+id/rb_minute30"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginBottom="0.5dp"
+                            android:background="@android:color/white"
+                            android:button="@null"
+                            android:drawableRight="@drawable/radiobroadcast_setting_radio"
+                            android:paddingRight="20dp"
+                            android:text="30分钟"
+                            android:textColor="@color/selector_radio_setting_text" />
+
+                        <RadioButton
+                            android:id="@+id/rb_minute10"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@android:color/white"
+                            android:button="@null"
+                            android:drawableRight="@drawable/radiobroadcast_setting_radio"
+                            android:paddingRight="20dp"
+                            android:text="10分钟"
+                            android:textColor="@color/selector_radio_setting_text" />
+
+                        <RadioButton
+                            android:id="@+id/rb_custom"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@android:color/white"
+                            android:button="@null"
+                            android:drawableRight="@drawable/radiobroadcast_setting_radio"
+                            android:paddingRight="20dp"
+                            android:text="自定义"
+                            android:textColor="@color/selector_radio_setting_text"
+                            android:visibility="gone" />
+                    </RadioGroup>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout><!-- From: file:/Users/rangey/MyRepository/News_xinhua/news_svn/src/main/res/layout/activity_radiobroadcast_setting.xml -->

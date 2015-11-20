@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+   	<item android:drawable="@drawable/detail_share_focus" android:state_focused="true" android:state_pressed="true"/>
+    <item android:drawable="@drawable/detail_share" android:state_focused="true" android:state_pressed="false"/>
+    <item android:drawable="@drawable/detail_share_focus" android:state_focused="false" android:state_pressed="true"/>
+    <item android:drawable="@drawable/detail_share"/>
+
+</selector>
+<!-- From: file:/Users/rangey/MyRepository/News_xinhua/news_svn/src/main/res/drawable/selector_detail_share.xml -->

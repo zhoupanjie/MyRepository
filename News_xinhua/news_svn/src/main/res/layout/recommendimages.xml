@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:id="@+id/recommend_linear_first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#50000000"
+                android:layout_marginRight="@dimen/image_distance"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/recommendimage_first"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_test" 
+                    android:clickable="true"
+                    android:scaleType="fitXY"/>
+
+                <TextView
+                    android:id="@+id/recommendtext_first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:singleLine="false"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/test_nickname" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/recommend_linear_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#50000fff"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/recommendimage_second"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_test"
+                    android:clickable="true" 
+                    android:scaleType="fitXY"/>
+
+                <TextView
+                    android:id="@+id/recommendtext_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:singleLine="false"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/test_nickname" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:layout_marginTop="@dimen/image_distance"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/recommend_linear_third"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#50fff000"
+                android:layout_marginRight="@dimen/image_distance"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/recommendimage_third"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_test"
+                    android:clickable="true" 
+                    android:scaleType="fitXY"/>
+
+                <TextView
+                    android:id="@+id/recommendtext_third"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:singleLine="false"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/test_nickname" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/recommend_linear_forth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#50f0f0f0"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/recommendimage_forth"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_test"
+                    android:clickable="true" 
+                    android:scaleType="fitXY"/>
+
+                <TextView
+                    android:id="@+id/recommendtext_forth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:singleLine="false"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/test_nickname" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

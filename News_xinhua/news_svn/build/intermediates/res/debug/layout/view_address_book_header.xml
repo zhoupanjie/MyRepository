@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:paddingLeft="10dp"
+                  android:paddingRight="10dp"
+                  android:paddingTop="5dp"
+                  android:background="#f7f8f5"
+                  android:paddingBottom="5dp"
+                  android:orientation="vertical">
+
+        <LinearLayout
+                android:id="@+id/ly_search"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:background="@drawable/ic_contacts_search_bg"
+                android:gravity="center_vertical"
+                android:padding="3dp">
+
+            <ImageView
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_contacts_search_icon"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/one_px"
+            android:background="#DEDEDC"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/ly_new_friend"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal" >
+
+            <com.cplatform.xhxw.ui.ui.base.widget.CircleImageView
+                    android:id="@+id/iv_photo"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="14dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_contacts_new"/>
+
+            <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_toRightOf="@+id/iv_photo"
+                    android:text="@string/new_friend"/>
+
+            <TextView
+                android:id="@+id/tv_num"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginLeft="35dp"
+                android:background="@drawable/ic_msg_new_bg"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="10dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/Users/rangey/MyRepository/News_xinhua/news_svn/src/main/res/layout/view_address_book_header.xml -->

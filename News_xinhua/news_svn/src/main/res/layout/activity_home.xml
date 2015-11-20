@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_activity_root_ly"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/fg_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/enterprise_bottom_bar" />
+    
+    <com.cplatform.xhxw.ui.ui.base.view.HomeOperationsBar
+        android:id="@+id/enterprise_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <com.cplatform.xhxw.ui.ui.base.widget.InputViewSensitiveLinearLayout
+        android:id="@+id/home_activity_lo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <WebView
+                android:id="@+id/home_activity_webview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/home_activity_enter_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/home_enter_bg"
+                android:padding="10dp"
+                android:text="进入首页"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </com.cplatform.xhxw.ui.ui.base.widget.InputViewSensitiveLinearLayout>
+	<TextView 
+	    android:id="@+id/home_language_switch_loading"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="@color/white"
+	    android:gravity="center"
+	    android:textSize="20sp"
+	    android:visibility="gone"
+	    android:text="LOADING..."/>
+</RelativeLayout>

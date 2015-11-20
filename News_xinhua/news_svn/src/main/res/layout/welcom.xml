@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/welcom_root_lo"
+    android:orientation="vertical" >
+	
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView 
+	        android:id="@+id/loading_fullscreen_iv"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:scaleType="fitXY"
+	        android:src="@drawable/bg_loading_fs"/>
+        <ImageView 
+	        android:id="@+id/loading_fullscreen_ad_iv"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:scaleType="fitXY"
+	        android:src="@drawable/bg_loading_fs"/>
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:visibility="gone">
+        
+        <ImageView
+            android:id="@+id/address_image"
+            android:layout_width="match_parent" 
+            android:layout_height="match_parent"
+            android:src="@drawable/bg_loading"
+            android:scaleType="fitXY"
+            />
+        
+        <ImageView 
+	        android:id="@+id/welcome_advertise"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:scaleType="fitXY"/>
+    
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone">
+        
+        <ImageView 
+	        android:id="@+id/welcome_logo_iv"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:background="@drawable/loading_logo"
+	        android:scaleType="fitXY"/>
+        
+        <ImageView 
+	        android:id="@+id/welcome_advertise_bottom"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:visibility="gone"
+	        android:scaleType="fitXY"/>
+    </RelativeLayout>
+</LinearLayout>

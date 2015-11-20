@@ -1,0 +1,46 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.cplatform.xhxw.ui"
+        minSdkVersion 14
+        targetSdkVersion 18
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles 'proguard-project.txt'
+        }
+    }
+}
+
+dependencies {
+    compile project(':baidu_locate_library')
+    compile project(':image_crop_library')
+    compile project(':photoView')
+    compile project(':social_sdk_library_project')
+    compile project(':swipeBackLayout')
+    compile project(':viewPagerIndicator')
+    compile 'com.android.support:support-v4:19.1.0'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.android.support:gridlayout-v7:18.0.0'
+    compile files('libs/CySDK.jar')
+    compile files('libs/MiPush_SDK_Client_2_2_sdk.jar')
+    compile files('libs/androidrecording.jar')
+    compile files('libs/butterknife-4.0.1.jar')
+    compile files('libs/com.wbkit1.0.jar')
+    compile files('libs/nineoldandroids-2.4.0.jar')
+    compile files('libs/ormlite-android-4.48.jar')
+    compile files('libs/ormlite-core-4.48.jar')
+    compile files('libs/pageddragdropgrid.jar')
+    compile files('libs/picasso-2.4.0.jar')
+    compile files('libs/pinyin4j-2.5.0.jar')
+    compile files('libs/pushsdk.jar')
+    compile files('libs/pushservice-3.2.0.jar')
+    compile files('libs/umeng_sdk.jar')
+    compile files('libs/universal-image-loader-1.8.4.jar')
+}

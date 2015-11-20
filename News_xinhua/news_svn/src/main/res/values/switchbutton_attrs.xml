@@ -1,0 +1,10 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <declare-styleable name="switchbutton">
+        <attr name="switchbutton_mask_width" format="dimension" />
+        <attr name="switchbutton_mask_height" format="dimension" />
+        <attr name="switchbutton_bottom_width" format="dimension" />
+        <attr name="switchbutton_bottom_height" format="dimension" />
+    </declare-styleable>
+
+</resources>

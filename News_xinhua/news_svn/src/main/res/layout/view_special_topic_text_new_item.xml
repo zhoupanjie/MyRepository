@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_background_gray"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/base_listitem_padding_top_bottom"
+    android:paddingTop="@dimen/base_listitem_padding_top_bottom" >
+
+    <TextView
+        android:id="@id/tv_header"
+        style="@style/base_list_item_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:text="图集" />
+
+    <RelativeLayout
+        style="@style/base_list_item_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="3.0dip"
+                android:layout_toRightOf="@+id/iv_img"
+                android:gravity="top|left|center"
+                android:lineSpacingExtra="3.0dip"
+                android:text="@string/test_nickname"
+                android:singleLine="true"
+                android:textAppearance="@style/base_list_title_style"/>
+
+        <TextView
+                android:id="@+id/tv_desc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_title"
+                android:layout_below="@+id/tv_title"
+                android:lineSpacingExtra="2.0dip"
+                android:maxLines="2"
+                android:minLines="2"
+                android:text="@string/test_nickname"
+                android:textAppearance="@style/base_list_desc_style"/>
+         <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+           android:layout_alignBottom="@+id/tv_desc"
+           android:layout_alignParentRight="true">
+        <ImageView
+                android:id="@+id/iv_action"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/tags_audio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:paddingLeft="2.0dip"
+                android:paddingRight="2.0dip"/>
+        <TextView
+                android:id="@+id/tv_comment"
+                style="@style/base_list_tag_style"
+                android:layout_width="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_height="wrap_content"
+                android:text="ceshiceshiceshiceshiceshiceshi"
+                android:layout_alignTop="@+id/iv_action"
+                android:layout_toLeftOf="@+id/iv_action"
+                />
+    </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cplatform.xhxw.ui"
+    android:versionCode="48"
+    android:versionName="5.0.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.RECORD_VIDEO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 检测网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取mac地址作为用户的备用唯一标识 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 获取用户手机的IMEI，用来唯一的标识用户。 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于评论模块分享位置信息 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 用于评论模块分享位置信息 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.SEND" />
+
+    <!-- Push service 运行需要的权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <permission
+        android:name="com.cplatform.xhxw.ui.permission.MIPUSH_RECEIVE"
+        android:protectionLevel="signatureOrSystem" />
+
+    <uses-permission android:name="com.cplatform.xhxw.ui.permission.MIPUSH_RECEIVE" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:largeHeap="true"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- 友盟key -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="52d628f156240b841100cc86" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="gfeng_xinwen" />
+
+        <!-- qndc -->
+        <!-- t_gongtt -->
+        <meta-data
+            android:name="UMS_APPKEY"
+            android:value="209e1739213cc641acbe9f2d9db72b88" />
+
+        <activity
+            android:name=".ui.welcom.WelcomActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="xhxw" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.cplatform.xhxw.ui.ui.main.HomeActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cplatform.xhxw.ui.ui.main.saas.EnterpriseMainFragment"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.message.MessageActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.detailpage.NewsPageActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cplatform.xhxw.ui.ui.main.cms.game.GameDetailActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cplatform.xhxw.ui.ui.main.cms.game.GameDownloadCenterActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.detailpage.CommentActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustUnspecified" />
+        <activity
+            android:name=".ui.picShow.PicShowActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
+            android:screenOrientation="sensor" />
+        <activity
+            android:name=".ui.recommendimages.RecommendImagesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.detailpage.VideoPlayerActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".ui.specialTopic.SpecialTopicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.RegisterCheckActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.RegisterTelephonActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.RegisterEmailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.comment.MyCommentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.search.SearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.login.ToFindPassWordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.ToFindPassWordEmailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.ToFindPassWordTelephonActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".test.Text"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.feedback.FeedbackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.about.AboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.settings.SettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.settings.UserInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.settings.BindPhoneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.settings.CropAvatarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.collect.CollectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.guide.GuideActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.web.WebViewActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.web.RedEnvelopesWebViewActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.advertisement.AdvertiseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cplatform.xhxw.ui.ui.main.cms.MyMsgActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cplatform.xhxw.ui.ui.main.saas.contribute.ContributeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cplatform.xhxw.ui.ui.main.saas.photopick.PhotoPickActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cplatform.xhxw.ui.ui.main.saas.personalcenter.MyRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cplatform.xhxw.ui.ui.main.saas.personalcenter.SaasSysSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cplatform.xhxw.ui.ui.main.saas.personalcenter.MyPushMessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cplatform.xhxw.ui.ui.main.saas.personalcenter.SaasUserinfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cplatform.xhxw.ui.ui.settings.ChangePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cplatform.xhxw.ui.ui.main.forelanguage.activity.ForeignLanguageHomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cplatform.xhxw.ui.ui.main.cms.channelsearch.ChannelSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cplatform.xhxw.ui.ui.main.cms.channelsearch.ShowChannelDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cplatform.xhxw.ui.ui.web.newscollect.NewsCollectWebActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cplatform.xhxw.ui.ui.web.newscollect.TextOrPhotoNewsCollectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cplatform.xhxw.ui.ui.web.newscollect.VideoRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cplatform.xhxw.ui.ui.web.newscollect.VideoPreviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cplatform.xhxw.ui.ui.apptips.TipsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.cplatform.xhxw.ui.ui.main.saas.addressBook.SearchFriendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cplatform.xhxw.ui.ui.main.saas.addressBook.SearchResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cplatform.xhxw.ui.ui.main.saas.addressBook.NewFriendsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cplatform.xhxw.ui.ui.main.saas.addressBook.FriendsVerifyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cplatform.xhxw.ui.ui.main.saas.addressBook.FriendInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cplatform.xhxw.ui.ui.main.saas.addressBook.UpdateInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cplatform.xhxw.ui.ui.main.saas.addressBook.SendImageTextActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.cplatform.xhxw.ui.ui.main.saas.addressBook.SendTextActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cplatform.xhxw.ui.ui.main.saas.addressBook.CompanyCircleAlbumGroupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cplatform.xhxw.ui.ui.main.saas.addressBook.CompanyCircleAlbumPreviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cplatform.xhxw.ui.ui.main.saas.addressBook.PersonalMoodActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cplatform.xhxw.ui.ui.main.saas.addressBook.CompanyFreshInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cplatform.xhxw.ui.ui.main.saas.addressBook.FriendsFreshInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cplatform.xhxw.ui.ui.main.saas.addressBook.FriendsFreshInfoNativeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cplatform.xhxw.ui.ui.main.saas.addressBook.CompanyFreshInfoNativeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cplatform.xhxw.ui.ui.main.saas.photopick.SelectTookenPhotoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cplatform.xhxw.ui.ui.main.saas.addressBook.HistoryMessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".test.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".ui.main.saas.addressBook.AddressBookActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.saas.SMessageChatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.saas.SMessageSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.saas.addressBook.AddressBookSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.saas.SMessageChatUserActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.saas.addressBook.CompanyMessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.saas.addressBook.FriendsMessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.saas.picShow.SaasPicShowActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".plugin.gallery.PicShowActivity"
+            android:screenOrientation="portrait" />
+        <!-- 广播设置 -->
+        <activity
+            android:name="com.cplatform.xhxw.ui.ui.main.cms.radiobroadcast.RadioBroadcastSettingActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <provider
+            android:name=".provider.XwContentProvider"
+            android:authorities="com.cplatform.xhxw.ui.provider.XwContentProvider" />
+
+        <service android:name=".service.VersionUpdateService" />
+        <service android:name=".service.VersionDownLoadService" />
+        <service android:name=".service.SyncService" />
+        <service
+            android:name=".service.DownloadService"
+            android:process=":xw_download" />
+        <service android:name=".service.NewsCashService" />
+
+        <receiver android:name=".receiver.StartServiceReceiver" />
+        <receiver android:name=".receiver.AppReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+        <!-- push应用定义消息receiver声明 -->
+        <receiver android:name=".receiver.PushMessageReceiver" >
+            <intent-filter>
+
+                <!-- 接收push消息 -->
+                <action android:name="com.baidu.android.pushservice.action.MESSAGE" />
+                <!-- 接收bind,unbind,fetch,delete等反馈消息 -->
+                <action android:name="com.baidu.android.pushservice.action.RECEIVE" />
+                <action android:name="com.baidu.android.pushservice.action.notification.CLICK" />
+            </intent-filter>
+        </receiver>
+
+        <!-- push必须的receviver和service声明 -->
+        <receiver
+            android:name="com.baidu.android.pushservice.PushServiceReceiver"
+            android:process=":bdservice_v1" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.baidu.android.pushservice.action.notification.SHOW" />
+                <action android:name="com.baidu.android.pushservice.action.media.CLICK" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.baidu.android.pushservice.RegistrationReceiver"
+            android:process=":bdservice_v1" >
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.METHOD" />
+                <action android:name="com.baidu.android.pushservice.action.BIND_SYNC" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.baidu.android.pushservice.PushService"
+            android:exported="true"
+            android:process=":bdservice_v1" />
+        <!-- push结束 -->
+
+
+        <!-- 众品push声明开始 -->
+
+        <receiver android:name="com.cplatform.xhxw.ui.receiver.FeedssPushMessageReceiver" >
+            <intent-filter>
+                <action android:name="com.cplatform.xhxw.ui.action.MESSAGE" />
+                <action android:name="com.cplatform.xhxw.ui.action.RECEIVE" />
+                <action android:name="com.cplatform.xhxw.ui.action.notification.CLICK" />
+                <action android:name="com.cplatform.xhxw.ui.action.notification.SHOW" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.feedss.push.sdk.PushServiceReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.feedss.push.sdk.PushService"
+            android:enabled="true"
+            android:label="PushService" />
+
+        <meta-data
+            android:name="APP_KEY"
+            android:value="pfCpxTNuOKRFeZD" />
+        <meta-data
+            android:name="APP_SECRET"
+            android:value="8d552d619da09ce4f7c96349d44f784f" />
+
+        <service
+            android:name="com.xiaomi.push.service.XMPushService"
+            android:enabled="true"
+            android:process=":pushservice" />
+        <service
+            android:name="com.xiaomi.mipush.sdk.PushMessageHandler"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.xiaomi.push.service.receivers.PingReceiver"
+            android:exported="false"
+            android:process=":pushservice" >
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.feedss.push.sdk.mi.MiMessageReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR" />
+            </intent-filter>
+        </receiver>
+
+        <!-- end 小米相关内容 -->
+
+
+        <!-- 众品push声明结束 -->
+
+
+        <!-- 定位声明开始 -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" >
+                </action>
+            </intent-filter>
+        </service>
+        <service android:name=".service.SyncContactsService" />
+        <!-- 定位声明结束 -->
+
+
+        <!-- 友盟分享配置开始 -->
+        <!-- 腾讯SSO授权的Activity注册 -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent801461360" />
+                <!-- qq_app_key -->
+            </intent-filter>
+        </activity>
+        <activity android:name="com.tencent.plus.ImageActivity" />
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- Socialize Activitys Start -->
+        <activity
+            android:name="com.umeng.socialize.view.CommentActivity"
+            android:configChanges="orientation|keyboard"
+            android:theme="@style/Theme.UMDefault" >
+        </activity>
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.umeng.socialize.view.CommentDetail"
+            android:configChanges="orientation|keyboard"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDefault" >
+        </activity>
+        <activity
+            android:name="com.umeng.socialize.view.CommentDetailNoMap"
+            android:configChanges="orientation|keyboard"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDefault" >
+        </activity>
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- 友盟分享配置结束 End -->
+
+
+        <!-- 畅言接入声明 -->
+        <!-- 评论列表界面 -->
+        <activity android:name="com.sohu.cyan.android.sdk.activity.CyanCommentActivity" />
+        <!-- 发表评论页面 -->
+        <activity android:name="com.sohu.cyan.android.sdk.activity.CyanPostCommentActivity" />
+        <!-- 社会化账号登陆界面 -->
+        <activity android:name="com.sohu.cyan.android.sdk.activity.OAuthActivity" >
+        </activity>
+        <!-- 游戏频道下载服务 -->
+        <service android:name="com.cplatform.xhxw.ui.ui.main.cms.game.GameDownService" >
+            <intent-filter>
+                <action android:name="com.shanshan.GameDownService" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

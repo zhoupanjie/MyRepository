@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/enterprise_main_root_ly"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/fg_enterprise_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/enterprise_bottom_bar"
+        android:layout_marginBottom="-7dp" />
+
+    <com.cplatform.xhxw.ui.ui.base.widget.ScrollLayout
+        android:id="@+id/ly_flag_manager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@id/view_header"
+            android:layout_width="@dimen/flag_width"
+            android:layout_height="@dimen/flag_height"
+            android:background="@drawable/flag"
+            android:clickable="true"
+            android:scaleType="fitXY" />
+
+        <com.cplatform.xhxw.ui.ui.base.view.FlagContent
+            android:id="@id/view_content"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:clickable="false"
+            android:background="@color/flag_content_bg"
+            android:orientation="vertical" />
+    </com.cplatform.xhxw.ui.ui.base.widget.ScrollLayout>
+
+    <com.cplatform.xhxw.ui.ui.base.view.HomeOperationsBar
+        android:id="@+id/enterprise_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+    </com.cplatform.xhxw.ui.ui.base.view.HomeOperationsBar>
+
+    <FrameLayout
+        android:id="@+id/fg_my_comment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout><!-- From: file:/Users/rangey/MyRepository/News_xinhua/news_svn/src/main/res/layout/fragment_enterprise_main.xml -->

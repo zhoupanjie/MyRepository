@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 首页下拉id -->
+    <item name="view_header" type="id"/>
+    <item name="view_content" type="id"/>
+</resources>

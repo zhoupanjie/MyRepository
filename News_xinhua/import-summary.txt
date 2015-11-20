@@ -1,0 +1,157 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Manifest Merging:
+-----------------
+Your project uses libraries that provide manifests, and your Eclipse
+project did not explicitly turn on manifest merging. In Android Gradle
+projects, manifests are always merged (meaning that contents from your
+libraries' manifests will be merged into the app manifest. If you had
+manually copied contents from library manifests into your app manifest
+you may need to remove these for the app to build correctly.
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+From News_svn:
+* .factorypath
+* bom.xml
+* proguard/
+* proguard/dump.txt
+* proguard/mapping.txt
+* proguard/seeds.txt
+* release_keystore/
+* release_keystore/xhxw.keystore
+From SwipeBackLayout:
+* SwipeBackLayout.iml
+From baidu_locate_library:
+* proguard-project.txt
+From social_sdk_library_project:
+* proguard-project.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:19.1.0
+android-support-v7-gridlayout.jar => com.android.support:gridlayout-v7:18.0.0
+gson-2.2.4.jar => com.google.code.gson:gson:2.2.4
+
+Potentially Missing Dependency:
+-------------------------------
+When we replaced the following .jar files with a Gradle dependency, we
+inferred the dependency version number from the filename. This
+specific version may not actually be available from the repository.
+If you get a build error stating that the dependency is missing, edit
+the version number to for example "+" to pick up the latest version
+instead. (This may require you to update your code if the library APIs
+have changed.)
+
+gson-2.2.4.jar => version 2.2.4 in com.google.code.gson:gson:2.2.4
+
+Replaced Libraries with Dependencies:
+-------------------------------------
+The importer recognized the following library projects as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the source files in your project were of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the library replacement in the import wizard and try
+again:
+
+android-support-v7-gridlayout => [com.android.support:gridlayout-v7:18.0.0]
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In PhotoView:
+* AndroidManifest.xml => photoView/src/main/AndroidManifest.xml
+* assets/ => photoView/src/main/assets
+* res/ => photoView/src/main/res
+* src/ => photoView/src/main/java/
+In SwipeBackLayout:
+* AndroidManifest.xml => swipeBackLayout/src/main/AndroidManifest.xml
+* assets/ => swipeBackLayout/src/main/assets
+* res/ => swipeBackLayout/src/main/res/
+* src/ => swipeBackLayout/src/main/java/
+In ViewPagerIndicator:
+* AndroidManifest.xml => viewPagerIndicator/src/main/AndroidManifest.xml
+* assets/ => viewPagerIndicator/src/main/assets
+* res/ => viewPagerIndicator/src/main/res/
+* src/ => viewPagerIndicator/src/main/java/
+In baidu_locate_library:
+* AndroidManifest.xml => baidu_locate_library/src/main/AndroidManifest.xml
+* assets/ => baidu_locate_library/src/main/assets
+* libs/locSDK_4.0.jar => baidu_locate_library/libs/locSDK_4.0.jar
+* res/ => baidu_locate_library/src/main/res
+* src/ => baidu_locate_library/src/main/java
+In image_crop_library:
+* AndroidManifest.xml => image_crop_library/src/main/AndroidManifest.xml
+* assets/ => image_crop_library/src/main/assets
+* res/ => image_crop_library/src/main/res/
+* src/ => image_crop_library/src/main/java/
+In social_sdk_library_project:
+* AndroidManifest.xml => social_sdk_library_project/src/main/AndroidManifest.xml
+* libs/SocialSDK_QQZone_1.jar => social_sdk_library_project/libs/SocialSDK_QQZone_1.jar
+* libs/SocialSDK_QQZone_2.jar => social_sdk_library_project/libs/SocialSDK_QQZone_2.jar
+* libs/SocialSDK_QQZone_3.jar => social_sdk_library_project/libs/SocialSDK_QQZone_3.jar
+* libs/SocialSDK_Scrshot_Lib.jar => social_sdk_library_project/libs/SocialSDK_Scrshot_Lib.jar
+* libs/SocialSDK_Shake_Lib.jar => social_sdk_library_project/libs/SocialSDK_Shake_Lib.jar
+* libs/SocialSDK_Sina.jar => social_sdk_library_project/libs/SocialSDK_Sina.jar
+* libs/SocialSDK_WeiXin_1.jar => social_sdk_library_project/libs/SocialSDK_WeiXin_1.jar
+* libs/SocialSDK_WeiXin_2.jar => social_sdk_library_project/libs/SocialSDK_WeiXin_2.jar
+* libs/SocialSDK_tencentWB_1.jar => social_sdk_library_project/libs/SocialSDK_tencentWB_1.jar
+* libs/SocialSDK_tencentWB_2.jar => social_sdk_library_project/libs/SocialSDK_tencentWB_2.jar
+* libs/SocialSDK_tencentWB_3.jar => social_sdk_library_project/libs/SocialSDK_tencentWB_3.jar
+* libs/httpmime-4.1.3.jar => social_sdk_library_project/libs/httpmime-4.1.3.jar
+* libs/umeng_social_sdk.jar => social_sdk_library_project/libs/umeng_social_sdk.jar
+* res/ => social_sdk_library_project/src/main/res/
+In News_svn:
+* .apt_generated/ => news_svn/src/main/java/
+* AndroidManifest.xml => news_svn/src/main/AndroidManifest.xml
+* assets/ => news_svn/src/main/assets/
+* libs/CySDK.jar => news_svn/libs/CySDK.jar
+* libs/MiPush_SDK_Client_2_2_sdk.jar => news_svn/libs/MiPush_SDK_Client_2_2_sdk.jar
+* libs/androidrecording.jar => news_svn/libs/androidrecording.jar
+* libs/butterknife-4.0.1.jar => news_svn/libs/butterknife-4.0.1.jar
+* libs/com.wbkit1.0.jar => news_svn/libs/com.wbkit1.0.jar
+* libs/nineoldandroids-2.4.0.jar => news_svn/libs/nineoldandroids-2.4.0.jar
+* libs/ormlite-android-4.48.jar => news_svn/libs/ormlite-android-4.48.jar
+* libs/ormlite-core-4.48.jar => news_svn/libs/ormlite-core-4.48.jar
+* libs/pageddragdropgrid.jar => news_svn/libs/pageddragdropgrid.jar
+* libs/picasso-2.4.0.jar => news_svn/libs/picasso-2.4.0.jar
+* libs/pinyin4j-2.5.0.jar => news_svn/libs/pinyin4j-2.5.0.jar
+* libs/pushsdk.jar => news_svn/libs/pushsdk.jar
+* libs/pushservice-3.2.0.jar => news_svn/libs/pushservice-3.2.0.jar
+* libs/umeng_sdk.jar => news_svn/libs/umeng_sdk.jar
+* libs/universal-image-loader-1.8.4.jar => news_svn/libs/universal-image-loader-1.8.4.jar
+* proguard-project.txt => news_svn/proguard-project.txt
+* res/ => news_svn/src/main/res/
+* src/ => news_svn/src/main/java/
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

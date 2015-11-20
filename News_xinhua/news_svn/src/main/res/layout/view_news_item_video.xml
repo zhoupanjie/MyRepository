@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/base_listitem_padding_top_bottom"
+    android:paddingBottom="@dimen/base_listitem_padding_top_bottom"
+    android:paddingLeft="@dimen/base_listitem_padding_left_right"
+    android:paddingRight="@dimen/base_listitem_padding_left_right"
+    android:background="@color/main_background_gray" >
+    
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@color/white">
+	    <ImageView 
+	        android:id="@+id/video_item_img"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:scaleType="fitXY"/>
+	    
+	    <ImageView 
+	        android:id="@+id/video_item_playbtn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:src="@drawable/video_play_btn"/>
+	    
+	    <TextView 
+	        android:id="@+id/video_item_title"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@color/translucent"
+	        android:textSize="@dimen/base_list_title_text_size"
+	        android:text="biao ti"
+	        android:textColor="@color/white"
+	        android:singleLine="true"
+	        android:padding="5dp"
+	        />
+	    
+	    <TextView 
+	        android:id="@+id/video_item_source_tv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@color/translucent"
+	        android:textSize="@dimen/base_list_desc_text_size"
+	        android:text="xin hua"
+	        android:textColor="@color/white"
+	        android:singleLine="true"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentLeft="true"
+	        android:padding="5dp"
+	        />
+	    
+	    <TextView 
+	        android:id="@+id/video_item_date"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@color/translucent"
+	        android:textSize="@dimen/base_list_desc_text_size"
+	        android:text="8-24 14:30"
+	        android:textColor="@color/white"
+	        android:singleLine="true"
+	        android:layout_toRightOf="@+id/video_item_source_tv"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentRight="true"
+	        android:gravity="right"
+	        android:padding="5dp"
+	        />
+	</RelativeLayout>
+</LinearLayout>

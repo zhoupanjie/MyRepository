@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res/com.cplatform.xhxw.ui"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/base_listitem_total_height"
+                style="@style/base_list_item_style">
+
+    <com.cplatform.xhxw.ui.ui.base.widget.RoundedImageView
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:id="@+id/iv_img"
+            android:layout_marginRight="@dimen/base_listitem_img_padding"
+            android:layout_marginTop="6dp"
+            android:layout_width="@dimen/base_listitem_img_width"
+            android:layout_height="@dimen/base_listitem_img_width"
+            android:scaleType="centerCrop"
+            app:corner_radius="@dimen/flag_rounded_avatar_size"
+            app:border_width="@dimen/flag_rounded_avatar_border_width"
+            app:is_oval="true"
+            app:border_color="@color/transparent"
+            app:round_background="true"
+            android:src="@drawable/def_img_4_3"/>
+    <RelativeLayout 
+        android:id="@+id/audio_item_tx_lo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="6dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/iv_img">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="top|left|center"
+            android:lineSpacingExtra="3.0dip"
+            android:textAppearance="@style/base_list_title_style"/>
+
+	    <TextView
+	        android:id="@+id/tv_desc"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/tv_title"
+	        android:layout_below="@+id/tv_title"
+	        android:lineSpacingExtra="2.0dip"
+	        android:maxLines="2"
+	        android:minLines="1"
+	        android:textAppearance="@style/base_list_desc_style"/>
+    </RelativeLayout>
+    
+	<TextView
+            android:id="@+id/au_comment"
+            style="@style/base_list_tag_style"
+            android:layout_width="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="ceshiceshiceshiceshiceshiceshi"/>
+
+	<TextView 
+        android:id="@+id/new_item_divider_tv"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_alignLeft="@+id/audio_item_tx_lo"
+        android:layout_alignParentBottom="true"
+        android:background="#d9d9d9"/>
+</RelativeLayout><!-- From: file:/Users/rangey/MyRepository/News_xinhua/news_svn/src/main/res/layout/view_news_audio_item.xml -->

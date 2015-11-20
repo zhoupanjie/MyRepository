@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ly_root_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.cplatform.xhxw.ui.ui.base.widget.PullRefreshListView
+        android:id="@+id/list"
+        style="@style/news_list_style"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null" />
+    <com.cplatform.xhxw.ui.ui.base.widget.DefaultView
+        android:id="@+id/def_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout><!-- From: file:/Users/rangey/MyRepository/News_xinhua/news_svn/src/main/res/layout/fragment_game.xml -->

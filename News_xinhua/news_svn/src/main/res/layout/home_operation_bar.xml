@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingTop="1dp" >
+
+    <LinearLayout
+        android:id="@+id/home_oper_xuanwen"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingBottom="2dp" >
+
+        <ImageView
+            android:id="@+id/home_oper_xuanwen_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/home_oper_xuanwen_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="@string/home_bar_news"
+            android:textColor="#8d8d8d"
+            android:textSize="@dimen/bottom_bar_text_size" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/home_oper_enterprise"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingBottom="2dp" >
+
+        <ImageView
+            android:id="@+id/enterprise_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/enterprise_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="@string/home_bar_broadcase"
+            android:textColor="#8d8d8d"
+            android:textSize="@dimen/bottom_bar_text_size" />
+
+        <TextView
+                android:id="@+id/tv_enterprise_msg"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="-50dp"
+                android:background="@drawable/ic_msg_new_bg"
+                android:textSize="12sp"
+                android:visibility="gone"
+                android:textColor="@color/white" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/home_oper_app_center"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingBottom="2dp" >
+
+        <ImageView
+            android:id="@+id/home_oper_app_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/home_oper_app_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="@string/home_bar_video"
+            android:textColor="#8d8d8d"
+            android:textSize="@dimen/bottom_bar_text_size" />
+
+        <TextView
+                android:id="@+id/tv_home_oper_app_msg"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="-50dp"
+                android:background="@drawable/ic_msg_new_bg"
+                android:textSize="12sp"
+                android:visibility="gone"
+                android:textColor="@color/white" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/home_oper_personnal_center"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingBottom="2dp" >
+
+        <ImageView
+            android:id="@+id/home_oper_personal_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/home_oper_personal_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="@string/home_bar_personal"
+            android:textColor="#8d8d8d"
+            android:textSize="@dimen/bottom_bar_text_size" />
+
+        <TextView
+            android:id="@+id/home_oper_personal_msgcount_iv"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="-50dp"
+            android:background="@drawable/ic_msg_new_bg"
+            android:text="13"
+            android:textSize="12sp"
+            android:visibility="gone"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

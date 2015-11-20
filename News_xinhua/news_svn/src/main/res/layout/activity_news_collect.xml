@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+	<LinearLayout
+	    android:id="@+id/news_collect_title_lo"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/action_bar_height" 
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/nv_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white" >
+
+            <Button
+                android:id="@+id/btn_back"
+                style="@style/back_btn_gray_style"/>
+
+            <TextView
+                android:id="@+id/news_collect_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:singleLine="true"
+                android:text="@string/login_title"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+			
+            <ImageView 
+	            android:id="@+id/news_collect_share"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginRight="10dp"
+	            android:layout_centerVertical="true"
+	            android:layout_alignParentRight="true"
+	            android:background="@drawable/icon_detail_more_func_normal"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/one_px"
+            android:background="@color/flag_content_dividing_line" />
+    </LinearLayout>
+	
+	<RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/news_collect_title_lo"
+        android:layout_above="@+id/news_collect_operate_lo">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+	        <android.support.v4.widget.SwipeRefreshLayout  
+		        android:id="@+id/swipe_container"  
+		        android:layout_width="match_parent"  
+		        android:layout_height="match_parent" >
+		        <com.cplatform.xhxw.ui.ui.base.view.ScrollListenWebView
+		            android:id="@+id/news_collect_wv"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"/>
+		    </android.support.v4.widget.SwipeRefreshLayout>
+		    <ProgressBar 
+		        android:id="@+id/news_collect_loadmore_pb"
+		        android:layout_width="wrap_content"
+		        android:layout_height="25dp"
+		        android:visibility="gone"
+		        android:layout_alignParentBottom="true"
+		        android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <LinearLayout 
+            android:id="@+id/news_collect_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="gone">
+            <ImageView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/bg_empty_view"/>
+        </LinearLayout>
+        
+        <ProgressBar 
+            android:id="@+id/news_collect_pb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    
+	<LinearLayout
+	    android:id="@+id/news_collect_operate_lo"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:orientation="horizontal">
+
+	    <Button
+	        android:id="@+id/news_collect_ask_btn"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:background="#FFFFF0"
+	        android:text="ask"
+	        android:textColor="#1C86EE" />
+
+	    <Button
+	        android:id="@+id/news_collect_survey_btn"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:background="#FFFFF0"
+	        android:text="survey"
+	        android:textColor="#1C86EE" />
+
+	</LinearLayout>
+</RelativeLayout>

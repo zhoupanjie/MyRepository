@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_index"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="0dp"
+        android:text="12dp"
+        android:textColor="#6b6c6e"
+        android:gravity="center_vertical"
+        android:background="#f6f9f9" />
+
+    <LinearLayout
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+
+        <com.cplatform.xhxw.ui.ui.base.widget.CircleImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/iv_photo"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher"/>
+        <TextView android:layout_marginLeft="14dp" android:id="@+id/tv_name" android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:textSize="15dp"
+                  android:textColor="@color/black"
+                  android:text="姓名"/>
+
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/Users/rangey/MyRepository/News_xinhua/news_svn/src/main/res/layout/view_address_book_item.xml -->

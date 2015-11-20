@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+     >
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="170dp"
+        android:gravity="center"
+        android:orientation="vertical"
+         >
+
+        <RelativeLayout
+            android:id="@+id/ly_single_img"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            android:padding="5dp"
+             >
+
+            <ImageView
+                android:id="@+id/iv_single_img"
+                android:layout_width="180dp"
+                android:layout_height="140dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/def_img_16_9" />
+
+            <ImageView
+                android:id="@+id/iv_play_btn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/video_play_btn" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/imginfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_translucent"
+            android:padding="5dp"
+             >
+            <TextView
+                android:id="@+id/tv_img_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:lines="2"
+                android:text="@string/test_nickname"
+                android:ellipsize="end"
+                android:textAppearance="@style/base_list_title_style" />
+            <TextView
+                android:id="@+id/tv_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tv_img_title"
+                android:lineSpacingExtra="2.0dip"
+                android:singleLine="true"
+                android:text="@string/test_nickname"
+                android:textAppearance="@style/base_list_desc_style"
+                android:visibility="gone"
+                 />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/Users/rangey/MyRepository/News_xinhua/news_svn/src/main/res/layout/view_video_gridview_item.xml -->
