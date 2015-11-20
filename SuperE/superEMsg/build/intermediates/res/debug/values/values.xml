@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/rangey/MyRepository/SuperE/superEMsg/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string-array name="menu_sms_share">
+        <item>@string/weixin</item>
+        <item>@string/weibo</item>
+        <item>@string/cancel</item>
+    </string-array>
+    <string-array name="mms_category">
+        <item>麻辣爱情</item>
+        <item>温馨祝福</item>
+        <item>幽默搞笑</item>
+        <item>节日祝福</item>
+    </string-array>
+    <string-array name="sms_category">
+        <item>愛情魔方</item>
+        <item>友情祝福</item>
+        <item>字字箴言</item>
+        <item>搞笑祝福</item>
+        <item>爆笑段子</item>
+        <item>吉日良言</item>
+        <item>节日祝福</item>
+        <item>生日祝福</item>
+    </string-array>
+    <!-- From: file:/Users/rangey/MyRepository/SuperE/superEMsg/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="activity_bgcolor1">#ffDEDCDC</color>
+    <color name="activity_bgcolor2">#ff665D60</color>
+    <color name="black">#000000</color>
+    <color name="blue">#ffccddff</color>
+    <color name="content_bg">#ff797071</color>
+    <color name="darkgrey">#ff404040</color>
+    <color name="grey">#58616d</color>
+    <color name="lightgrey">#ff888888</color>
+    <color name="lightransparent">#a0000000</color>
+    <color name="navpage">#FFE1E8EB</color>
+    <color name="semitransparent">#80000000</color>
+    <color name="tab_text_normal">#FFBBC0F7</color>
+    <color name="tab_text_selected">#FF707AFA</color>
+    <color name="title_color_bg">#FF7EEAF1</color>
+    <color name="toasterro">#9fd524</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+    <declare-styleable name="PullToRefresh"><attr format="reference|color" name="ptrRefreshableViewBackground"/><attr format="reference|color" name="ptrHeaderBackground"/><attr format="reference|color" name="ptrHeaderTextColor"/><attr format="reference|color" name="ptrHeaderSubTextColor"/><attr name="ptrMode"><flag name="disabled" value="0x0"/><flag name="pullFromStart" value="0x1"/><flag name="pullFromEnd" value="0x2"/><flag name="both" value="0x3"/><flag name="manualOnly" value="0x4"/><flag name="pullDownFromTop" value="0x1"/><flag name="pullUpFromBottom" value="0x2"/></attr><attr format="reference|boolean" name="ptrShowIndicator"/><attr format="reference" name="ptrDrawable"/><attr format="reference" name="ptrDrawableStart"/><attr format="reference" name="ptrDrawableEnd"/><attr format="reference|boolean" name="ptrOverScroll"/><attr format="reference" name="ptrHeaderTextAppearance"/><attr format="reference" name="ptrSubHeaderTextAppearance"/><attr name="ptrAnimationStyle"><flag name="rotate" value="0x0"/><flag name="flip" value="0x1"/></attr><attr format="reference|boolean" name="ptrScrollingWhileRefreshingEnabled"/><attr format="reference|boolean" name="ptrListViewExtrasEnabled"/><attr format="reference|boolean" name="ptrRotateDrawableWhilePulling"/><attr format="reference|color" name="ptrAdapterViewBackground"/><attr format="reference" name="ptrDrawableTop"/><attr format="reference" name="ptrDrawableBottom"/></declare-styleable>
+    <!-- From: file:/Users/rangey/MyRepository/SuperE/superEMsg/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="BasicTextSize">15dp</dimen>
+    <dimen name="ChattingContentMinHeight">49dp</dimen>
+    <dimen name="ChattingTextSize">16dp</dimen>
+    <dimen name="ConversationItemHeight">58dp</dimen>
+    <dimen name="LargeAvatarSize">56dp</dimen>
+    <dimen name="LargeTextSize">16dp</dimen>
+    <dimen name="LargestTextSize">30dp</dimen>
+    <dimen name="PreferenceItemHeight">42dp</dimen>
+    <dimen name="SmallTextSize">14dp</dimen>
+    <dimen name="SmallerTextSize">13dp</dimen>
+    <dimen name="TitleTextSize">18dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="app_title_size">25sp</dimen>
+    <!-- From: file:/Users/rangey/MyRepository/SuperE/superEMsg/build/intermediates/exploded-aar/SuperE/pull2refreshlibrary/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <item name="gridview" type="id"/>
+    <item name="scrollview" type="id"/>
+    <!-- From: file:/Users/rangey/MyRepository/SuperE/superEMsg/src/main/res/values/ids.xml -->
+    <eat-comment/>
+    <item name="ui_title" type="id"/>
+    <!-- From: file:/Users/rangey/MyRepository/SuperE/superEMsg/build/intermediates/exploded-aar/SuperE/pull2refreshlibrary/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <item name="webview" type="id"/>
+    <!-- From: file:/Users/rangey/MyRepository/SuperE/superEMsg/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_name">超级E信</string>
+    <string name="baiku_info">佰库资讯</string>
+    <string name="cancel">取消</string>
+    <string name="cartoon_zone">动漫乐园</string>
+    <string name="close">关闭</string>
+    <string name="collection">收藏</string>
+    <string name="demo_children_day">距 儿童节 还有16天</string>
+    <string name="game_zone">游戏大全</string>
+    <string name="holiday">节日祝福</string>
+    <string name="load_error">加载错误</string>
+    <string name="loading">加载中</string>
+    <string name="mms_collection">彩信收藏夹</string>
+    <string name="mms_depot">彩信宝典</string>
+    <string name="music_zone">音乐基地</string>
+    <string name="news_pic">美图</string>
+    <!-- From: file:/Users/rangey/MyRepository/SuperE/superEMsg/build/intermediates/exploded-aar/SuperE/pull2refreshlibrary/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <string name="pull_to_refresh_from_bottom_pull_label">@string/pull_to_refresh_pull_label</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
+    <string name="pull_to_refresh_from_bottom_release_label">@string/pull_to_refresh_release_label</string>
+    <string name="pull_to_refresh_pull_label">Pull to refresh…</string>
+    <string name="pull_to_refresh_refreshing_label">Loading…</string>
+    <string name="pull_to_refresh_release_label">Release to refresh…</string>
+    <!-- From: file:/Users/rangey/MyRepository/SuperE/superEMsg/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="re_load">重新加载</string>
+    <string name="remove_collection">取消收藏</string>
+    <string name="ring_zone">铃音地带</string>
+    <string name="search">搜索</string>
+    <string name="send">发送</string>
+    <string name="share">分享</string>
+    <string name="sms_collection">短信收藏夹</string>
+    <string name="sms_depot">短信仓库</string>
+    <string name="weibo">新浪微博</string>
+    <string name="weixin">微信朋友圈</string>
+    <string name="xinhua_news">新华炫闻</string>
+    <!-- From: file:/Users/rangey/MyRepository/SuperE/superEMsg/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="Animation">
+        <item name="android:windowEnterAnimation">@anim/push_left_in</item>
+        <item name="android:windowExitAnimation">@anim/push_right_out</item>
+    </style>
+    <style name="AppBaseTheme" parent="android:style/Theme.NoTitleBar.Fullscreen">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/Animation</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="NavPage">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+        <!-- <item name="android:background">@drawable/nav_page</item> -->
+        <item name="android:background">@color/navpage</item>
+    </style>
+    <style name="app_title">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDy">-1</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:maxEms">10</item>
+    </style>
+    <style name="book_name">
+        <item name="android:ellipsize">end</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textSize">@dimen/px18</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:maxWidth">@dimen/px106</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="item_send_btn">
+        <item name="android:background">@drawable/btn_common</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:paddingLeft">@dimen/px35</item>
+        <item name="android:paddingRight">@dimen/px35</item>
+        <item name="android:paddingTop">@dimen/px10</item>
+        <item name="android:paddingBottom">@dimen/px10</item>
+        <item name="android:textSize">@dimen/px24</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="pointer_text">
+        <item name="android:textSize">@dimen/px20</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="round_btn">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>

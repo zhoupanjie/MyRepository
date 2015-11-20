@@ -1,0 +1,13 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/ui_title" />
+
+    <com.hy.superemsg.components.Bookshelf
+        android:id="@+id/book_shelf"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout><!-- From: file:/Users/rangey/MyRepository/SuperE/superEMsg/src/main/res/layout/activity_cartoon.xml -->

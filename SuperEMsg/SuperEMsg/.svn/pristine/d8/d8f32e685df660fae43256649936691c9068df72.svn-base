@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_background"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px70"
+    android:background="@drawable/title_bg"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/px20"
+    android:paddingRight="@dimen/px20" >
+
+    <ImageView
+        android:id="@+id/ui_title_lbtn"
+        android:layout_width="@dimen/px48"
+        android:layout_height="@dimen/px41"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="false"
+        android:scaleType="fitXY"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/ui_title_rbtn1"
+        android:layout_width="@dimen/px48"
+        android:layout_height="@dimen/px41"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="false"
+        android:scaleType="fitXY"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/ui_title_rbtn2"
+        android:layout_width="@dimen/px48"
+        android:layout_height="@dimen/px41"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/px15"
+        android:layout_toLeftOf="@id/ui_title_rbtn1"
+        android:adjustViewBounds="false"
+        android:includeFontPadding="false"
+        android:scaleType="fitXY"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/ui_title_text"
+        style="@style/app_title"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</RelativeLayout>

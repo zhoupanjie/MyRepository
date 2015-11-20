@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bgcolor1"
+    android:orientation="vertical" >
+
+    <include layout="@layout/ui_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         >
+
+        <TextView
+            android:layout_marginTop="@dimen/px30"
+            android:layout_marginLeft="@dimen/px30"
+            android:id="@+id/item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px50"
+            android:layout_marginRight="@dimen/px10"
+            android:gravity="center"
+            android:text="您的手机号:"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/item_input"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/px50"
+            android:layout_alignTop="@id/item_text"
+            android:layout_marginBottom="@dimen/px20"
+            android:layout_toRightOf="@id/item_text"
+            android:includeFontPadding="false"
+            android:inputType="textPhonetic"
+            android:textSize="15sp" android:layout_marginRight="@dimen/px60"/>
+
+        <Button
+            android:id="@+id/item_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/px50"
+            android:layout_alignLeft="@id/item_input"
+            android:layout_below="@id/item_input"
+            android:layout_marginBottom="@dimen/px20"
+            android:layout_alignRight="@id/item_input"
+            android:background="@drawable/get_phone_btn"
+            android:text="获取短信验证码"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/item_input1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px50"
+            android:layout_alignLeft="@id/item_btn"
+            android:layout_below="@id/item_btn"
+            android:layout_marginBottom="@dimen/px20"
+            android:layout_alignRight="@id/item_btn"
+            android:includeFontPadding="false"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/item_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px50"
+            android:layout_alignTop="@id/item_input1"
+            android:layout_marginRight="@dimen/px10"
+            android:layout_toLeftOf="@id/item_input1"
+            android:gravity="center"
+            android:text="输入验证码:"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="@dimen/px40"
+            android:layout_height="@dimen/px40"
+            android:layout_alignTop="@id/item_input1"
+            android:layout_marginLeft="@dimen/px10"
+            android:layout_toRightOf="@id/item_input1"
+            android:adjustViewBounds="false"
+            android:src="@drawable/cross"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/item_btn1"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/px50"
+            android:layout_alignLeft="@id/item_input1"
+            android:layout_below="@id/item_input1"
+            android:background="@drawable/btn_common"
+            android:layout_alignRight="@id/item_input1"
+            android:text="确定"
+            android:textColor="#ffffffff"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/rangey/MyRepository/SuperE/superEMsg/libs/weibo.sdk.android.sso.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="e81daa09ae0ba8614ac736487b55fe3bb7679b87">
+        <dex dex="/Users/rangey/MyRepository/SuperE/superEMsg/build/intermediates/pre-dexed/debug/weibo.sdk.android.sso-fd8464e92bebd3a3b8211fae5299d9400584adec.jar" />
+    </item>
+    <item
+        jar="/Users/rangey/MyRepository/SuperE/superEMsg/build/intermediates/exploded-aar/SuperE/pull2refreshlibrary/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="773ae9a1b7a2d60511b2c11a5e376e4b96de19f4">
+        <dex dex="/Users/rangey/MyRepository/SuperE/superEMsg/build/intermediates/pre-dexed/debug/classes-54a1ac9790f4b0b7bd49c2694330eedc5b004269.jar" />
+    </item>
+    <item
+        jar="/Users/rangey/MyRepository/SuperE/superEMsg/libs/fastjson-1.1.24.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="c1f5317e11bd2638095549d4806b0753dfeb2249">
+        <dex dex="/Users/rangey/MyRepository/SuperE/superEMsg/build/intermediates/pre-dexed/debug/fastjson-1.1.24-049c8e022c54e665f4233f1281304ecc966e67df.jar" />
+    </item>
+    <item
+        jar="/Users/rangey/MyRepository/SuperE/superEMsg/libs/libammsdk.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="a5f20a9010df32cb73db28ec33964ed8b4c503cc">
+        <dex dex="/Users/rangey/MyRepository/SuperE/superEMsg/build/intermediates/pre-dexed/debug/libammsdk-9575bde110b9f62b30ffb7f5b27355c9538874ee.jar" />
+    </item>
+    <item
+        jar="/Users/rangey/Library/Android/sdk/extras/android/m2repository/com/android/support/support-v4/18.0.0/support-v4-18.0.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="/Users/rangey/MyRepository/SuperE/superEMsg/build/intermediates/pre-dexed/debug/support-v4-18.0.0-648ea17eed39c1cf43518a45de7380174bcc6ca0.jar" />
+    </item>
+
+</items>

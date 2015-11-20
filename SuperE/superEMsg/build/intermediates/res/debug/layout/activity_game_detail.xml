@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/ui_title" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/px20" >
+
+                <ImageView
+                    android:id="@+id/item_image"
+                    android:layout_width="@dimen/px130"
+                    android:layout_height="@dimen/px130"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/px20"
+                    android:src="@drawable/round_default_pic" />
+
+                <TextView
+                    android:id="@+id/item_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/item_image"
+                    android:layout_marginTop="@dimen/px3"
+                    android:layout_toRightOf="@id/item_image"
+                    android:ellipsize="end"
+                    android:includeFontPadding="false"
+                    android:maxEms="10"
+                    android:singleLine="true"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/item_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/item_text"
+                    android:layout_below="@id/item_text"
+                    android:layout_marginTop="@dimen/px3"
+                    android:includeFontPadding="false"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/item_text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/item_text"
+                    android:layout_marginLeft="@dimen/px10"
+                    android:layout_marginTop="@dimen/px3"
+                    android:layout_toRightOf="@id/item_text1"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/item_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/item_text1"
+                    android:layout_below="@id/item_text1"
+                    android:layout_marginTop="@dimen/px3"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/item_text4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/item_text3"
+                    android:layout_marginLeft="@dimen/px10"
+                    android:layout_marginTop="@dimen/px3"
+                    android:layout_toRightOf="@id/item_text2"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/item_btn"
+                    android:layout_width="@dimen/px110"
+                    android:layout_height="@dimen/px40"
+                    android:layout_alignBottom="@id/item_image"
+                    android:layout_alignLeft="@id/item_text"
+                    android:background="@drawable/btn_common"
+                    android:includeFontPadding="false"
+                    android:text="安装"
+                    android:textColor="#ffffffff"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/px2"
+                android:layout_marginLeft="@dimen/px10"
+                android:layout_marginRight="@dimen/px10"
+                android:background="@drawable/lb2" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/px20"
+                android:text="游戏截图"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Gallery
+                android:id="@+id/game_screenshot"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/px2"
+                android:layout_marginLeft="@dimen/px10"
+                android:layout_marginRight="@dimen/px10"
+                android:layout_marginTop="@dimen/px30"
+                android:background="@drawable/lb2" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/px20"
+                android:text="游戏介绍"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/item_text5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/px20"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout><!-- From: file:/Users/rangey/MyRepository/SuperE/superEMsg/src/main/res/layout/activity_game_detail.xml -->

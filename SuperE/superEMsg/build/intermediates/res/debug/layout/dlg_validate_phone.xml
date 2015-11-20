@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal" android:padding="@dimen/px20">
+	<TextView android:text="手机号:" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/px10"/>
+    <EditText
+        android:id="@+id/item_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:maxEms="11"
+        android:ems="11"
+        android:singleLine="true" />
+
+</LinearLayout><!-- From: file:/Users/rangey/MyRepository/SuperE/superEMsg/src/main/res/layout/dlg_validate_phone.xml -->

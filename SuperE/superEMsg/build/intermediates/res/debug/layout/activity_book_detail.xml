@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/ui_title" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="@dimen/px30" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/item_image"
+                        android:layout_width="@dimen/px106"
+                        android:layout_height="@dimen/px132"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:adjustViewBounds="false"
+                        android:background="@drawable/book_bg"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:id="@+id/item_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="@dimen/px10"
+                        android:layout_toRightOf="@id/item_image"
+                        android:textSize="@dimen/px24"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/item_text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/item_image"
+                        android:layout_alignLeft="@id/item_text"
+                        android:layout_below="@id/item_text"
+                        android:textSize="@dimen/px20" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/px4"
+                    android:layout_margin="@dimen/px10"
+                    android:background="@drawable/lb2" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/px10"
+                    android:text="动漫简介"
+                    android:textSize="@dimen/px22" />
+
+                <TextView
+                    android:id="@+id/item_text2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/px10"
+                    android:scrollbars="vertical"
+                    android:textSize="@dimen/px20" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/px4"
+                    android:layout_margin="@dimen/px10"
+                    android:background="@drawable/lb2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/px10"
+                    android:text="剧集列表"
+                    android:textSize="@dimen/px22" />
+
+                <GridView
+                    android:id="@+id/grid"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:horizontalSpacing="@dimen/px5"
+                    android:numColumns="3"
+                    android:verticalSpacing="@dimen/px5" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout><!-- From: file:/Users/rangey/MyRepository/SuperE/superEMsg/src/main/res/layout/activity_book_detail.xml -->

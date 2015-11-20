@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/ui_title" />
+
+    <EditText
+        android:id="@+id/item_input"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="手动输入号码，以#区分多个号码"
+        android:imeActionLabel="完成"
+        android:imeOptions="actionDone"
+        android:inputType="phone"
+        android:singleLine="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <com.hy.superemsg.components.PinnedHeaderListView
+            android:id="@+id/contact_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/pointers_list"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="#40000000"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffA5A1A1"
+        android:orientation="horizontal"
+        android:padding="@dimen/px15" >
+
+        <Button
+            android:id="@+id/item_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px40"
+            android:layout_marginRight="@dimen/px20"
+            android:layout_weight="0.5"
+            android:background="@drawable/btn2_bg"
+            android:text="全部选择"
+            android:textColor="#ffffffff" />
+
+        <Button
+            android:id="@+id/item_btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px40"
+            android:layout_marginRight="@dimen/px20"
+            android:layout_weight="0.5"
+            android:background="@drawable/btn2_bg"
+            android:text="全部取消"
+            android:textColor="#ffffffff" />
+
+        <CheckBox
+            android:id="@+id/item_btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px40"
+            android:layout_weight="0.5"
+            android:text="语音祝福"
+            android:textColor="#ffffffff" />
+
+        <Button
+            android:id="@+id/item_btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px40"
+            android:layout_marginRight="@dimen/px20"
+            android:layout_weight="1"
+            android:background="@drawable/btn2_bg"
+            android:text="发送"
+            android:textColor="#ffffffff" />
+    </LinearLayout>
+
+</LinearLayout>
